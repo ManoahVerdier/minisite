@@ -1,0 +1,26 @@
+header{
+    #logo{ 
+        img{
+            width:100%;
+        }
+    }
+        
+    #devis-btn{
+        font-size:1rem;
+        font-weight:600;
+        
+        
+        .devis-icon{
+        font-size:1.2rem !important;
+        line-height:18px !important;
+        }
+        
+        span{
+        height:30px;
+        line-height:20px;
+        padding-top:5px;
+        display:inline-block;
+        vertical-align:middle;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+// Variables
+@import 'variables';
+@import 'helpers';
+@import 'fonts';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'header/main';
+
+@import 'pages/formation';
