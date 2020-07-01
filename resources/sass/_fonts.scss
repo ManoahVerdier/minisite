@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Muli extra bold';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30eg.woff2) format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Muli bold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
+  }
+
 h1,h2,h3,h4,h5,h6,p, header{
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Muli', sans-serif;
 }

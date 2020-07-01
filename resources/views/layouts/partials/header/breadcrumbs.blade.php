@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 px-4 py-3">
-                <a href="{{url('/')}}">Accueil</a>
+                <a href="{{url('/')}}" class="blue">Accueil</a>
                 <span>&gt;</span>
-                <a href="{{url('/')}}">{{$formation->categorie}}</a>
+                <a href="{{url('/')}}" class="blue">{{$formation->categorie}}</a>
                 <span>&gt;</span>
-                <a href="{{url('/')}}">{{$formation->sous_categorie}}</a>
+                <a href="{{url('/')}}" class="blue">{{$formation->sous_categorie}}</a>
                 <span>&gt;</span>
-                <a href="{{url('/')}}">{{$formation->titre}}</a>
+                <span>{{$formation->titre}}</span>
             </div>
         </div>
     </div>

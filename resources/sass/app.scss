@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
 
 // Variables
 @import 'variables';
@@ -9,6 +10,19 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import 'footer/main';
+
 @import 'header/main';
+@import 'header/breadcrumbs';
 
 @import 'pages/formation';
+
+@media (min-width:1270px){
+    .container{
+        max-width:1270px !important;
+    }
+}
+
+body{
+    background-color:white;
+}

@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap);@import url(https://fonts.googleapis.com/css2?family=Muli:wght@400;
 
+600;700&display=swap);@charset "UTF-8";
 .btn.btn-orange {
   color: #fff;
   background-color: #FF6519;
@@ -12,16 +13,20 @@
 
 .btn.btn-blue {
   color: #fff;
-  background-color: #54C3ED;
-  border-color: #54C3ED;
+  background-color: #249fd5;
+  border-color: #249fd5;
 }
 
 .blue {
-  color: #54C3ED;
+  color: #249fd5;
 }
 
 .grey {
   color: #A4AABC;
+}
+
+.dark-grey {
+  color: #303030;
 }
 
 .btn.btn-yellow {
@@ -44,6 +49,30 @@
   border-radius: 15px;
 }
 
+@font-face {
+  font-family: "Muli extra bold";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30eg.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Muli bold";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format("woff2");
+}
+
 h1,
 h2,
 h3,
@@ -52,7 +81,7 @@ h5,
 h6,
 p,
 header {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 /*!
@@ -10983,18 +11012,37 @@ a.text-dark:focus {
   }
 }
 
+footer {
+  background: #f7f7f7;
+}
+
+footer img {
+  max-width: 200px;
+  height: auto;
+}
+
+footer .title {
+  font-size: 1.3rem;
+}
+
 header #logo img {
-  width: 100%;
+  width: 80%;
 }
 
 header #devis-btn {
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Muli bold";
 }
 
 header #devis-btn .devis-icon {
-  font-size: 1.2rem !important;
-  line-height: 18px !important;
+  font-size: 1.05rem !important;
+  line-height: 24px !important;
+  height: 36px;
+  width: 36px;
+  border-radius: 20px;
+  text-align: center;
+  padding-right: 1px;
 }
 
 header #devis-btn span {
@@ -11003,6 +11051,36 @@ header #devis-btn span {
   padding-top: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+
+header #contact-btn {
+  font-family: "Muli bold";
+}
+
+header #contact-btn a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+header #menu {
+  background: #DEDEDE;
+  color: #2E3038;
+}
+
+header #menu a {
+  color: #2E3038;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+header #menu a:hover {
+  background: #FDBE2D;
+  text-decoration: none;
+}
+
+#breadcrumbs span,
+#breadcrumbs a {
+  font-size: 0.7rem;
 }
 
 #form-page #formation-detail #resume,
@@ -11047,5 +11125,27 @@ header #devis-btn span {
   visibility: hidden;
   max-height: 0px;
   overflow: hidden;
+}
+
+#form-page #formation-detail #title {
+  background: #f7f7f7;
+}
+
+#form-page #formation-detail h3 {
+  background: #303030;
+  color: #249fd5;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 1270px) {
+  .container {
+    max-width: 1270px !important;
+  }
+}
+
+body {
+  background-color: white;
 }
 

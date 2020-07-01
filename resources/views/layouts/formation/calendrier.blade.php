@@ -10,7 +10,7 @@ $details = array (
 "Paris"           => array ("07/07/20","24/08/20","25/09/20","30/10/20","27/11/20"),
 "Toulouse"        => array ("07/07/20","24/08/20","25/09/20","30/10/20","27/11/20"));
 ?>
-<div class="row" id="calendrier">
+<div class="row d-none d-md-block" id="calendrier">
     <div class="col-12">
         <table id="date">
             <thead>
