@@ -7,14 +7,30 @@
   border-color: #FF6519;
 }
 
-.orange {
-  color: #FF6519;
-}
-
 .btn.btn-blue {
   color: #fff;
   background-color: #249fd5;
   border-color: #249fd5;
+}
+
+.btn.btn-yellow {
+  color: #fff;
+  background-color: #FDCD3D;
+  border-color: #FDCD3D;
+}
+
+.btn.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.orange {
+  color: #FF6519;
 }
 
 .blue {
@@ -29,24 +45,16 @@
   color: #303030;
 }
 
-.btn.btn-yellow {
-  color: #fff;
-  background-color: #FDCD3D;
-  border-color: #FDCD3D;
-}
-
 .yellow {
   color: #FDCD3D;
 }
 
-.btn.btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+.purple {
+  color: #bb0072;
+}
+
+.bg-dark-grey {
+  background: #303030;
 }
 
 @font-face {

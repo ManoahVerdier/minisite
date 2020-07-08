@@ -38,15 +38,32 @@
     <div class="container-fluid px-0">
         <div id='menu'>
             <div class="container">
-                <nav class="navbar navbar-expand-lg row py-1 mt-2">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg px-1 navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <div class="col-3 text-center"><a class="w-100 d-inline-block py-2" href="">Domaines</a></div>
-                        <div class="col-3 text-center"><a class="w-100 d-inline-block py-2" href="">Types</a></div>
-                        <div class="col-3 text-center"><a class="w-100 d-inline-block py-2" href="">Divers</a></div>
-                        <div class="col-3 text-center"><a class="w-100 d-inline-block py-2" href="">Contact</a></div>
+                    <div class="collapse navbar-collapse" id="menu-nav">
+                        <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0">
+                            <li class="nav-item active col-12 col-lg-3 text-center dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Domaines
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="domaines">
+                                    @foreach($categories as $category)
+                                    <a class="dropdown-item" href="{{route('categorie', ['slug' => $category->slug])}}">{{$category->nom}}</a>
+                                    @endforeach
+                                </div>
+                            </li>
+                            <li class="nav-item col-12 col-lg-3 text-center">
+                                <a class="w-100 d-inline-block py-2" href="">Types</a>
+                            </li>
+                            <li class="nav-item col-12 col-lg-3 text-center">
+                                <a class="w-100 d-inline-block py-2" href="">Divers</a>
+                            </li>
+                            <li class="nav-item col-12 col-lg-3 text-center">
+                                <a class="w-100 d-inline-block py-2" href="">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>

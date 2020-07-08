@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,20 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('/formation/{id}',function($id){
     $formation = App\Formation::where('id','=',$id)->firstOrFail();
-    return view ('formation',compact('formation'));
+    $categories = App\Categorie::distinct('nom')->get();
+    return view ('formation',compact('categories','formation'));
 })->name('formation');
+
+Route::get('/categorie/{slug}',function($slug){
+    $categorie = App\Categorie::where('slug',$slug)->first();
+    $categories = App\Categorie::distinct('nom')->get();
+    $formations = $categorie->formations()->get();
+    return view ('categorie',compact('categories','categorie','formations'));
+})->name('categorie');
+
+Route::get('/sous_categorie/{slug}',function($slug){
+    $sous_categorie = App\SousCategorie::where('slug',$slug)->first();
+    $categories = App\Categorie::distinct('nom')->get();
+    $formations = $sous_categorie->formations()->get();
+    return view ('sous_categorie',compact('categories','sous_categorie','formations'));
+})->name('sous_categorie');

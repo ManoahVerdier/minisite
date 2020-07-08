@@ -12,8 +12,6 @@ id="form-page"
     @include('layouts.partials.header.breadcrumbs')
 @endsection
 
-{{-- Breadcrumbs --}}
-
 
 {{-- Content --}}
 @section('content')
