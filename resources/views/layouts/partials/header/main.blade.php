@@ -61,7 +61,7 @@
                                 <a class="w-100 d-inline-block py-2" href="">Divers</a>
                             </li>
                             <li class="nav-item col-12 col-lg-3 text-center">
-                                <a class="w-100 d-inline-block py-2" href="">Contact</a>
+                                <a class="w-100 d-inline-block py-2" href="{{route('contact')}}">Contact</a>
                             </li>
                         </ul>
                     </div>
