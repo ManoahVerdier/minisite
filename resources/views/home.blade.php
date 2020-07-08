@@ -7,17 +7,18 @@ id="home-page"
 @endsection
 
 {{-- Header --}}
-{{--@section('header')
-    @include('layouts.partials.header.homepage')
-@endsection--}}
+@section('header')
+    @include('layouts.partials.header.main')
+@endsection
+
 
 {{-- Content --}}
 @section('content')
-TEST
-{{$formations}}
+    @include('layouts.home.banner')
+    @include('layouts.home.expertise')
+    @include('layouts.home.clients')
 @endsection
-
 {{-- Footer --}}
-{{--@section('footer')
+@section('footer')
     @include('layouts.partials.footer.main')
-@endsection--}}
+@endsection

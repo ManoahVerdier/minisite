@@ -41,6 +41,10 @@
   color: #A4AABC;
 }
 
+.gray {
+  color: #8c93aa;
+}
+
 .dark-grey {
   color: #303030;
 }
@@ -55,6 +59,14 @@
 
 .bg-dark-grey {
   background: #303030;
+}
+
+.bg-light-grey {
+  background: #F7F7F7;
+}
+
+.bg-yellow {
+  background: #FDCD3D;
 }
 
 @font-face {
@@ -11145,6 +11157,51 @@ header #menu a:hover {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+#home-page #banner .banner-text {
+  top: 0px;
+  padding: 100px;
+}
+
+#home-page #banner .banner-bullet {
+  bottom: 2.5em;
+  font-size: 1.3rem;
+}
+
+#home-page #expertise #expertise-right {
+  font-size: 1rem;
+}
+
+#home-page #expertise .expertise-categ::after {
+  content: "\203A";
+  display: inline-block;
+  position: absolute;
+  left: calc(100% - 60px);
+  background: #1DB0EE;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 10px;
+  color: #fff;
+  font-size: 1.8em;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+#home-page #clients #clients-right {
+  font-size: 1rem;
+}
+
+#home-page #clients #clients-right,
+#home-page #clients #clients-left {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 @media (min-width: 1270px) {

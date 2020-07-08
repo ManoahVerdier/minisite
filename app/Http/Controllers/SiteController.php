@@ -49,7 +49,7 @@ class SiteController extends Controller
                 'nom' => $request->get('nom'),
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
-                'message' => $request->get('message')
+                'formation_message' => $request->get('message')
             ), function($message)
             {
                 $message->from('vmogenet@cyn-communication.fr');

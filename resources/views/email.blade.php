@@ -9,4 +9,4 @@ Email: {{ $email }}
 Téléphone: {{ $telephone }}
 </p>
 <p>
-Message: {{ print_r($message,true) }}
+Message: {{ $formation_message }}
