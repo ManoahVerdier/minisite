@@ -19,7 +19,7 @@ class Categorie extends Model
 
     public function formations()
     {
-        return $this->hasMany(\App\Formation::class,'categorie');
+        return $this->hasMany(\App\Formation::class,'categorie_id');
     }
 
     public function sous_categories()

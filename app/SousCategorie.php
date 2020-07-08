@@ -24,6 +24,6 @@ class SousCategorie extends Model
 
     public function formations()
     {
-        return $this->hasMany(\App\Formation::class,'sous_categorie');
+        return $this->hasMany(\App\Formation::class,'sous_categorie_id');
     }
 }
