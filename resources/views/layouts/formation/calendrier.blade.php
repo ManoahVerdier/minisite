@@ -11,7 +11,10 @@ $details = array (
 "Toulouse"        => array ("07/07/20","24/08/20","25/09/20","30/10/20","27/11/20"));
 ?>
 <div class="row d-none d-md-block" id="calendrier">
-    <div class="col-12">
+    <div class="col-12 text-center">
+        <a data-toggle="collapse" href="#collapseCalendrier" role="button" aria-expanded="false" aria-controls="collapseCalendrier" class='btn btn-blue mr-3'>Voir le calendrier</a>
+    </div>
+    <div class="col-12 collapse" id="collapseCalendrier">
         <table id="date">
             <thead>
                 <tr class="hidden-phone">

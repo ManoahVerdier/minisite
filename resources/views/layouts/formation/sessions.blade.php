@@ -11,7 +11,7 @@
             </ul>
         </div>
         <div class="col-12 text-center p-3">
-            <a href="" class="btn btn-blue">Demander un devis</a>
+            <a href="{{route('contact', ['id' => $formation->id])}}" class="btn btn-blue">Demander un devis</a>
         </div>
     </div>
 </div>

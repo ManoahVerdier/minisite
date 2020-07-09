@@ -12,26 +12,34 @@
         <div class="col-12 text-left py-2">
             <span class='blue font-weight-bold'> Prochaines sessions à distance</span>
         </div>
-        <div class="col-6 text-center py-0">
-            07-08/07/20
-        </div>
-        <div class="col-6 text-center  py-0">
-            07-08/07/20
-        </div>
-        <div class="col-6 text-center  py-0">
-            07-08/07/20
-        </div>
-        <div class="col-6 text-center  py-0">
-            07-08/07/20
-        </div>
-        <div class="col-6 text-center  py-0">
-            07-08/07/20
-        </div>
-        <div class="col-6 text-center  py-0">
-            07-08/07/20
-        </div>
+        @if($formation->sessions ?? false)
+            @foreach(explode(',',$formation->sessions) as $session)
+            <div class="col-6 text-center py-0">
+                {{$session}}
+            </div>
+            @endforeach 
+        @else
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+            <div class="col-6 text-center  py-0">
+                07-08/07/20
+            </div>
+        @endif
         <div class="col-12 text-center p-3">
-            <a href="" class="btn btn-blue">S'inscrire</a>
+            <a href="{{route('contact', ['id' => $formation->id])}}" class="btn btn-blue">S'inscrire</a>
         </div>
     </div>
 </div>

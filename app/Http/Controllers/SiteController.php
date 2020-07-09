@@ -31,9 +31,12 @@ class SiteController extends Controller
         return view ('sous_categorie',compact('categories','sous_categorie','formations'));
     }
 
-    public function contact(){
+    public function contact($id=""){
         $categories = Categorie::distinct('nom')->get();
-        return view('contact', compact('categories'));
+        $formation=null;
+        if($id!="")
+            $formation = Formation::where('id','=',$id)->firstOrFail();
+        return view('contact', compact('categories','formation'));
     }
 
     public function contactPost(Request $request){
@@ -49,7 +52,9 @@ class SiteController extends Controller
                 'nom' => $request->get('nom'),
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
-                'formation_message' => $request->get('message')
+                'formation_message' => $request->get('message'),
+                'formation'=> $request->get('formation'),
+                'date_choisie'=> $request->get('date_choisie'),
             ), function($message)
             {
                 $message->from('vmogenet@cyn-communication.fr');

@@ -11204,6 +11204,16 @@ header #menu a:hover {
   padding-bottom: 100px;
 }
 
+#home-page #clients .clients-text {
+  top: 0px;
+  padding: 6.4em;
+}
+
+#home-page #clients .clients-bullet {
+  bottom: 2.5em;
+  font-size: 1.3rem;
+}
+
 @media (min-width: 1270px) {
   .container {
     max-width: 1270px !important;

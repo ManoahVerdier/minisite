@@ -18,46 +18,36 @@
             <div class="col-12 bg-light-grey p-5"></div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-0 m-0" id="banner-left">
+            <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_BMW.jpg')}}"/>
-                <div class='position-absolute w-100 h-100 banner-text'>
-                    <div class='d-inline-block w-100 h-50'></div>
-                    <h2 class='text-white h1 font-weight-bold mb-0'>Audit/Conseil</h2>
-                    <h5 class='blue h4'>certification ISO</h5>
-                    <div class='position-absolute banner-bullet text-white'>- experts qualifiés</div>
+                <div class='position-absolute w-100 h-100 clients-text'>
+                    <div class='d-inline-block w-100 h-50 mb-1'></div>
+                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
             </div>
-            <div class="col-12 col-md-4 p-0 m-0" id="banner-left">
+            <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Carrefour.jpg')}}"/>
-                <div class='position-absolute w-100 h-100 banner-text'>
-                    <div class='d-inline-block w-100 h-50'></div>
-                    <h2 class='text-white h1 font-weight-bold mb-0'>Audit/Conseil</h2>
-                    <h5 class='blue h4'>certification ISO</h5>
-                    <div class='position-absolute banner-bullet text-white'>- experts qualifiés</div>
+                <div class='position-absolute w-100 h-100 clients-text'>
+                    <div class='d-inline-block w-100 h-50 mb-1'></div>
+                    <h5 class='yellow h5 font-weight-bold mt-5 ml-1 mb-0'>ISO 9001</h2>
                 </div>
-            </div><div class="col-12 col-md-4  p-0 m-0" id="banner-left">
+            </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ricard.jpg')}}"/>
-                <div class='position-absolute w-100 h-100 banner-text'>
-                    <div class='d-inline-block w-100 h-50'></div>
-                    <h2 class='text-white h1 font-weight-bold mb-0'>Audit/Conseil</h2>
-                    <h5 class='blue h4'>certification ISO</h5>
-                    <div class='position-absolute banner-bullet text-white'>- experts qualifiés</div>
+                <div class='position-absolute w-100 h-100 clients-text'>
+                    <div class='d-inline-block w-100 h-50 mb-1'></div>
+                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
-            </div><div class="col-12 col-md-4  p-0 m-0" id="banner-left">
+            </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ministère.jpg')}}"/>
-                <div class='position-absolute w-100 h-100 banner-text'>
-                    <div class='d-inline-block w-100 h-50'></div>
-                    <h2 class='text-white h1 font-weight-bold mb-0'>Audit/Conseil</h2>
-                    <h5 class='blue h4'>certification ISO</h5>
-                    <div class='position-absolute banner-bullet text-white'>- experts qualifiés</div>
+                <div class='position-absolute w-100 h-100 clients-text'>
+                    <div class='d-inline-block w-100 h-50 mb-1'></div>
+                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
-            </div><div class="col-12 col-md-4 p-0 m-0" id="banner-left">
+            </div><div class="col-12 col-md-4 p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_clients.jpg')}}"/>
-                <div class='position-absolute w-100 h-100 banner-text'>
-                    <div class='d-inline-block w-100 h-50'></div>
-                    <h2 class='text-white h1 font-weight-bold mb-0'>Audit/Conseil</h2>
-                    <h5 class='blue h4'>certification ISO</h5>
-                    <div class='position-absolute banner-bullet text-white'>- experts qualifiés</div>
+                <div class='position-absolute w-100 h-100 clients-text'>
+                    <div class='d-inline-block w-100 h-50 mb-1'></div>
+                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
             </div>
         </div>

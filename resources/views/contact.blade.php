@@ -51,6 +51,12 @@ id="contact-page"
                     <span class="text-danger">{{ $errors->first('message') }}</span>
                 </div>
 
+                @if($formation ?? false)
+                        {!! Form::hidden('formation', $formation->nom, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}
+                @endif
+                @if($date_choisie ?? false)
+                        {!! Form::hidden('date_choisie', $date_choisie, ['class'=>'form-control', 'placeholder'=>'Date choisie']) !!}
+                @endif
                 <div class="form-group">
                     <button class="btn btn-block btn-blue">Envoyer</button>
                 </div>

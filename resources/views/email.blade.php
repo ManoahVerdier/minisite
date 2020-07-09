@@ -1,12 +1,23 @@
 Vous avez recu un email depuis cyn-formation.fr
 <p>
-Nom: {{ $nom }}
+    Nom: {{ $nom }}
 </p>
 <p>
-Email: {{ $email }}
+    Email: {{ $email }}
 </p>
 <p>
-Téléphone: {{ $telephone }}
+    Téléphone: {{ $telephone }}
 </p>
 <p>
-Message: {{ $formation_message }}
+    Message: {{ $formation_message }}
+</p>
+@if($formation ?? false)
+    <p>
+        Formation concernée : {{ $formation }}
+    </p>
+@endif
+@if($date_choisie ?? false)
+    <p>
+        Date choisie : {{ $date_choisie }}
+    </p>
+@endif
