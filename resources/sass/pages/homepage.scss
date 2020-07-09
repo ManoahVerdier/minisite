@@ -36,6 +36,20 @@
             padding-right: 5px;
             font-weight:bold;
         }
+
+        .underline{
+            position:relative;
+            top:-20px;
+        }
+
+        .plus{
+            width:40px;
+            height:40px;
+            border-radius:30px;
+            text-align:center;
+            padding-top:7px;
+            top:-8px;
+        }
     }
 
     #clients{
