@@ -60,9 +60,8 @@ id="contact-page"
                         <label for="session">Choix de la session :</label>
                         {!!Form::select('session', explode(',',$formation->sessions))!!}
                     @endif
-                    {!! Form::hidden('formation', $formation->id, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}
+                    {!! Form::hidden('formation_id', $formation->id, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}
                 @endif
-                {{--{!! Form::hidden('formation_nom', $formation->id, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}--}}
                 <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
                     <div class="px-0 offset-md-3 col-md-6 pull-center text-center">
                         {!! app('captcha')->display() !!}
