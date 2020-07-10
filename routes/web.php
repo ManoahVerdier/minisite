@@ -20,8 +20,9 @@ Route::get('/', function () {
 });
 
 Route::get('/formation/{id}', 'SiteController@formation')->name('formation');
-Route::get('/categorie/{slug}', 'SiteController@categorie')->name('categorie');
-Route::get('/sous_categorie/{slug}', 'SiteController@sous_categorie')->name('sous_categorie');
+Route::get('/f/{slug}', 'SiteController@formationBySlug')->name('formation_slug');
+Route::get('/c/{slug}', 'SiteController@categorie')->name('categorie');
+Route::get('/sc/{slug}', 'SiteController@sous_categorie')->name('sous_categorie');
 
 Route::get('/contact/{id?}/{session?}', 'SiteController@contact')->name('contact');
 Route::get('/contact_test/{id?}/{session?}', 'SiteController@contact')->name('contact');

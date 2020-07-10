@@ -14,7 +14,16 @@ class SiteController extends Controller
 {
     public function formation($id){
         $formation = Formation::where('id','=',$id)->firstOrFail();
-        $formation = Formation::where('id','=',$id)->firstOrFail();
+        if(! isset($formation->sessions) || $formation->sessions==""){
+            $default = Formation::where('nom','=','default')->firstOrFail();
+            $formation->session=$default->session;
+        }
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        return view ('formation',compact('categories','formation'));
+    }
+
+    public function formationBySlug($slug){
+        $formation = Formation::where('slug','=',$slug)->firstOrFail();
         if(! isset($formation->sessions) || $formation->sessions==""){
             $default = Formation::where('nom','=','default')->firstOrFail();
             $formation->session=$default->session;
