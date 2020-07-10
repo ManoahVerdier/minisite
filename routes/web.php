@@ -25,9 +25,11 @@ Route::get('/c/{slug}', 'SiteController@categorie')->name('categorie');
 Route::get('/sc/{slug}', 'SiteController@sous_categorie')->name('sous_categorie');
 
 Route::get('/contact/{id?}/{session?}', 'SiteController@contact')->name('contact');
-Route::get('/contact_test/{id?}/{session?}', 'SiteController@contact')->name('contact');
 Route::post('/contact', ['as'=>'contact.store','uses'=>'SiteController@contactPost']);
 Route::post('/contact/{id}', ['as'=>'contact.store.form','uses'=>'SiteController@contactPost']);
+
+Route::get('/recrutement', 'SiteController@contactRecrutement')->name('contact_recrutement');
+Route::post('/recrutement', ['as'=>'contact_recrutement.store','uses'=>'SiteController@contactRecrutementPost']);
 
 Route::get('/mentions-legales', 'SiteController@mentions_legales')->name('mentions_legales');
 Route::get('/infos-pratiques', 'SiteController@infos_pratiques')->name('infos_pratiques');

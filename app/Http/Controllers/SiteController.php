@@ -133,4 +133,60 @@ class SiteController extends Controller
         $categories = Categorie::distinct('nom')->get();
         return view('page', compact('page','categories'));
     }
+
+    public function contactRecrutement($id="",$session=false){
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        return view('contact_recrutement', compact('categories'));
+    }
+
+    public function contactRecrutementPost(Request $request){
+        
+        $this->validate(
+            $request, 
+            [
+                'nom' => 'required',
+                'email' => 'required|email',
+                'telephone' => 'required|regex:/(0)[0-9]{9}/',
+                'g-recaptcha-response' => 'required|captcha',
+                'message' => 'required',
+                'file'=>'file'
+            ],
+            [
+                'required'=>"Le champ :attribute est requis",
+                'g-recaptcha-response.required'=>"Merci de cocher le captcha"
+            ]
+        );
+        $filePath = $this->upload($request->file('file'));
+        Contact::create($request->all());
+        Mail::send('email',
+            array(
+                'nom' => $request->get('nom'),
+                'email' => $request->get('email'),
+                'telephone' => $request->get('telephone'),
+                'formation_message' => $request->get('message'),
+                'file'=>$filePath
+            ), function($message)
+            {
+                $message->from('vmogenet@cyn-communication.fr');
+                //$message->to('vmogenet@cyn-communication.fr', 'Admin')->subject('Contact Cyn-formation');
+                $message->to('verdier.developpement@gmail.com', 'Admin')->subject('Contact Cyn-formation');
+            }
+        );
+        $categories = Categorie::distinct('nom')->get();
+
+        return view('contact_recrutement', compact('categories'))->with('success', 'Merci pour votre message !</br> Nous vous recontacterons sous peu');
+        //return back()->with('success', 'Merci pour votre message ! Nous vous recontacterons sous peu');
+    }
+
+    protected function upload($file)
+    {
+        if (!is_null($file) && isset($file) && $file->isValid()) {
+            $fileName = (new \DateTime())->format('d.m.Y-hsi').'.'.$file->guessExtension();
+            $file->move(storage_path() . '/uploads', $fileName);
+            return storage_path() . '/uploads/' . $fileName;
+        } else {
+            return view('contact_recrutement')
+                ->with('message', 'Fichier invalide !');
+        }        
+    }
 }
