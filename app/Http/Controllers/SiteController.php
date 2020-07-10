@@ -69,8 +69,8 @@ class SiteController extends Controller
             ]
         );
         $date_choisie=false;
-        if($request->get('formation_nom') ?? false){
-            $formation = Formation::where('id','=',$request->get('formation_nom'))->firstOrFail();
+        if($request->get('formation_id') ?? false){
+            $formation = Formation::where('id','=',$request->get('formation_id'))->firstOrFail();
             if($formation->sessions ?? false)
                 $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
             else{
