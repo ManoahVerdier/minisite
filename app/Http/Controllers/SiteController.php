@@ -67,6 +67,7 @@ class SiteController extends Controller
                 'g-recaptcha-response.required'=>"Merci de cocher le captcha"
             ]
         );
+        $date_choisie=false;
         if($request->get('formation') ?? false){
             $formation = Formation::where('id','=',$request->get('formation'))->firstOrFail();
             if($formation->sessions ?? false)
