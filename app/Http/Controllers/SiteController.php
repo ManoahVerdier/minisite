@@ -183,7 +183,7 @@ class SiteController extends Controller
         if (!is_null($file) && isset($file) && $file->isValid()) {
             $fileName = (new \DateTime())->format('d.m.Y-hsi').'.'.$file->guessExtension();
             $file->move(storage_path() . '/uploads', $fileName);
-            return storage_path() . '/uploads/' . $fileName;
+            return storage_path() . '/app/public/uploads/' . $fileName;
         } else {
             return view('contact_recrutement')
                 ->with('message', 'Fichier invalide !');

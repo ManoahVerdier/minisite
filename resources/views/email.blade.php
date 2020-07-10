@@ -21,3 +21,8 @@ Vous avez recu un email depuis cyn-formation.fr
         Date choisie : {{ $date_choisie }}
     </p>
 @endif
+@if($file ?? false)
+    <p>
+        CV : {{ URL::to('/').$file }}
+    </p>
+@endif

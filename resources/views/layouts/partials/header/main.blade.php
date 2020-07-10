@@ -74,7 +74,7 @@
                                                     <a class="dropdown-item" href="{{route('demarche_qualite')}}">Démarche qualité</a>
                                                 </div>
                                                 <div class="col-12 col-md-3 text-center">
-                                                    <a class="dropdown-item" href="{{route('demarche_qualite')}}">Recrutement</a>
+                                                    <a class="dropdown-item" href="{{route('contact_recrutement')}}">Recrutement</a>
                                                 </div>
                                         </div>
                                     </div>
