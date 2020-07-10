@@ -62,8 +62,16 @@ id="contact-page"
                         {!! Form::hidden('date_choisie', $date_choisie, ['class'=>'form-control', 'placeholder'=>'Date choisie']) !!}
                 @endif
 
-                <div class="g-recaptcha mx-auto mb-4 text-center" data-sitekey="6Ler0a8ZAAAAAPZ2pTRmq7y5Ct4ElyRviuweiag2"></div>
-
+                <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
+                    <div class="px-0 offset-md-3 col-md-6 pull-center">
+                        {!! app('captcha')->display() !!}
+                        @if ($errors->has('g-recaptcha-response'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
                 <div class="form-group">
                     <button class="btn btn-block btn-blue">Envoyer</button>
                 </div>
@@ -73,7 +81,7 @@ id="contact-page"
         </div>
     </div>
 </section>
-
+{!! NoCaptcha::renderJs() !!}
 @endsection
 
 {{-- Footer --}}
