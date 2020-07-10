@@ -45,8 +45,8 @@ class SiteController extends Controller
             //dd($formation);
             if(! isset($formation->sessions) || $formation->sessions==""){
                 $default = Formation::where('nom','=','default')->firstOrFail();
-                dd($default);
-                $formation->session=$default->session;
+                //dd($default);
+                $formation->sessions=$default->sessions;
             }
         }
         return view('contact', compact('categories','formation','session'));
