@@ -53,13 +53,14 @@ class SiteController extends Controller
     }
 
     public function contactPost(Request $request){
+        
         $this->validate(
             $request, 
             [
                 'nom' => 'required',
                 'email' => 'required|email',
                 'telephone' => 'required|regex:/(0)[0-9]{9}/',
-                'g-recaptcha-response' => 'required|captcha',
+                /*'g-recaptcha-response' => 'required|captcha',*/
                 'message' => 'required'
             ],
             [
@@ -68,8 +69,8 @@ class SiteController extends Controller
             ]
         );
         $date_choisie=false;
-        if($request->get('formation') ?? false){
-            $formation = Formation::where('id','=',$request->get('formation'))->firstOrFail();
+        if($request->get('formation_nom') ?? false){
+            $formation = Formation::where('id','=',$request->get('formation_nom'))->firstOrFail();
             if($formation->sessions ?? false)
                 $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
             else{
@@ -84,7 +85,7 @@ class SiteController extends Controller
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
-                'formation'=> $request->get('formation'),
+                'formation'=> $request->get('formation_nom'),
                 'date_choisie'=> $date_choisie?$date_choisie:false,
             ), function($message)
             {
@@ -94,6 +95,7 @@ class SiteController extends Controller
             }
         );
         $categories = Categorie::distinct('nom')->get();
+
         return view('contact', compact('categories'))->with('success', 'Merci pour votre message !</br> Nous vous recontacterons sous peu');
         //return back()->with('success', 'Merci pour votre message ! Nous vous recontacterons sous peu');
     }
