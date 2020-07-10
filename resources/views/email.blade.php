@@ -24,5 +24,6 @@ Vous avez recu un email depuis cyn-formation.fr
 @if($file ?? false)
     <p>
         CV : <a href="{{ URL::to('/').$file }}">{{ URL::to('/').$file }}</a>
+        {{storage_path() . '/storage/app/public/uploads'}}
     </p>
 @endif
