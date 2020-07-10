@@ -23,6 +23,6 @@ Vous avez recu un email depuis cyn-formation.fr
 @endif
 @if($file ?? false)
     <p>
-        CV : {{ URL::to('/').$file }}
+        CV : <a href="{{ URL::to('/').$file }}">{{ URL::to('/').$file }}</a>
     </p>
 @endif
