@@ -39,7 +39,7 @@
             </div>
         @endif
         <div class="col-12 text-center p-3">
-            <a href="{{route('contact', ['id' => $formation->id])}}" class="btn btn-blue">S'inscrire</a>
+            <a href="{{route('contact', ['id' => $formation->id,'session'=>1])}}" class="btn btn-blue">S'inscrire</a>
         </div>
     </div>
 </div>

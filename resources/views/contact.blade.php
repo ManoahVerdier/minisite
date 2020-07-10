@@ -56,10 +56,14 @@ id="contact-page"
                 </div>
 
                 @if($formation ?? false)
-                        {!! Form::hidden('formation', $formation->nom, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}
+                    @if($session)
+                        <label for="session">Choix de la session :</label>
+                        {!!Form::select('session', explode(',',$formation->sessions))!!}
+                    @endif
+                    {!! Form::hidden('formation', $formation->nom, ['class'=>'form-control', 'placeholder'=>'Formation']) !!}
                 @endif
                 @if($date_choisie ?? false)
-                        {!! Form::hidden('date_choisie', $date_choisie, ['class'=>'form-control', 'placeholder'=>'Date choisie']) !!}
+                    {!! Form::hidden('date_choisie', $date_choisie, ['class'=>'form-control', 'placeholder'=>'Date choisie']) !!}
                 @endif
 
                 <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">

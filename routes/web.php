@@ -23,7 +23,7 @@ Route::get('/formation/{id}', 'SiteController@formation')->name('formation');
 Route::get('/categorie/{slug}', 'SiteController@categorie')->name('categorie');
 Route::get('/sous_categorie/{slug}', 'SiteController@sous_categorie')->name('sous_categorie');
 
-Route::get('/contact/{id?}', 'SiteController@contact')->name('contact');
+Route::get('/contact/{id?}/{session?}', 'SiteController@contact')->name('contact');
 Route::post('/contact', ['as'=>'contact.store','uses'=>'SiteController@contactPost']);
 
 Route::group(['prefix' => 'admin'], function () {

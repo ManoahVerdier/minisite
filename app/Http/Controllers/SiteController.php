@@ -32,12 +32,12 @@ class SiteController extends Controller
         return view ('sous_categorie',compact('categories','sous_categorie','formations'));
     }
 
-    public function contact($id=""){
+    public function contact($id="",$session=false){
         $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         $formation=null;
         if($id!="")
             $formation = Formation::where('id','=',$id)->firstOrFail();
-        return view('contact', compact('categories','formation'));
+        return view('contact', compact('categories','formation','session'));
     }
 
     public function contactPost(ContactRequest $request){
@@ -55,6 +55,10 @@ class SiteController extends Controller
                 'g-recaptcha-response.required'=>"Merci de cocher le captcha"
             ]
         );
+        if($request->get('formation') ?? false){
+            $formation = Formation::where('id','=',$request->get('formation'))->firstOrFail();
+            $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+        }
         Contact::create($request->all());
         Mail::send('email',
             array(
@@ -63,7 +67,7 @@ class SiteController extends Controller
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
                 'formation'=> $request->get('formation'),
-                'date_choisie'=> $request->get('date_choisie'),
+                'date_choisie'=> $date_choisie,
             ), function($message)
             {
                 $message->from('vmogenet@cyn-communication.fr');
