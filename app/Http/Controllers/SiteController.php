@@ -42,7 +42,7 @@ class SiteController extends Controller
         $formation=null;
         if($id!=""){
             $formation = Formation::where('id','=',$id)->firstOrFail();
-            dd($formation);
+            //dd($formation);
             if(! isset($formation->sessions) || $formation->sessions==""){
                 $default = Formation::where('nom','=','default')->firstOrFail();
                 dd($default);
