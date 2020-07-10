@@ -13,26 +13,26 @@ class SiteController extends Controller
 {
     public function formation($id){
         $formation = Formation::where('id','=',$id)->firstOrFail();
-        $categories = Categorie::distinct('nom')->get();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         return view ('formation',compact('categories','formation'));
     }
 
     public function categorie($slug){
         $categorie = Categorie::where('slug',$slug)->first();
-        $categories = Categorie::distinct('nom')->get();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         $formations = $categorie->formations()->get();
         return view ('categorie',compact('categories','categorie','formations'));
     }
 
     public function sous_categorie($slug){
         $sous_categorie = SousCategorie::where('slug',$slug)->first();
-        $categories = Categorie::distinct('nom')->get();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         $formations = $sous_categorie->formations()->get();
         return view ('sous_categorie',compact('categories','sous_categorie','formations'));
     }
 
     public function contact($id=""){
-        $categories = Categorie::distinct('nom')->get();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         $formation=null;
         if($id!="")
             $formation = Formation::where('id','=',$id)->firstOrFail();

@@ -11110,7 +11110,8 @@ header #menu a {
 }
 
 header #menu a:hover {
-  background: #FDBE2D;
+  /*background:#FDBE2D;*/
+  color: #249fd5;
   text-decoration: none;
 }
 
@@ -11122,6 +11123,10 @@ header #menu #domaines-sub {
   z-index: 1;
   background: rgba(255, 255, 255, 0.7);
   margin-top: 0px;
+}
+
+header #menu #domaines-sub a:hover {
+  background: rgba(255, 255, 255, 0);
 }
 
 #breadcrumbs span,
