@@ -18,6 +18,8 @@
         @section('css')
         {!! Html::style(mix('/css/app.css')) !!}
         @show
+
+        @yield('captcha')
     </head>
 
     <body @yield('body-attr')>

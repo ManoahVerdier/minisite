@@ -2,6 +2,10 @@
 
 @section('title', 'Cyn-formation')
 
+@section('captcha')
+<script src="https://www.google.com/recaptcha/api.js"></script>
+@endsection
+
 @section('body-attr')
 id="contact-page"
 @endsection
@@ -57,9 +61,13 @@ id="contact-page"
                 @if($date_choisie ?? false)
                         {!! Form::hidden('date_choisie', $date_choisie, ['class'=>'form-control', 'placeholder'=>'Date choisie']) !!}
                 @endif
+
+                <div class="g-recaptcha mx-auto mb-4 text-center" data-sitekey="6Ler0a8ZAAAAAPZ2pTRmq7y5Ct4ElyRviuweiag2"></div>
+
                 <div class="form-group">
                     <button class="btn btn-block btn-blue">Envoyer</button>
                 </div>
+                
                 {!! Form::close() !!}
             </div>
         </div>
