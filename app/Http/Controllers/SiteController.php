@@ -14,6 +14,11 @@ class SiteController extends Controller
 {
     public function formation($id){
         $formation = Formation::where('id','=',$id)->firstOrFail();
+        $formation = Formation::where('id','=',$id)->firstOrFail();
+        if(! isset($formation->sessions) || $formation->sessions==""){
+            $default = Formation::where('nom','=','default')->firstOrFail();
+            $formation->session=$default->session;
+        }
         $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         return view ('formation',compact('categories','formation'));
     }
@@ -35,8 +40,13 @@ class SiteController extends Controller
     public function contact($id="",$session=false){
         $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         $formation=null;
-        if($id!="")
+        if($id!=""){
             $formation = Formation::where('id','=',$id)->firstOrFail();
+            if(! isset($formation->sessions) || $formation->sessions==""){
+                $default = Formation::where('nom','=','default')->firstOrFail();
+                $formation->session=$default->session;
+            }
+        }
         return view('contact', compact('categories','formation','session'));
     }
 
@@ -57,7 +67,12 @@ class SiteController extends Controller
         );
         if($request->get('formation') ?? false){
             $formation = Formation::where('id','=',$request->get('formation'))->firstOrFail();
-            $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+            if($formation->sessions ?? false)
+                $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+            else{
+                $formation=Formation::where('nom','=','default')->firstOrFail();
+                $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+            }
         }
         Contact::create($request->all());
         Mail::send('email',
