@@ -7,6 +7,7 @@ use App\Formation;
 use App\Categorie;
 use App\SousCategorie;
 use App\Contact;
+use App\Http\Requests\ContactRequest;
 use Mail;
 
 class SiteController extends Controller
@@ -39,14 +40,21 @@ class SiteController extends Controller
         return view('contact', compact('categories','formation'));
     }
 
-    public function contactPost(Request $request){
-        $this->validate($request, [
-            'nom' => 'required',
-            'email' => 'required|email',
-            'telephone' => 'required|regex:/(0)[0-9]{9}/',
-            'g-recaptcha-response' => 'required|captcha',
-            'message' => 'required'
-        ]);
+    public function contactPost(ContactRequest $request){
+        $this->validate(
+            $request, 
+            [
+                'nom' => 'required',
+                'email' => 'required|email',
+                'telephone' => 'required|regex:/(0)[0-9]{9}/',
+                'g-recaptcha-response' => 'required|captcha',
+                'message' => 'required'
+            ],
+            [
+                'required'=>"Le champ :attribute est requis",
+                'g-recaptcha-response.required'=>"Merci de cocher le captcha"
+            ]
+        );
         Contact::create($request->all());
         Mail::send('email',
             array(
