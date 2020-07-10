@@ -72,6 +72,8 @@
     background:#FDCD3D;
 }
 
-.border-blue{
-    border-color:#249fd5;
+.border,.border-bottom{
+    &.border-blue{
+        border-color:#249fd5 !important;
+    }
 }

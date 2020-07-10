@@ -35,10 +35,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 offset-md-8 h4 my-4 pr-5">
+            <div class="col-12 col-md-3 offset-md-9 h4 my-4 pr-5">
                 <div class="d-relative pr-5">
-                    <span class="w-100 d-inline-block">Tous nos secteurs d'activité</span>
-                    <span class="border-bottom border-blue w-100 d-inline-block underline"></span>
+                    <span class="w-100 d-inline-block"><span class="border-bottom border-blue">Tous nos secteurs d'activité</span></span>
                     <span class="blue plus border border-blue d-inline-block position-absolute">+</span>
                 </div>
             </div>

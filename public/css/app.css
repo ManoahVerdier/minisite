@@ -73,8 +73,9 @@
   background: #FDCD3D;
 }
 
-.border-blue {
-  border-color: #249fd5;
+.border.border-blue,
+.border-bottom.border-blue {
+  border-color: #249fd5 !important;
 }
 
 @font-face {
@@ -11268,6 +11269,7 @@ header #menu #domaines-sub a:hover {
   text-align: center;
   padding-top: 7px;
   top: -8px;
+  right: 120px;
 }
 
 #home-page #clients #clients-right {

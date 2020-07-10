@@ -20,7 +20,7 @@ id="form-page"
 
 <div class="container">
     <h1 class="w-100 text-center blue mb-3">{{$categorie->nom}}</h1>
-    @foreach($categorie->sous_categories()->get() as $ss_categ)
+    @foreach($categorie->sous_categories()->orderBy('slug')->get() as $ss_categ)
         <div class="bg-grey w-100 p-2 mb-4 mt-4">
             <h2 class="blue h5 mb-0">Formations {{$ss_categ->nom}}</h2>
         </div>
@@ -29,7 +29,7 @@ id="form-page"
             <div class="col-10 text-left font-weight-bold">Intitulé</div>
             <div class="col-2 text-center font-weight-bold">Durée</div>
         </div>
-        @foreach($ss_categ->formations()->get() as $formation)
+        @foreach($ss_categ->formations()->orderBy('nom')->get() as $formation)
             <div class="row mx-2 my-2">
                 @if($formation->slug ?? false)
                     <div class="col-10"><a href="{{route('formation_slug', ['slug' => $formation->slug])}}">{{$formation->nom}}</a></div>
