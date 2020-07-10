@@ -84,7 +84,7 @@ class SiteController extends Controller
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
                 'formation'=> $request->get('formation'),
-                'date_choisie'=> $date_choisie,
+                'date_choisie'=> $date_choisie?$date_choisie:false,
             ), function($message)
             {
                 $message->from('vmogenet@cyn-communication.fr');
