@@ -11054,7 +11054,8 @@ footer .title {
 }
 
 header #header-main {
-  max-height: 70px;
+  max-height: 75px;
+  min-height: 75px;
 }
 
 header #header-main #logo img {
@@ -11116,7 +11117,30 @@ header #menu a:hover {
 }
 
 header #menu #domaines-sub {
-  top: 130px;
+  top: 135px;
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  z-index: 1;
+  background: #F7F7F7;
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  header #menu #domaines-sub {
+    position: relative;
+    top: 0px;
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+}
+
+header #menu #domaines-sub a:hover {
+  background: rgba(222, 222, 222, 0);
+}
+
+#home-page header #domaines-sub {
+  top: 135px;
   width: 100%;
   border-radius: 0px;
   border: none;
@@ -11125,7 +11149,7 @@ header #menu #domaines-sub {
   margin-top: 0px;
 }
 
-header #menu #domaines-sub a:hover {
+#home-page header #domaines-sub a:hover {
   background: rgba(255, 255, 255, 0);
 }
 
@@ -11188,6 +11212,13 @@ header #menu #domaines-sub a:hover {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+#form-page #formation-detail #programme .content h3,
+#form-page #formation-detail #objectifs .content h3,
+#form-page #formation-detail #infos .content h3 {
+  background: none !important;
+  font-size: 1.2rem;
 }
 
 #home-page #banner .banner-text {

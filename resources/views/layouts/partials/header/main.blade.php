@@ -51,8 +51,8 @@
                                     Domaines
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
-                                    <div class="container">
-                                        <div class="row w-100">
+                                    <div class="container px-0">
+                                        <div class="row w-100 mx-0">
                                             @foreach($categories as $category)
                                                 <div class="col-12 col-md-3 text-center">
                                                     <a class="dropdown-item" href="{{route('categorie', ['slug' => $category->slug])}}">{{$category->nom}}</a>

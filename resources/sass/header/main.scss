@@ -1,6 +1,7 @@
 header{
     #header-main{
-        max-height:70px;
+        max-height:75px;
+        min-height:75px;
 
         #logo{ 
             img{
@@ -63,12 +64,39 @@ header{
         }
 
         #domaines-sub{
-            top:130px;
+            top:135px;
             width:100%;
             border-radius:0px;
             border:none;
             z-index:1;
-            background:rgba(255,255,255,0.7);
+            background:#F7F7F7;
+            margin-top:0px;
+
+            @media (max-width:767px){
+                position:relative;
+                top:0px;
+                left:-40px;
+                width:calc(100% + 80px);
+            }
+
+            a{
+                &:hover{
+                    background:rgba(222,222,222,0);
+                }
+            }
+        }
+    }
+}
+
+#home-page{
+    header{
+        #domaines-sub{
+            top:135px;
+            width:100%;
+            border-radius:0px;
+            border:none;
+            z-index:1;
+            background:rgba(2552,255,255,0.7);
             margin-top:0px;
 
             a{
