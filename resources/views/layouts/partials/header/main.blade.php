@@ -1,5 +1,5 @@
 <header>
-    <div class="container">
+    <div class="container" id="header-main">
         <div class="row">
             <div class="col-12 col-md-4">
                 <div id="logo" class="px-5 mt-2">
@@ -10,9 +10,11 @@
             </div>
             <div class="d-none d-md-block col-4">
                 <div id="devis-btn" class="mt-4 text-center">
-                    <span class="grey">DEMANDER</span>
-                    <span class="yellow"> UN DEVIS</span>
-                    <span class="devis-icon btn btn-circle btn-yellow ml-2"><i class="fas fa-euro-sign"></i></span>
+                    <a href="{{route('contact')}}">
+                        <span class="grey">DEMANDER</span>
+                        <span class="yellow"> UN DEVIS</span>
+                        <span class="devis-icon btn btn-circle btn-yellow ml-2"><i class="fas fa-euro-sign"></i></span>
+                    </a>
                 </div>
             </div>
             <div class="d-none d-md-block col-4">
@@ -38,20 +40,26 @@
     <div class="container-fluid px-0">
         <div id='menu'>
             <div class="container">
-                <nav class="navbar navbar-expand-lg px-1 navbar-light">
+                <nav class="navbar navbar-expand-lg px-1 navbar-light position-static">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="menu-nav">
                         <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0">
-                            <li class="nav-item active col-12 col-lg-3 text-center dropdown">
+                            <li class="nav-item active col-12 col-lg-3 text-center dropdown position-static">
                                 <a class="nav-link dropdown-toggle" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Domaines
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="domaines">
-                                    @foreach($categories as $category)
-                                    <a class="dropdown-item" href="{{route('categorie', ['slug' => $category->slug])}}">{{$category->nom}}</a>
-                                    @endforeach
+                                <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
+                                    <div class="container">
+                                        <div class="row w-100">
+                                            @foreach($categories as $category)
+                                                <div class="col-12 col-md-3 text-center">
+                                                    <a class="dropdown-item" href="{{route('categorie', ['slug' => $category->slug])}}">{{$category->nom}}</a>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="nav-item col-12 col-lg-3 text-center">

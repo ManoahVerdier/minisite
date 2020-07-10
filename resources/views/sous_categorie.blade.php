@@ -26,7 +26,7 @@ id="sscateg-page"
     </div>--}}
 
     <div class="row border-bottom mx-2 mb-2">
-        <div class="col-10 text-center font-weight-bold">Intitulé</div>
+        <div class="col-10 text-left font-weight-bold">Intitulé</div>
         <div class="col-2 text-center font-weight-bold">Durée</div>
     </div>
     @foreach($sous_categorie->formations()->get() as $formation)

@@ -1,40 +1,48 @@
 header{
-    #logo{ 
-        img{
-            width:80%;
-        }
-    }
-        
-    #devis-btn{
-        font-size:1rem;
-        font-weight:600;
-        font-family:'Muli bold';
-        
-        .devis-icon{
-            font-size:1.05rem !important;
-            line-height:24px !important;
-            height:36px;
-            width:36px;
-            border-radius:20px;
-            text-align:center;
-            padding-right:1px;
-        }
-        
-        span{
-            height:30px;
-            line-height:20px;
-            padding-top:5px;
-            display:inline-block;
-            vertical-align:middle;
-        }
-    }
+    #header-main{
+        max-height:70px;
 
-    #contact-btn{
-        font-family:'Muli bold';
+        #logo{ 
+            img{
+                width:80%;
+            }
+        }
+            
+        #devis-btn{
+            font-size:1rem;
+            font-weight:600;
+            font-family:'Muli bold';
+            
+            a:hover{
+                text-decoration:none;
+            }
 
-        a{
-            padding-top:8px;
-            padding-bottom:8px;
+            .devis-icon{
+                font-size:1.05rem !important;
+                line-height:24px !important;
+                height:36px;
+                width:36px;
+                border-radius:20px;
+                text-align:center;
+                padding-right:1px;
+            }
+            
+            span{
+                height:30px;
+                line-height:20px;
+                padding-top:5px;
+                display:inline-block;
+                vertical-align:middle;
+            }
+        }
+
+        #contact-btn{
+            font-family:'Muli bold';
+
+            a{
+                padding-top:8px;
+                padding-bottom:8px;
+            }
         }
     }
 
@@ -51,6 +59,16 @@ header{
                 background:#FDBE2D;
                 text-decoration:none;
             }
+        }
+
+        #domaines-sub{
+            top:130px;
+            width:100%;
+            border-radius:0px;
+            border:none;
+            z-index:1;
+            background:rgba(255,255,255,0.7);
+            margin-top:0px;
         }
     }
 }

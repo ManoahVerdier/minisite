@@ -22,26 +22,22 @@
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_BMW.jpg')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
-                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
             </div>
             <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Carrefour.jpg')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
-                    <h5 class='yellow h5 font-weight-bold mt-5 ml-1 mb-0'>ISO 9001</h2>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ricard.jpg')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
-                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ministère.jpg')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
-                    <h5 class='yellow h5 font-weight-bold mt-5 mb-0'>ISO 9001</h2>
                 </div>
             </div><div class="col-12 col-md-4 p-0 m-0" id="clients-left">
                 <img class="w-100 h-auto" src="{{asset('/img/home/HP_clients.jpg')}}"/>
