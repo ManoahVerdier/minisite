@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    $categories = App\Categorie::distinct('nom')->get();
+    $categories = App\Categorie::distinct('nom')->orderBy('nom','ASC')->get();
     return view('home', compact('categories'));
 });
 
