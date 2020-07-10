@@ -85,7 +85,7 @@ class SiteController extends Controller
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
-                'formation'=> $request->get('formation_nom'),
+                'formation'=> $request->get('formation_id'),
                 'date_choisie'=> $date_choisie?$date_choisie:false,
             ), function($message)
             {
