@@ -14,7 +14,13 @@ id="home-page"
 
 {{-- Content --}}
 @section('content')
-    {{$page->contenu}}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {!!$page->contenu!!}
+            </div>
+        </div>
+    </div>
 @endsection
 {{-- Footer --}}
 @section('footer')

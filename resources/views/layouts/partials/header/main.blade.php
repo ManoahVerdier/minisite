@@ -65,8 +65,20 @@
                             <li class="nav-item col-12 col-lg-3 text-center">
                                 <a class="w-100 d-inline-block py-2" href="">Types</a>
                             </li>
-                            <li class="nav-item col-12 col-lg-3 text-center">
-                                <a class="w-100 d-inline-block py-2" href="">Divers</a>
+                            <li class="nav-item col-12 col-lg-3 text-center dropdown position-static">
+                                <a class="nav-link dropdown-toggle w-100 d-inline-block py-2" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infos pratiques</a>
+                                <div class="dropdown-menu" aria-labelledby="infos-pratiques" id="infos-pratiques-sub">
+                                    <div class="container px-0">
+                                        <div class="row w-100 mx-0">
+                                                <div class="col-12 col-md-3 text-center">
+                                                    <a class="dropdown-item" href="{{route('demarche_qualite')}}">Démarche qualité</a>
+                                                </div>
+                                                <div class="col-12 col-md-3 text-center">
+                                                    <a class="dropdown-item" href="{{route('demarche_qualite')}}">Recrutement</a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item col-12 col-lg-3 text-center">
                                 <a class="w-100 d-inline-block py-2" href="{{route('contact')}}">Contact</a>

@@ -11117,7 +11117,8 @@ header #menu a:hover {
   text-decoration: none;
 }
 
-header #menu #domaines-sub {
+header #menu #domaines-sub,
+header #menu #infos-pratiques-sub {
   top: 135px;
   width: 100%;
   border-radius: 0px;
@@ -11128,7 +11129,8 @@ header #menu #domaines-sub {
 }
 
 @media (max-width: 767px) {
-  header #menu #domaines-sub {
+  header #menu #domaines-sub,
+  header #menu #infos-pratiques-sub {
     position: relative;
     top: 0px;
     left: -40px;
@@ -11136,7 +11138,8 @@ header #menu #domaines-sub {
   }
 }
 
-header #menu #domaines-sub a:hover {
+header #menu #domaines-sub a:hover,
+header #menu #infos-pratiques-sub a:hover {
   background: rgba(222, 222, 222, 0);
 }
 
