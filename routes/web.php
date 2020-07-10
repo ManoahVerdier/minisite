@@ -29,6 +29,11 @@ Route::get('/contact_test/{id?}/{session?}', 'SiteController@contact')->name('co
 Route::post('/contact', ['as'=>'contact.store','uses'=>'SiteController@contactPost']);
 Route::post('/contact/{id}', ['as'=>'contact.store.form','uses'=>'SiteController@contactPost']);
 
+Route::get('/mentions-legales', 'SiteController@mentions_legales')->name('mentions_legales');
+Route::get('/infos-pratiques', 'SiteController@infos_pratiques')->name('infos_pratiques');
+Route::get('/cgv', 'SiteController@cgv')->name('cgv');
+Route::get('/demarche-qualite', 'SiteController@demarche_qualite')->name('demarche_qualite');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

@@ -7,6 +7,7 @@ use App\Formation;
 use App\Categorie;
 use App\SousCategorie;
 use App\Contact;
+use App\Page;
 use App\Http\Requests\ContactRequest;
 use Mail;
 
@@ -107,5 +108,29 @@ class SiteController extends Controller
 
         return view('contact', compact('categories'))->with('success', 'Merci pour votre message !</br> Nous vous recontacterons sous peu');
         //return back()->with('success', 'Merci pour votre message ! Nous vous recontacterons sous peu');
+    }
+
+    public function mentions_legales(){
+        $page=Page::where('slug','mentions-legales')->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('page', compact('page','categories'));
+    }
+
+    public function infos_pratiques(){
+        $page=Page::where('slug','infos-pratiques')->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('page', compact('page','categories'));
+    }
+
+    public function cgv(){
+        $page=Page::where('slug','cgv')->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('page', compact('page','categories'));
+    }
+
+    public function demarche_qualite(){
+        $page=Page::where('slug','demarche-qualite')->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('page', compact('page','categories'));
     }
 }
