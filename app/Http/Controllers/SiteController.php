@@ -52,7 +52,7 @@ class SiteController extends Controller
         return view('contact', compact('categories','formation','session'));
     }
 
-    public function contactPost(ContactRequest $request){
+    public function contactPost(Request $request){
         $this->validate(
             $request, 
             [
