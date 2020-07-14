@@ -11218,6 +11218,10 @@ header #menu #infos-pratiques-sub a:hover {
   font-size: 0.7rem;
 }
 
+#form-page #title h2 {
+  font-size: 1rem;
+}
+
 #form-page #formation-detail #resume,
 #form-page #formation-detail #session {
   background: #F2F2F2;

@@ -19,7 +19,7 @@ class SousCategorie extends Model
 
     public function parent()
     {
-        return $this->belongsTo(\App\Categorie::class);
+        return $this->belongsTo(\App\Categorie::class,'parent');
     }
 
     public function formations()

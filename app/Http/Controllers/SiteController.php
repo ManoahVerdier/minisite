@@ -15,9 +15,10 @@ use DB;
 class SiteController extends Controller
 {
     public function formation($id){
-        $formation = Formation::where('id','=',$id)->firstOrFail();
+        DB::enableQueryLog();
+        $formation = Formation::where('id',$id)->firstOrFail();
         if(! isset($formation->sessions) || $formation->sessions==""){
-            $default = Formation::where('nom','=','default')->firstOrFail();
+            $default = Formation::where('nom','=','default')->first();
             $formation->session=$default->session;
         }
         $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();

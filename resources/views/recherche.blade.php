@@ -17,11 +17,11 @@ id="search-page"
 {{-- Content --}}
 @section('content')
 
-<div class="container">
+<div class="container mb-5">
     <h1 class="w-100 text-center blue mb-4">{{$search}}</h1>
     
     {{--<div class="bg-dark-grey w-100 p-2 mb-4">
-        <h2 class="blue h5 mb-0">{{$search}}</h2>
+        <h2 class="blue h5 mb-0 mt-3">{{$search}}</h2>
     </div>--}}
 
     <div class="row border-bottom mx-2 mb-2">

@@ -8,10 +8,11 @@
         </div>
         <div class="col-9 text-left  pl-0 py-0">
             <ul>
-                <li>Dans <span class="blue">votre entreprise uniquement</li>
+                <li>En <span class="blue">entreprise</span> ou à <span class="blue">distance</span></li>
                 <li>Des programmes <span class="blue">sur mesure</li>
                 <li>Des résultats <span class="blue">immédiats</li>
                 <li>Des consultants formateurs <span class="blue">experts</li>
+                <li>Nous sommes certifiés <span class="blue">QUALIOPI</li>
             </ul>
         </div>
     </div>

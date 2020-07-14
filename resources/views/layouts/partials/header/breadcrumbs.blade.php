@@ -12,9 +12,13 @@
                     <span>{{$formation->titre}}</span>
                 @else 
                     @if($categorie ?? false)
-                        <span>{{$categorie->first()->nom}}</span>
+                        <span>{{$categorie->nom}}</span>
                     @else 
-                        <span>{{$sous_categorie->first()->nom}}</span>
+                    <a href="{{route('categorie', ['slug' => $sous_categorie->parent()->first()->slug])}}" class="blue">
+                        {{$sous_categorie->parent()->first()->nom}}
+                    </a>
+                    <span>&gt;</span>
+                    <span>{{$sous_categorie->nom}}</span>
                     @endif
                 @endif
             </div>
