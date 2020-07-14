@@ -78,6 +78,34 @@
   border-color: #249fd5 !important;
 }
 
+.h-20 {
+  height: 20% !important;
+}
+
+.h-40 {
+  height: 40% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-30 {
+  height: 30% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-90 {
+  height: 90% !important;
+}
+
 @font-face {
   font-family: "Muli extra bold";
   font-style: normal;
@@ -11063,6 +11091,12 @@ header #header-main #logo img {
   width: 80%;
 }
 
+@media (max-width: 767px) {
+  header #header-main #logo img {
+    width: 100%;
+  }
+}
+
 header #header-main #devis-btn {
   font-size: 1rem;
   font-weight: 600;
@@ -11098,6 +11132,15 @@ header #header-main #contact-btn {
 header #header-main #contact-btn a {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+header #header-main #search form {
+  border-radius: 40px !important;
+  border: 2px solid #dedede !important;
+}
+
+header #header-main #search form input[name=search] {
+  border-radius: 40px;
 }
 
 header #menu {
@@ -11155,6 +11198,19 @@ header #menu #infos-pratiques-sub a:hover {
 
 #home-page header #domaines-sub a:hover {
   background: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 767px) {
+  #mobile-main {
+    bottom: 0px;
+    z-index: 5;
+  }
+
+  #mobile-main .navbar-toggler-icon {
+    background: url("/img/header/menu_img.png");
+    background-repeat: no-repeat;
+    background-position: auto 50%;
+  }
 }
 
 #breadcrumbs span,
@@ -11230,9 +11286,31 @@ header #menu #infos-pratiques-sub a:hover {
   padding: 100px;
 }
 
+@media (max-width: 767px) {
+  #home-page #banner .banner-text {
+    padding: 50px;
+    padding-top: 0px;
+  }
+
+  #home-page #banner .banner-text .h1 {
+    font-size: 1.5rem;
+  }
+
+  #home-page #banner .banner-text .h4 {
+    font-size: 1rem;
+  }
+}
+
 #home-page #banner .banner-bullet {
   bottom: 2.5em;
   font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  #home-page #banner .banner-bullet {
+    bottom: 2em;
+    font-size: 1.1rem;
+  }
 }
 
 #home-page #expertise #expertise-right {
@@ -11253,11 +11331,21 @@ header #menu #infos-pratiques-sub a:hover {
   color: #fff;
   font-size: 1.8em;
   vertical-align: middle;
-  padding-top: 8px;
-  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 5px;
   padding-left: 6px;
   padding-right: 5px;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #home-page #expertise .expertise-categ::after {
+    left: calc(100% - 40px);
+    bottom: 45px;
+    height: 25px;
+    width: 25px;
+    font-size: 1.5em;
+  }
 }
 
 #home-page #expertise .expertise-categ a {
@@ -11277,6 +11365,13 @@ header #menu #infos-pratiques-sub a:hover {
   padding-top: 7px;
   top: -8px;
   right: 5em;
+}
+
+@media (max-width: 767px) {
+  #home-page #expertise .plus {
+    font-size: 1.5rem;
+    padding-top: 0px;
+  }
 }
 
 #home-page #clients #clients-right {

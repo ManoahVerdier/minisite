@@ -1,6 +1,6 @@
 <div class=" container-fluid mb-5" id="clients">
     {{--<div class="container">--}}
-        <div class="row pl-5 pr-1 pt-5 justify-content-center h-100">
+        <div class="row pl-0 pl-md-5 pr-1 pt-5 justify-content-center h-100">
             <div class="px-5 col-12 col-md-6 bg-light-grey" id="clients-left">
                 <div class='h1 yellow w-100 mb-0'>Nos</div>
                 <div class='h2  w-100  mb-0'>clients</div>
@@ -8,7 +8,7 @@
             </div>
             <div class="col-12 col-md-6 bg-yellow" id="clients-right">
                 <div class="d-flex h-100">
-                    <div class="pl-5 my-auto d-inline-block dark-grey align-center font-weight-bold">
+                    <div class="pl-md-5 pl-1 my-auto d-inline-block dark-grey align-center font-weight-bold">
                         Ils nous font confiance dans le cadre de leur projet de formation
                     </div>
                 </div>

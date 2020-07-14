@@ -1,10 +1,10 @@
 <header>
     <div class="container" id="header-main">
         <div class="row">
-            <div class="col-12 col-md-3">
-                <div id="logo" class="px-3 mt-2">
+            <div class="col-6 col-md-3">
+                <div id="logo" class="px-md-3 px-0 mt-4">
                     <a href="{{url('/')}}" class="d-inline-block h-80 w-100">
-                        <img src="{{asset('img/header/logo.png')}}"/>
+                        <img class=" mx-auto" src="{{asset('img/header/logo.png')}}"/>
                     </a>
                 </div>
             </div>
@@ -25,14 +25,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <div id="search" class="my-4">
 
                         <form method="post" action="{{route('recherche')}}" class="input-group mb-3 border rounded">
                             @csrf
-                            <input name="search" type="text" placeholder="Recherche" class="pl-3 form-control border-0" aria-describedby="search">
+                            <input name="search" type="text" placeholder="Recherche" class="pl-1 pl-md-3 form-control border-0" aria-describedby="search">
                             <div class="input-group-append">
-                                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                                <button class="btn px-1 px-md-2" type="submit"><i class="fas fa-search"></i></button>
                             </div>
                         </form>
    
@@ -44,7 +44,7 @@
         <div id='menu'>
             <div class="container">
                 <nav class="navbar navbar-expand-lg px-1 navbar-light position-static">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
+                    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="menu-nav">

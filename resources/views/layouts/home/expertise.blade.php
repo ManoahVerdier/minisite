@@ -13,28 +13,32 @@
             </div>
         </div>
         <div class="row p-4">
-            <div class="col">
+            <div class="col-6 col-md px-1 px-md-2">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_aero.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'communication'))}}" class="font-weight-bold dark-grey">Communication</a></div>
+                <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'communication'))}}" class="font-weight-bold dark-grey">Communication</a></div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md px-1 px-md-2">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_auto.jpg')}}"/>
                 <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'immobilier'))}}" class="font-weight-bold dark-grey">Immobilier</a></div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md px-1 px-md-2">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_environnement.jpg')}}"/>
                 <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'informatique'))}}" class="font-weight-bold dark-grey">Informatique</a></div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md px-1 px-md-2">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_labo.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'qualite'))}}" class="font-weight-bold dark-grey">Qualité</a></div>
+                <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'qualite'))}}" class="font-weight-bold dark-grey">Qualité</a></div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md px-1 px-md-2">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_sante.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'marches_publics'))}}" class="font-weight-bold dark-grey">Marchés publics</a></div>
+                <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'marches_publics'))}}" class="font-weight-bold dark-grey">Marchés publics</a></div>
+            </div>
+            <div class="col-6 col-md px-1 px-md-2 d-md-none">
+                <span class="w-100 d-inline-block my-3"><span class="border-bottom border-blue mr-3">Tous nos secteurs de formation</span></span>
+                <span class="blue plus border border-blue d-inline-block float-right mr-3">+</span>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-none d-md-flex">
             <div class="col-12 col-md-3 offset-md-9 h4 my-4 pr-5">
                 <div class="d-relative pr-5">
                     <span class="w-100 d-inline-block"><span class="border-bottom border-blue mr-3">Tous nos secteurs de formation</span></span>
