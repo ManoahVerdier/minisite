@@ -14,23 +14,23 @@
         </div>
         <div class="row p-4">
             <div class="col-6 col-md px-1 px-md-2">
-                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_aero.jpg')}}"/>
+                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_aero.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'communication'))}}" class="font-weight-bold dark-grey">Communication</a></div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_auto.jpg')}}"/>
+                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_auto.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'immobilier'))}}" class="font-weight-bold dark-grey">Immobilier</a></div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_environnement.jpg')}}"/>
+                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_environnement.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ"><a href="{{route('categorie',array('slug'=>'informatique'))}}" class="font-weight-bold dark-grey">Informatique</a></div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_labo.jpg')}}"/>
+                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_labo.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'qualite'))}}" class="font-weight-bold dark-grey">Qualité</a></div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_sante.jpg')}}"/>
+                <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_sante.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0"><a href="{{route('categorie',array('slug'=>'marches_publics'))}}" class="font-weight-bold dark-grey">Marchés publics</a></div>
             </div>
             <div class="col-6 col-md px-1 px-md-2 d-md-none">

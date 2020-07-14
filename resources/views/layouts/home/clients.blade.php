@@ -19,28 +19,28 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto" src="{{asset('/img/home/HP_BMW.jpg')}}"/>
+                <img class="w-100 h-auto" src="{{asset('/img/home/HP_BMW.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
                 </div>
             </div>
             <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Carrefour.jpg')}}"/>
+                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Carrefour.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ricard.jpg')}}"/>
+                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ricard.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ministère.jpg')}}"/>
+                <img class="w-100 h-auto" src="{{asset('/img/home/HP_Ministère.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
                 </div>
             </div><div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto" src="{{asset('/img/home/HP_clients.jpg')}}"/>
+                <img class="w-100 h-auto" src="{{asset('/img/home/HP_clients.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-50 mb-1'></div>
                     
