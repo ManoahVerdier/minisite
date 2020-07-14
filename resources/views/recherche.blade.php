@@ -9,7 +9,6 @@ id="search-page"
 {{-- Header --}}
 @section('header')
     @include('layouts.partials.header.main')
-    @include('layouts.partials.header.breadcrumbs')
 @endsection
 
 {{-- Breadcrumbs --}}
