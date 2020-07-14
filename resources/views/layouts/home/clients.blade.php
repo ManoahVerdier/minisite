@@ -9,7 +9,7 @@
             <div class="col-12 col-md-6 bg-yellow" id="clients-right">
                 <div class="d-flex h-100">
                     <div class="pl-5 my-auto d-inline-block dark-grey align-center font-weight-bold">
-                        Ils nous font confiance dans le cadre de la certification ISO
+                        Ils nous font confiance dans le cadre de leur projet de formation
                     </div>
                 </div>
             </div>

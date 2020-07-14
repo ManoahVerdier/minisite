@@ -8,36 +8,36 @@
             </div>
             <div class="col-12 col-md-8 align-bottom align-self-end pb-3" id="expertise-right">
                 <div class="h-100 align-bottom d-inline-block gray">
-                    Où que vous soyez en France, quel que soit votre secteur d’activité, vous pouvez compter sur nos partenaires pour vous fournir des solutions adaptées pour vos projets de <b>certification ISO</b>.
+                Où que vous soyez en France, quel que soit votre secteur d’activité, vous pouvez compter sur nos formateurs pour vous fournir des solutions adaptées pour vos projets de <b>formation</b>.
                 </div>
             </div>
         </div>
         <div class="row p-4">
             <div class="col">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_aero.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ">Aéronautique</div>
+                <div class="w-100 text-upper expertise-categ">Communication</div>
             </div>
             <div class="col">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_auto.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ">Aéronautique</div>
+                <div class="w-100 text-upper expertise-categ">Immobilier</div>
             </div>
             <div class="col">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_environnement.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ">Aéronautique</div>
+                <div class="w-100 text-upper expertise-categ">Informatique</div>
             </div>
             <div class="col">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_labo.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ">Aéronautique</div>
+                <div class="w-100 text-upper expertise-categ">Qualité</div>
             </div>
             <div class="col">
                 <img class="w-100 h-auto mb-3" src="{{asset('img/home/HP_sante.jpg')}}"/>
-                <div class="w-100 text-upper expertise-categ">Aéronautique</div>
+                <div class="w-100 text-upper expertise-categ">Marchés publics</div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-3 offset-md-9 h4 my-4 pr-5">
                 <div class="d-relative pr-5">
-                    <span class="w-100 d-inline-block"><span class="border-bottom border-blue">Tous nos secteurs d'activité</span></span>
+                    <span class="w-100 d-inline-block"><span class="border-bottom border-blue">Tous nos secteurs de formation</span></span>
                     <span class="blue plus border border-blue d-inline-block position-absolute">+</span>
                 </div>
             </div>

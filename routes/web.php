@@ -31,6 +31,8 @@ Route::post('/contact/{id}', ['as'=>'contact.store.form','uses'=>'SiteController
 Route::get('/recrutement', 'SiteController@contactRecrutement')->name('contact_recrutement');
 Route::post('/recrutement', ['as'=>'contact_recrutement.store','uses'=>'SiteController@contactRecrutementPost']);
 
+Route::post('/recherche', ['as'=>'recherche','uses'=>'SiteController@recherche']);
+
 Route::get('/mentions-legales', 'SiteController@mentions_legales')->name('mentions_legales');
 Route::get('/infos-pratiques', 'SiteController@infos_pratiques')->name('infos_pratiques');
 Route::get('/cgv', 'SiteController@cgv')->name('cgv');

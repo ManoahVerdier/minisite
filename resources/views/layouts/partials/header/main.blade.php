@@ -1,14 +1,14 @@
 <header>
     <div class="container" id="header-main">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3">
                 <div id="logo" class="px-5 mt-2">
                     <a href="{{url('/')}}" class="d-inline-block h-80 w-100">
                         <img src="{{asset('img/header/logo.png')}}"/>
                     </a>
                 </div>
             </div>
-            <div class="d-none d-md-block col-4">
+            <div class="d-none d-md-block col-3">
                 <div id="devis-btn" class="mt-4 text-center">
                     <a href="{{route('contact')}}">
                         <span class="grey">DEMANDER</span>
@@ -17,7 +17,7 @@
                     </a>
                 </div>
             </div>
-            <div class="d-none d-md-block col-4">
+            <div class="d-none d-md-block col-3">
                 <div id="contact-btn" class="mt-4 text-center">
                     <a href="tel:0482534478" class='btn btn-blue rounded-pill font-weight-bold px-3'>
                         <span>04 82 53 44 78</span>
@@ -25,16 +25,19 @@
                     </a>
                 </div>
             </div>
-            {{--<div class="col-3">
+            <div class="col-3">
                 <div id="search" class="my-4">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-describedby="search">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="search">Recherche</span>
-                        </div>
-                    </div>
+
+                        <form method="post" action="{{route('recherche')}}" class="input-group mb-3 border rounded">
+                            @csrf
+                            <input name="search" type="text" placeholder="Recherche" class="pl-3 form-control border-0" aria-describedby="search">
+                            <div class="input-group-append">
+                                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+   
                 </div>
-            </div>--}}
+            </div>
         </div>
     </div>
     <div class="container-fluid px-0">
@@ -62,9 +65,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item col-12 col-lg-3 text-center">
+                            {{--<li class="nav-item col-12 col-lg-3 text-center">
                                 <a class="w-100 d-inline-block py-2" href="">Types</a>
-                            </li>
+                            </li>--}}
                             <li class="nav-item col-12 col-lg-3 text-center dropdown position-static">
                                 <a class="nav-link dropdown-toggle w-100 d-inline-block py-2" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infos pratiques</a>
                                 <div class="dropdown-menu" aria-labelledby="infos-pratiques" id="infos-pratiques-sub">

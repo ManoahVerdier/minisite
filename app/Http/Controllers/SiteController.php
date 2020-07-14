@@ -10,6 +10,7 @@ use App\Contact;
 use App\Page;
 use App\Http\Requests\ContactRequest;
 use Mail;
+use DB;
 
 class SiteController extends Controller
 {
@@ -188,5 +189,16 @@ class SiteController extends Controller
             return view('contact_recrutement')
                 ->with('message', 'Fichier invalide !');
         }        
+    }
+
+    public function recherche(Request $request){
+        $formations = Formation::where('titre','LIKE','%'.$request->get('search').'%')
+                                ->orWhere('contenu','LIKE','%'.$request->get('search').'%')
+                                ->orWhere('objectif','LIKE','%'.$request->get('search').'%')
+                                ->orWhere('infos_pratiques','LIKE','%'.$request->get('search').'%')->get();
+        $categorie = Categorie::where('slug',"qualite")->first();
+        $search = $request->get('search');
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        return view ('recherche',compact('categories','categorie','formations','search'));
     }
 }
