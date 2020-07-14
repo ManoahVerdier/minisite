@@ -11260,6 +11260,10 @@ header #menu #infos-pratiques-sub a:hover {
   font-weight: bold;
 }
 
+#home-page #expertise .expertise-categ a {
+  text-transform: uppercase;
+}
+
 #home-page #expertise .underline {
   position: relative;
   top: -20px;
@@ -11272,7 +11276,7 @@ header #menu #infos-pratiques-sub a:hover {
   text-align: center;
   padding-top: 7px;
   top: -8px;
-  right: 120px;
+  right: 5em;
 }
 
 #home-page #clients #clients-right {

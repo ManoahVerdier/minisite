@@ -2,7 +2,7 @@
     <div class="container" id="header-main">
         <div class="row">
             <div class="col-12 col-md-3">
-                <div id="logo" class="px-5 mt-2">
+                <div id="logo" class="px-3 mt-2">
                     <a href="{{url('/')}}" class="d-inline-block h-80 w-100">
                         <img src="{{asset('img/header/logo.png')}}"/>
                     </a>
