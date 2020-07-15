@@ -20,6 +20,25 @@
         @show
 
         @yield('captcha')
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9998670-20"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-9998670-20');
+        </script>
+
+        <script>
+            function initFreshChat() {
+                window.fcWidget.init({
+                    token: "4b595a1a-4a6f-4b35-92ca-71f3abba4e57",
+                    host: "https://wchat.eu.freshchat.com"
+                });
+            }
+            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.eu.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+        </script>
     </head>
 
     <body @yield('body-attr')>
