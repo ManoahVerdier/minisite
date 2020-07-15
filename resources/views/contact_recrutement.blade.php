@@ -21,9 +21,9 @@ id="contact-page"
 <section id="formation-detail">
     <div class="container py-4">
         <h1 class="w-100 text-center blue mb-4">Nous contacter</h1>
-        <p>Demander un devis, un renseignement
-            Vous souhaitez un renseignement ? un devis ? ou tout simplement parler à un consultant.
-            N’hésitez pas à nous joindre par téléphone ou remplissez ce formulaire pour être recontacté immédiatement.
+        <p>Cyn Formation est en constante recherche de formateurs spécialisés.
+            Nous intervenons dans toute la France et nous souhaitons élargir notre réseau de formateurs indépendants (uniquement en sous-traitance, pas de recherche de salarié).
+            N'hésitez pas à renseigner le formulaire ci-dessous en nous joignant votre CV et en nous indiquant vos domaines et villes d'intervention ainsi qu'un tarif journalier.
         </p>
         <div class="row">
 
