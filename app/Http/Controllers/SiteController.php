@@ -15,23 +15,27 @@ use DB;
 class SiteController extends Controller
 {
     public function formation($id){
-        DB::enableQueryLog();
+
         $formation = Formation::where('id',$id)->firstOrFail();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         if(! isset($formation->sessions) || $formation->sessions==""){
             $default = Formation::where('nom','=','default')->first();
             $formation->session=$default->session;
+            return view ('formation',compact('categories','formation','default'));
         }
-        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        
         return view ('formation',compact('categories','formation'));
     }
 
     public function formationBySlug($slug){
         $formation = Formation::where('slug','=',$slug)->firstOrFail();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
         if(! isset($formation->sessions) || $formation->sessions==""){
             $default = Formation::where('nom','=','default')->firstOrFail();
             $formation->session=$default->session;
+            return view ('formation',compact('categories','formation','default'));
         }
-        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        
         return view ('formation',compact('categories','formation'));
     }
 
@@ -83,6 +87,7 @@ class SiteController extends Controller
         $date_choisie=false;
         if($request->get('formation_id') ?? false){
             $formation = Formation::where('id','=',$request->get('formation_id'))->firstOrFail();
+            $slug = $formation->slug;
             if($formation->sessions ?? false)
                 $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
             else{
@@ -97,13 +102,13 @@ class SiteController extends Controller
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
-                'formation'=> $request->get('formation_id'),
+                'formation'=> $slug,
                 'date_choisie'=> $date_choisie?$date_choisie:false,
             ), function($message)
             {
                 $message->from('contact@cyn-communication.fr');
                 $message->to('vmogenet@cyn-communication.fr', 'Admin')->subject('Contact Cyn-formation');
-                //$message->to('verdier.developpement@gmail.com', 'Admin')->subject('Contact Cyn-formation');
+                $message->to('verdier.developpement@gmail.com', 'Admin')->subject('Contact Cyn-formation');
             }
         );
         $categories = Categorie::distinct('nom')->get();

@@ -13,7 +13,7 @@ Vous avez recu un email depuis cyn-formation.fr @if($file ?? false)> recrutement
 </p>
 @if($formation ?? false)
     <p>
-        Formation concernée : {{ $formation }}
+        Formation concernée : <a href="{{route('formation',array('slug'=>$formation))}}"> {{ $formation }}</a>
     </p>
 @endif
 @if($date_choisie ?? false)

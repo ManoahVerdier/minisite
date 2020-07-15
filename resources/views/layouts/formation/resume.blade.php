@@ -19,24 +19,12 @@
             </div>
             @endforeach 
         @else
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
+            @foreach(explode(',',$default->sessions) as $session)
+            <div class="col-6 text-center py-0">
+                {{$session}}
             </div>
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
-            </div>
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
-            </div>
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
-            </div>
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
-            </div>
-            <div class="col-6 text-center  py-0">
-                07-08/07/20
-            </div>
+            @endforeach 
+            
         @endif
         <div class="col-12 text-center p-3">
             <a href="{{route('contact', ['id' => $formation->id,'session'=>1])}}" class="btn btn-blue">S'inscrire</a>
