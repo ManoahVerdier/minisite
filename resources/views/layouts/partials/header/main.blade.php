@@ -79,6 +79,9 @@
                                                 <div class="col-12 col-md-3 text-center">
                                                     <a class="dropdown-item" href="{{route('contact_recrutement')}}">Recrutement</a>
                                                 </div>
+                                                <div class="col-12 col-md-3 text-center">
+                                                    <a class="dropdown-item" href="{{route('faqs')}}">FAQ</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

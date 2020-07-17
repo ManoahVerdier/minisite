@@ -8,6 +8,7 @@ use App\Categorie;
 use App\SousCategorie;
 use App\Contact;
 use App\Page;
+use App\Faq;
 use App\Http\Requests\ContactRequest;
 use Mail;
 use DB;
@@ -139,6 +140,18 @@ class SiteController extends Controller
         $page=Page::where('slug','demarche-qualite')->firstOrFail();
         $categories = Categorie::distinct('nom')->get();
         return view('page', compact('page','categories'));
+    }
+
+    public function faqs(){
+        $faqs = Faq::all();
+        $categories = Categorie::distinct('nom')->get();
+        return view('faqs', compact('faqs','categories'));
+    }
+
+    public function faq($slug){
+        $faq = Faq::where('slug',$slug)->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('faq', compact('faq','categories'));
     }
 
     public function contactRecrutement($id="",$session=false){

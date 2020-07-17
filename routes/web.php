@@ -38,6 +38,9 @@ Route::get('/infos-pratiques', 'SiteController@infos_pratiques')->name('infos_pr
 Route::get('/cgv', 'SiteController@cgv')->name('cgv');
 Route::get('/demarche-qualite', 'SiteController@demarche_qualite')->name('demarche_qualite');
 
+Route::get('/faqs', 'SiteController@faqs')->name('faqs');
+Route::get('/faq/{slug}', 'SiteController@faq')->name('faq_slug');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
