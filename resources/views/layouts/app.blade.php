@@ -12,7 +12,8 @@
 
         @yield('extra-meta')
 
-        <title>@section('title', 'Cyn-formation')</title>
+        <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')"/>
 
         {{-- CSS --}}
         @section('css')

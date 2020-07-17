@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Cyn-formation')
+@section('title', 'Cyn-formation - Recherche')
 
 @section('body-attr')
 id="search-page"

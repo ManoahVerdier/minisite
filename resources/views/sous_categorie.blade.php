@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Cyn-formation')
+@section('title', "Cyn-formation - ".$sous_categorie->nom)
+@section('description', "Cyn-formation - ".$sous_categorie->nom)
 
 @section('body-attr')
 id="sscateg-page"
