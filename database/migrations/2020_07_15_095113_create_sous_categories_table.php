@@ -18,7 +18,7 @@ class CreateSousCategoriesTable extends Migration {
 			$table->string('nom');
 			$table->string('slug');
 			$table->timestamps();
-			$table->integer('parent')->nullable();
+			$table->integer('parent_id')->nullable();
 		});
 	}
 
