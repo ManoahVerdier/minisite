@@ -89,11 +89,13 @@ class SiteController extends Controller
         if($request->get('formation_id') ?? false){
             $formation = Formation::where('id','=',$request->get('formation_id'))->firstOrFail();
             $slug = $formation->slug;
-            if($formation->sessions ?? false)
-                $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
-            else{
-                $formation=Formation::where('nom','=','default')->firstOrFail();
-                $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+            if($request->get('session') ?? false){
+                if($formation->sessions ?? false)
+                    $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+                else{
+                    $formation=Formation::where('nom','=','default')->firstOrFail();
+                    $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
+                }
             }
         }
         Contact::create($request->all());
