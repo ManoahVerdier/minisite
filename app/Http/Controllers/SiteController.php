@@ -77,19 +77,20 @@ class SiteController extends Controller
                 'nom' => 'required',
                 'email' => 'required|email',
                 'telephone' => 'required|regex:/(0)[0-9]{9}/',
-                'g-recaptcha-response' => 'required|captcha',
-                'message' => 'required'
+                /*'g-recaptcha-response' => 'required|captcha'*/
             ],
             [
                 'required'=>"Le champ :attribute est requis",
-                'g-recaptcha-response.required'=>"Merci de cocher le captcha"
+                /*'g-recaptcha-response.required'=>"Merci de cocher le captcha"*/
             ]
         );
+        
         $date_choisie=false;
         if($request->get('formation_id') ?? false){
             $formation = Formation::where('id','=',$request->get('formation_id'))->firstOrFail();
             $slug = $formation->slug;
-            if($request->get('session') ?? false){
+            
+            if($request->get('session') != null ){
                 if($formation->sessions ?? false)
                     $date_choisie = explode(',',$formation->sessions)[$request->get('session')];
                 else{
