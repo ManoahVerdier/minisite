@@ -84,7 +84,7 @@ class SiteController extends Controller
                 /*'g-recaptcha-response.required'=>"Merci de cocher le captcha"*/
             ]
         );
-        
+        $slug="";
         $date_choisie=false;
         if($request->get('formation_id') ?? false){
             $formation = Formation::where('id','=',$request->get('formation_id'))->firstOrFail();
@@ -106,7 +106,7 @@ class SiteController extends Controller
                 'email' => $request->get('email'),
                 'telephone' => $request->get('telephone'),
                 'formation_message' => $request->get('message'),
-                'formation'=> $slug,
+                'formation'=> $slug?$slug:"",
                 'date_choisie'=> $date_choisie?$date_choisie:false,
             ), function($message)
             {
