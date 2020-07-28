@@ -77,11 +77,11 @@ class SiteController extends Controller
                 'nom' => 'required',
                 'email' => 'required|email',
                 'telephone' => 'required|regex:/(0)[0-9]{9}/',
-                /*'g-recaptcha-response' => 'required|captcha'*/
+                'g-recaptcha-response' => 'required|captcha'
             ],
             [
                 'required'=>"Le champ :attribute est requis",
-                /*'g-recaptcha-response.required'=>"Merci de cocher le captcha"*/
+                'g-recaptcha-response.required'=>"Merci de cocher le captcha"
             ]
         );
         $slug="";
