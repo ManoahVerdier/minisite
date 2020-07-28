@@ -14,7 +14,7 @@
                     @if($categorie ?? false)
                         <span>{{$categorie->nom}}</span>
                     @else 
-                    <a href="{{route('categorie', ['slug' => $sous_categorie->parent()->first()->slug])}}" class="blue">
+                    <a href="{{route('categorie', ['slug' => $sous_categorie->parent()->firstOrFail()->slug])}}" class="blue">
                         {{$sous_categorie->parent()->first()->nom}}
                     </a>
                     <span>&gt;</span>
