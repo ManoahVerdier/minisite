@@ -5,7 +5,7 @@
                 <a href="{{url('/')}}" class="blue">Accueil</a>
                 <span>&gt;</span>
                 @if($formation ?? false)
-                    <?php dd($formation->categorie()->first());?>
+                    <?php dd($formation);?>
                     <a href="{{route('categorie', ['slug' => $formation->categorie()->firstOrFail()->slug])}}" class="blue">{{$formation->categorie()->first()->nom}}</a>
                     <span>&gt;</span>
                     <a href="{{route('sous_categorie', ['slug' => $formation->sous_categorie()->firstOrFail()->slug])}}" class="blue">{{$formation->sous_categorie()->first()->nom}}</a>
