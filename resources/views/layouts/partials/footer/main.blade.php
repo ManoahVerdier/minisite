@@ -9,8 +9,8 @@
             <div class="col-12 col-md-6 mt-4 mt-md-0  text-center">
                 <p class="title mb-1">Besoin d'un conseil ?</p>
                 <a href="" class="w-100 d-inline-block blue h5 font-weight-bold">Contactez nous !</a>
-                <a href="" class="w-100 d-inline-block mt-3 dark-grey h6 mb-0">04 82 53 44 78</a>
-                <a href="" class="w-100 d-inline-block blue h5 font-weight-bold">contact@cyn-communication fr</a>
+                <a href="tel:+33482534478" class="w-100 d-inline-block mt-3 dark-grey h6 mb-0">04 82 53 44 78</a>
+                <a href="mailto:contact@cyn-communication.fr" class="w-100 d-inline-block blue h5 font-weight-bold">contact@cyn-communication.fr</a>
             </div>
             <div class="col-12 text-center">
                 <span>Cyn Formation - Copyright 2020 - Tous droits reserves. | </span>
