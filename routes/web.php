@@ -40,6 +40,7 @@ Route::get('/demarche-qualite', 'SiteController@demarche_qualite')->name('demarc
 
 Route::get('/faqs', 'SiteController@faqs')->name('faqs');
 Route::get('/faq/{slug}', 'SiteController@faq')->name('faq_slug');
+Route::get('/faq_categ/{slug}', 'SiteController@faq_categories')->name('faq_categ');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -9,6 +9,7 @@ use App\SousCategorie;
 use App\Contact;
 use App\Page;
 use App\Faq;
+use App\FaqCategory;
 use App\Http\Requests\ContactRequest;
 use Mail;
 use DB;
@@ -146,9 +147,15 @@ class SiteController extends Controller
     }
 
     public function faqs(){
-        $faqs = Faq::all();
+        $faqs = FaqCategory::all();
         $categories = Categorie::distinct('nom')->get();
         return view('faqs', compact('faqs','categories'));
+    }
+
+    public function faq_categories($categ_slug){
+        $faq_categ = FaqCategory::where('slug',$categ_slug)->firstOrFail();
+        $categories = Categorie::distinct('nom')->get();
+        return view('faq_category', compact('faq_categ','categories'));
     }
 
     public function faq($slug){
