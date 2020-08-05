@@ -4,18 +4,18 @@
             <img class="w-100 h-auto" src="{{asset('/img/home/HP_haut_01.webp')}}"/>
             <div class='position-absolute w-100 h-100 banner-text'>
                 <div class='d-inline-block w-100 h-40 h-md-50'></div>
-                <h2 class='text-white h1 font-weight-bold mb-0'>Un projet de formation ?</h2>
-                <h5 class='blue h4'>Notre équipe est à votre écoute</h5>
-                <div class='position-absolute banner-bullet text-white'>- formation à distance</div>
+                <h2 class='text-white h1 font-weight-bolder muli-bold mb-0'>Audit / Conseil</h2>
+                <h5 class='blue h4'>certifications ISO</h5>
+                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content">experts qualité</span></div>
             </div>
         </div>
         <div class="col-12 col-md-6 px-0" id="banner-right">
             <img class="w-100 h-auto" src="{{asset('/img/home/HP_haut_02.webp')}}"/>
             <div class='position-absolute w-100 h-100 banner-text'>
                 <div class='d-inline-block w-100 h-40 h-md-50'></div>
-                <h2 class='text-white h1 font-weight-bold mb-0'>Un besoin spécifique ?</h2>
-                <h5 class='blue h4'>Nos experts sont là ! </h5>
-                <div class='position-absolute banner-bullet text-white'>- formation en entreprise</div>
+                <h2 class='text-white h1 font-weight-bolder muli-bold mb-0'>Formations</h2>
+                <h5 class='blue h4'>normes ISO</h5>
+                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content"> experts consultants</span></div>
             </div>
         </div>
     </div>

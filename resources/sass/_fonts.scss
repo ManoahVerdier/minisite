@@ -6,22 +6,47 @@
     src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30eg.woff2) format('woff2');
   }
   
-  @font-face {
-    font-family: 'Muli bold';
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
-  }
+@font-face {
+  font-family: 'Muli bold';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('/fonts/ElegantIcons.ttf');
+@font-face {
+  font-family: "ElegantIcons";
+  src: url("/fonts/ElegantIcons.ttf") format("trutype"),
+       url("/fonts/ElegantIcons.woff") format("woff");
+ }
 
 h1,h2,h3,h4,h5,h6,p, header{
     font-family: 'Muli', sans-serif;
+}
+
+.pretty{
+  font-family:'Libre baskerville';
+  font-size:0.98em;
+}
+
+.muli{
+  font-family: 'Muli', sans-serif;
+}
+
+.muli-bold{
+  font-family: 'Muli bold', sans-serif;
+}
+
+.muli-extra-bold{
+  font-family: 'Muli extra bold', sans-serif;
 }

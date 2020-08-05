@@ -10,6 +10,7 @@ use App\Contact;
 use App\Page;
 use App\Faq;
 use App\FaqCategory;
+use App\Conseil;
 use App\Http\Requests\ContactRequest;
 use Mail;
 use DB;
@@ -39,6 +40,12 @@ class SiteController extends Controller
         }
         
         return view ('formation',compact('categories','formation'));
+    }
+
+    public function conseilBySlug($slug){
+        $conseil = Conseil::where('slug','=',$slug)->firstOrFail();
+        $categories = Categorie::distinct('nom')->orderBy('nom', 'ASC')->get();
+        return view ('conseil',compact('categories','conseil'));
     }
 
     public function categorie($slug){

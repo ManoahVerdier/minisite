@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 Route::get('/formation/{id}', 'SiteController@formation')->name('formation');
 Route::get('/f/{slug}', 'SiteController@formationBySlug')->name('formation_slug');
+Route::get('/conseil/{slug}', 'SiteController@conseilBySlug')->name('conseil_slug');
 Route::get('/c/{slug}', 'SiteController@categorie')->name('categorie');
 Route::get('/sc/{slug}', 'SiteController@sous_categorie')->name('sous_categorie');
 

@@ -44,6 +44,10 @@
     color:#8c93aa;
 }
 
+.dark-gray{
+    color:#5e5e5e;
+}
+
 .dark-grey{
     color:#303030;
 }
@@ -72,7 +76,11 @@
     background:#FDCD3D;
 }
 
-.border,.border-bottom{
+.bg-blue{
+    background-color:#1CB0EE;
+}
+
+.border,.border-bottom,.border-top,.border-left,.border-right{
     &.border-blue{
         border-color:#249fd5 !important;
     }

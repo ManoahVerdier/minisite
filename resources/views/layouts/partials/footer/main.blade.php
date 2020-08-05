@@ -1,19 +1,29 @@
 <footer class='p-3 mt-5'>
     <div class="container">    
-        <div class="row">
-            <div class="col-12 col-md-6 text-center">
-                <p class="title">Qualité et certification</p>
+        <div class="row pt-3">
+            <div class="col-12 col-md-6 text-left">
+                <p class="title pt-5 text-left mb-4"><b>Qualité et certification</b></p>
                 <img src="{{asset('img/footer/qualiopi.png')}}"/>
                 <img src="{{asset('img/footer/datadock.webp')}}"/>
             </div>
-            <div class="col-12 col-md-6 mt-4 mt-md-0  text-center">
-                <p class="title mb-1">Besoin d'un conseil ?</p>
-                <a href="" class="w-100 d-inline-block blue h5 font-weight-bold">Contactez nous !</a>
-                <a href="tel:+33482534478" class="w-100 d-inline-block mt-3 dark-grey h6 mb-0">04 82 53 44 78</a>
-                <a href="mailto:contact@cyn-communication.fr" class="w-100 d-inline-block blue h5 font-weight-bold">contact@cyn-communication.fr</a>
+            <div class="col-12 col-md-6 mt-4 mt-md-0 bg-blue text-white pt-5 pl-5">
+                <p class="title mb-2 text-left pretty">Suivez-nous</p>
+                <a href="" class="w-100 d-inline-block blue h5 font-weight-bold text-left mt-4 mb-5">
+                    <img src="{{asset('img/footer/LinkedIn.jpg')}}"/>
+                </a>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-12 col-md-6 my-5 text-left pl-5 py-2 contact">
+                <p class="ml-4 title pretty mb-0">Besoin d'un conseil ?</p>
+                <a href="" class="ml-4 text-uppercase w-100 d-inline-block blue h4 mt-0 font-weight-bold muli-bold">Contactez-nous !</a>
+            </div>
+            <div class="col-12 col-md-6 my-5 text-left pl-5 pb-2 pt-1">
+                <a href="tel:+33482534478" class="ml-4 w-100 d-inline-block dark-grey h6 mb-0"><b>04 82 53 44 78</b></a>
+                <a href="mailto:contact@cyn-communication.fr" class="ml-4 w-100 d-inline-block blue h5 font-weight-bold small">contact@cyn-communication.fr</a>
             </div>
             <div class="col-12 text-center">
-                <span>Cyn Formation - Copyright 2020 - Tous droits reserves. | </span>
+                <span>CertificationISO - Copyright 2020 - Tous droits reserves. | </span>
                 <a href="{{route('mentions_legales')}}">Mentions legales</a><span> | </span>
                 <a href="{{route('infos_pratiques')}}">Infos Pratiques</a><span> | </span>
                 <a href="{{route('cgv')}}">CGV</a>
