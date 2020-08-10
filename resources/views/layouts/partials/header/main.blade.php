@@ -69,7 +69,7 @@
                                         <div class="row w-100 mx-0">
                                             @foreach($conseils_header as $conseil)
                                                 <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['slug' => $conseil->slug])}}">{{$conseil->nom}}</a>
+                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['slug' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
                                                 </div>
                                             @endforeach
                                         </div>
