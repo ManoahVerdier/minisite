@@ -17,7 +17,7 @@ use App\Conseil;
 */
 
 Route::get('/', function () {
-    $formations_header = Formation::distinct('nom')->orderBy('nom', 'ASC')->get();
+    $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
     $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
     return view('home', compact('formations_header','conseils_header'));
 });

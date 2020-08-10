@@ -33,7 +33,7 @@ class SiteController extends Controller
 
     public function formationBySlug($slug){
         $formation = Formation::where('slug','=',$slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         if(! isset($formation->sessions) || $formation->sessions==""){
             $default = Formation::where('nom','=','default')->firstOrFail();
@@ -46,7 +46,7 @@ class SiteController extends Controller
 
     public function conseilBySlug($slug){
         $conseil = Conseil::where('slug','=',$slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view ('conseil',compact('conseils_header','formations_header','conseil'));
     }
@@ -54,7 +54,7 @@ class SiteController extends Controller
     public function categorie($slug){
         $categorie = Categorie::where('slug',$slug)->first();
         
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
 
         $formations = $categorie->formations()->get();
@@ -63,14 +63,14 @@ class SiteController extends Controller
 
     public function sous_categorie($slug){
         $sous_categorie = SousCategorie::where('slug',$slug)->first();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         $formations = $sous_categorie->formations()->get();
         return view ('sous_categorie',compact('conseils_header','formations_header','sous_categorie','formations'));
     }
 
     public function contact($id="",$session=false){
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         $formation=null;
         if($id!=""){
@@ -131,7 +131,7 @@ class SiteController extends Controller
                 $message->to('verdier.developpement@gmail.com', 'Admin')->subject('Contact Cyn-formation');
             }
         );
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         
         return view('contact', compact('conseils_header','formations_header'))->with('success', 'Merci pour votre message !</br> Nous vous recontacterons sous peu');
@@ -140,55 +140,55 @@ class SiteController extends Controller
 
     public function mentions_legales(){
         $page=Page::where('slug','mentions-legales')->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('page', compact('page','conseils_header','formations_header'));
     }
 
     public function infos_pratiques(){
         $page=Page::where('slug','infos-pratiques')->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('page', compact('page','conseils_header','formations_header'));
     }
 
     public function cgv(){
         $page=Page::where('slug','cgv')->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('page', compact('page','conseils_header','formations_header'));
     }
 
     public function demarche_qualite(){
         $page=Page::where('slug','demarche-qualite')->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('page', compact('page','conseils_header','formations_header'));
     }
 
     public function faqs(){
         $faqs = FaqCategory::all();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('faqs', compact('faqs','conseils_header','formations_header'));
     }
 
     public function faq_categories($categ_slug){
         $faq_categ = FaqCategory::where('slug',$categ_slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('faq_category', compact('faq_categ','conseils_header','formations_header'));
     }
 
     public function faq($slug){
         $faq = Faq::where('slug',$slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('faq', compact('faq','conseils_header','formations_header'));
     }
 
     public function contactRecrutement($id="",$session=false){
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view('contact_recrutement', compact('conseils_header','formations_header'));
     }
@@ -226,7 +226,7 @@ class SiteController extends Controller
                 //$message->to('verdier.developpement@gmail.com', 'Admin')->subject('Contact Cyn-formation');
             }
         );
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         
         return view('contact_recrutement', compact('conseils_header','formations_header'))->with('success', 'Merci pour votre message !</br> Nous vous recontacterons sous peu');
@@ -252,7 +252,7 @@ class SiteController extends Controller
                                 ->orWhere('infos_pratiques','LIKE','%'.$request->get('search').'%')->get();
         $categorie = Categorie::where('slug',"qualite")->first();
         $search = $request->get('search');
-        $formations_header = Formation::distinct('nom')->where('categorie_id is not null')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         return view ('recherche',compact('categorie','formations','search','conseils_header','formations_header'));
     }
