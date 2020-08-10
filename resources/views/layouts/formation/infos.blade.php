@@ -4,5 +4,7 @@
     </div>
     <div class="col-12 content">
         {!!$formation->infos_pratiques!!}
+        </br>
+        Accessibilité aux personnes handicapées : Pour tout personne en situation d’handicap, merci de nous préciser la forme d’handicap à cette adresse contact@cyn-communication fr afin que nous puissions vous orienter vers un partenaire prenant en charge ce type d’handicap.
     </div>
 </div>
