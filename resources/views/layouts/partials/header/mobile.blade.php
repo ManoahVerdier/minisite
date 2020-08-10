@@ -17,8 +17,8 @@
             </div>
         </div>
         <div class="col-1 px-0">
-            <button class="navbar-toggler px-0 py-2 mr-1" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler px-0 py-2 mr-1" type="button" aria-label="Menu mobile">
+                <span class="navbar-toggler-icon" onclick="$('#menu').toggleClass('hidden')"></span>
             </button>
         </div>
     </div>

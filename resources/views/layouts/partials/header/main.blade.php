@@ -2,7 +2,7 @@
     <div class="container" id="header-main">
         <div class="row">
             <div class="col-6 col-md-3">
-                <div id="logo" class="px-md-3 px-0 mt-4">
+                <div id="logo" class="px-md-3 px-0 mt-3 mb-3">
                     <a href="{{url('/')}}" class="d-inline-block h-50 w-100">
                         <img class=" mx-auto" src="{{asset('img/header/logo.png')}}"/>
                     </a>
@@ -17,7 +17,7 @@
                     </a>
                 </div>
             </div>
-            <div class="d-none d-md-block col-3">
+            <div class="d-none d-md-block col-2">
                 <div id="contact-btn" class="mt-4 text-center">
                     <a href="tel:0482534478" class='btn btn-blue rounded-pill font-weight-bold px-3'>
                         <span>04 82 53 44 78</span>
@@ -38,56 +38,80 @@
    
                 </div>
             </div>
+            <div class="col-1">
+                <button id="show-menu" class="btn btn-blank my-3" onclick="$('#menu').toggleClass('hidden')"><div class="blue"><img src="{{asset('/img/header/menu_img.png')}}"/></div></button>
+            </div>
         </div>
     </div>
-    <div class="container-fluid px-0">
-        <div id='menu'>
+</header>
+
+<div id='menu' class="position-fixed h-100 w-100 hidden">
+    <div class='wrap w-100 h-100'>
+        <div class="d-md-inline-block w-70 h-100 float-left d-none" id='menu-background' onclick="$('#menu').toggleClass('hidden')"></div>
+        <div id="inner-menu" class="d-inline-block w-md-30 w-sm-100 float-right bg-light-grey h-100">
             <div class="container">
-                <nav class="navbar navbar-expand-lg px-1 navbar-light position-static">
-                    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Menu mobile">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="menu-nav">
+                <div class='row w-100 mb-5'>
+                    <div class="col-12 text-right pr-0">
+                        <button class="btn btn-blank" id='close-menu' onclick="$('#menu').toggleClass('hidden')">X</button>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg px-1 navbar-light position-relative">
+
+                    <div class="collapse navbar-collapse collapse show" id="menu-nav">
+                        
                         <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0">
-                            <li class="nav-item active col-12 col-lg-3 text-center dropdown position-static">
-                                <a class="nav-link dropdown-toggle" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Domaines
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
+                                <a class="nav-link dropdown-toggle h4" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Conseil
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
-                                            @foreach($categories as $category)
-                                                <div class="col-12 col-md-3 text-center">
-                                                    <a class="dropdown-item" href="{{route('categorie', ['slug' => $category->slug])}}">{{$category->nom}}</a>
+                                            @foreach($conseils_header as $conseil)
+                                                <div class="col-12 text-left">
+                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['slug' => $conseil->slug])}}">{{$conseil->nom}}</a>
                                                 </div>
                                             @endforeach
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            {{--<li class="nav-item col-12 col-lg-3 text-center">
-                                <a class="w-100 d-inline-block py-2" href="">Types</a>
-                            </li>--}}
-                            <li class="nav-item col-12 col-lg-3 text-center dropdown position-static">
-                                <a class="nav-link dropdown-toggle w-100 d-inline-block py-2" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Infos pratiques</a>
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
+                                <a class="nav-link dropdown-toggle h4" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Formation
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
+                                    <div class="container px-0">
+                                        <div class="row w-100 mx-0">
+                                            @foreach($formations_header as $formation)
+                                                <div class="col-12 text-left">
+                                                    <a class="dropdown-item" href="{{route('formation_slug', ['slug' => $formation->slug])}}">{{$formation->nom}}</a>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
+                                <a class="nav-link dropdown-toggle w-100 d-inline-block py-2 h4" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A propos</a>
                                 <div class="dropdown-menu" aria-labelledby="infos-pratiques" id="infos-pratiques-sub">
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
-                                                <div class="col-12 col-md-3 text-center">
+                                                <div class="col-12 text-left">
                                                     <a class="dropdown-item" href="{{route('demarche_qualite')}}">Démarche qualité</a>
                                                 </div>
-                                                <div class="col-12 col-md-3 text-center">
+                                                <div class="col-12 text-left">
                                                     <a class="dropdown-item" href="{{route('contact_recrutement')}}">Recrutement</a>
                                                 </div>
-                                                <div class="col-12 col-md-3 text-center">
+                                                <div class="col-12 text-left">
                                                     <a class="dropdown-item" href="{{route('faqs')}}">FAQ</a>
                                                 </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item col-12 col-lg-3 text-center">
-                                <a class="w-100 d-inline-block py-2" href="{{route('contact')}}">Contact</a>
+                            <li class="nav-item col-12 text-left border-bottom border-blue py-3">
+                                <a class="pl-2 w-100 d-inline-block py-2 h4" href="{{route('contact')}}">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -95,4 +119,4 @@
             </div>
         </div>
     </div>
-</header>
+</div>

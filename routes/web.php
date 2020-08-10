@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Formation;
+use App\Conseil;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +17,9 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    $categories = App\Categorie::distinct('nom')->orderBy('nom','ASC')->get();
-    return view('home', compact('categories'));
+    $formations_header = Formation::distinct('nom')->orderBy('nom', 'ASC')->get();
+    $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
+    return view('home', compact('formations_header','conseils_header'));
 });
 
 Route::get('/formation/{id}', 'SiteController@formation')->name('formation');

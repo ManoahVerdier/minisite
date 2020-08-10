@@ -28,3 +28,46 @@
 body{
     background-color:white;
 }
+
+#menu{
+    right:0px;
+    top:0px;
+    z-index:3;
+    transition: width 2s, max-width 2s, left 2s;
+
+    &.hidden{
+        left:100%;
+        max-width:0px;
+        visibility:hidden;
+        transition:left .5s ease, max-width .5s ease;
+        transition: width 2s, max-width 2s, left 2s;
+    }
+
+    #menu-background{
+        background:rgba(20,20,20,0.6);
+    }
+
+    #inner-menu{
+        box-shadow: -10px -5px 30px 2px #353535;
+
+        #close-menu{
+            font-size:1.1rem;
+        }
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: relative;
+        top:0%;
+        background-color:transparent;
+        border:none;
+    }
+
+    .dropdown-toggle::after {
+        float:right;
+        margin-top:10px;
+    }
+}
+    
+body{
+    overflow-x:hidden;
+}

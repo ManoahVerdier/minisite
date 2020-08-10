@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Cyn-formation')
+@section('title', 'CertificationISO')
 
 @section('body-attr')
 id="home-page"
