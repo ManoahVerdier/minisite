@@ -20,7 +20,7 @@ class SiteController extends Controller
     public function formation($id){
 
         $formation = Formation::where('id',$id)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->orderBy('nom', 'ASC')->get();
+        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
         $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
         if(! isset($formation->sessions) || $formation->sessions==""){
             $default = Formation::where('nom','=','default')->first();
