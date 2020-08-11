@@ -15,40 +15,131 @@ use App\Http\Requests\ContactRequest;
 use Mail;
 use DB;
 
+/**
+ * Controller principal des pages
+ * 
+ * @author Manoah Verdier
+ * @package Controllers
+ * @category SiteController
+ * @license 
+ */
 class SiteController extends Controller
 {
-    public function formation($id){
+    /**
+     * Pages formations accédées par l'id
+     *
+     * @param int $id l'id de la formation
+     * 
+     * @return void
+     */
+    public function formation($id)
+    {
 
-        $formation = Formation::where('id',$id)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
-        $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
-        if(! isset($formation->sessions) || $formation->sessions==""){
-            $default = Formation::where('nom','=','default')->first();
+        $formation = Formation::where('id', $id)->firstOrFail();
+        $formations_header = Formation::distinct('nom')
+            ->whereNotNull('categorie_id')
+            ->where("nom", "!=", "default")
+            ->orderBy('nom', 'ASC')
+            ->get();
+        $conseils_header = Conseil::distinct('certification')
+            ->orderBy('certification', 'ASC')
+            ->get();
+        if (! isset($formation->sessions) || $formation->sessions=="") {
+            $default = Formation::where('nom', '=', 'default')->first();
             $formation->session=$default->session;
-            return view ('formation',compact('conseils_header','formations_header','formation','default'));
+            return view(
+                'formation', 
+                compact(
+                    'conseils_header', 
+                    'formations_header', 
+                    'formation', 
+                    'default'
+                )
+            );
         }
         
-        return view ('formation',compact('conseils_header','formations_header','formation'));
+        return view(
+            'formation',
+            compact(
+                'conseils_header',
+                'formations_header',
+                'formation'
+            )
+        );
     }
 
-    public function formationBySlug($slug){
-        $formation = Formation::where('slug','=',$slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
-        $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
-        if(! isset($formation->sessions) || $formation->sessions==""){
-            $default = Formation::where('nom','=','default')->firstOrFail();
+    /**
+     * Pages formations accédées par le slug
+     *
+     * @param string $slug le slug de la formation
+     * 
+     * @return void
+     */
+    public function formationBySlug($slug)
+    {
+        $formation = Formation::where('slug', '=', $slug)->firstOrFail();
+
+        $formations_header = Formation::distinct('nom')
+            ->whereNotNull('categorie_id')
+            ->where("nom", "!=", "default")
+            ->orderBy('nom', 'ASC')
+            ->get();
+        $conseils_header = Conseil::distinct('certification')
+            ->orderBy('certification', 'ASC')
+            ->get();
+
+        if (! isset($formation->sessions) || $formation->sessions=="") {
+            $default = Formation::where('nom', '=', 'default')->firstOrFail();
             $formation->session=$default->session;
-            return view ('formation',compact('conseils_header','formations_header','formation','default'));
+            return view(
+                'formation',
+                compact(
+                    'conseils_header',
+                    'formations_header',
+                    'formation',
+                    'default'
+                )
+            );
         }
         
-        return view ('formation',compact('conseils_header','formations_header','formation'));
+        return view(
+            'formation',
+            compact(
+                'conseils_header',
+                'formations_header',
+                'formation'
+            )
+        );
     }
 
-    public function conseilBySlug($slug){
-        $conseil = Conseil::where('slug','=',$slug)->firstOrFail();
-        $formations_header = Formation::distinct('nom')->whereNotNull('categorie_id')->where("nom","!=","default")->orderBy('nom', 'ASC')->get();
-        $conseils_header = Conseil::distinct('certification')->orderBy('certification', 'ASC')->get();
-        return view ('conseil',compact('conseils_header','formations_header','conseil'));
+    /**
+     * Page conseil accédée par le slug
+     *
+     * @param string $slug le slug de la page conseil
+     * 
+     * @return void
+     */
+    public function conseilBySlug($slug)
+    {
+        $conseil = Conseil::where('slug', '=', $slug)->firstOrFail();
+
+        $formations_header = Formation::distinct('nom')
+            ->whereNotNull('categorie_id')
+            ->where("nom", "!=", "default")
+            ->orderBy('nom', 'ASC')
+            ->get();
+        $conseils_header = Conseil::distinct('certification')
+            ->orderBy('certification', 'ASC')
+            ->get();
+
+        return view(
+            'conseil',
+            compact(
+                'conseils_header',
+                'formations_header',
+                'conseil'
+            )
+        );
     }
 
     public function categorie($slug){
