@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col-md-1 number py-4 text-center">02</div>
-            <div class="col-md-10 content border-top py-4 px-0">De la formation et d’échange de bonnes pratiques en conseil iso 9001</div>
+            <div class="col-md-10 content border-top py-4 px-0">De la formation et d’échange de bonnes pratiques en conseil {{$conseil->certification}}</div>
             <div class="col-md-1 icon py-4 text-center">✓</div>
         </div>
         <div class="row ">
@@ -35,7 +35,7 @@
         </div>
         <div class="row ">
             <div class="col-md-1 number py-4 text-center">04</div>
-            <div class="col-md-10 content border-top py-4 px-0">D’un suivi tout au long de votre démarche et après l’obtention de la certification iso 9001</div>
+            <div class="col-md-10 content border-top py-4 px-0">D’un suivi tout au long de votre démarche et après l’obtention de la certification {{$conseil->certification}}</div>
             <div class="col-md-1 icon py-4 text-center">✓</div>
         </div>
         <div class="row ">

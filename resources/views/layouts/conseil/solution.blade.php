@@ -13,7 +13,7 @@
         <div class="w-100 text-left blue muli text mb-5">{{$conseil->certification}}</div>
         <ul class="text-white text muli mt-5 w-50 mb-5 pb-5">
             <li>Nous proposons un programme d’accompagnement
-                iso 9001 vers la <strong>certification ISO 9001</strong>
+                iso 9001 vers la <strong>certification {{$conseil->certification}}</strong>
             </li>
         </ul>
     </div>
@@ -23,7 +23,7 @@
         <div class="w-100 text-left dark-grey muli text ">certification ISO</div>
         <ul class="text-white text muli mt-5 w-60 mb-5 pb-5">
             <li>
-                Une expertise technique en <b>conseil iso 9001</b>
+                Une expertise technique en <b>conseil {{$conseil->certification}}</b>
             </li>
             <li>
                 Un accompagnement opérationnel 
@@ -41,7 +41,7 @@
             <div class="w-100 text-left blue muli text mb-5">{{$conseil->certification}}</div>
             <ul class="text-white text-left text muli mt-5 w-80 mb-5 pb-4">
                 <li class="">Nous proposons un programme d’accompagnement
-                    iso 9001 vers la <strong>certification ISO 9001</strong>
+                    {{$conseil->certification}} vers la <strong>certification {{$conseil->certification}}</strong>
                 </li>
             </ul>
         </div>
@@ -51,7 +51,7 @@
             <div class="w-100 text-left dark-grey muli text ">certification ISO</div>
             <ul class="text-white text-left text muli mt-5 w-80 mb-1 pb-1">
                 <li>
-                    Une expertise technique en <b>conseil iso 9001</b>
+                    Une expertise technique en <b>conseil {{$conseil->certification}}</b>
                 </li>
                 <li>
                     Un accompagnement opérationnel 

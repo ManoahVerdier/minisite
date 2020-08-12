@@ -7,7 +7,7 @@
     </div>  
     <div class='col-10 col-md-4 offset-md-2 offset-1 mb-5 pb-5'>
         <div class="text px-2 gray muli">
-            Nous sommes convaincus de la simplicité pour obtenir la certification ISO 9001 et nos consultants ISO 9001 vous
+            Nous sommes convaincus de la simplicité pour obtenir la certification {{$conseil->certification}} et nos consultants {{$conseil->certification}} vous
             guideront pas à pas tout au long du processus.
             <br><br>
             Envoyez-nous votre formulaire de demande et un consultant vous répondra dans les 24 heures.
@@ -18,7 +18,7 @@
             Nous organiserons une consultation gratuite pour nous assurer de bien comprendre votre demande et 
             nous vous fournirons un prix fixe et sans frais cachés pour votre accompagnement.
             <br><br>
-            Une fois notre offre acceptée, les travaux de mise en œuvre de votre système de management de la qualité ISO 9001 commenceront.
+            Une fois notre offre acceptée, les travaux de mise en œuvre de votre système de management de la qualité {{$conseil->certification}} commenceront.
         </div>
     </div>
 
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
             <div class="col-md-2 number py-3 text-center">02</div>
-            <div class="col-md-9 content border-top py-3">Formation de sensibilisation à ISO 9001</div>
+            <div class="col-md-9 content border-top py-3">Formation de sensibilisation à {{$conseil->certification}}</div>
         </div>
         <div class="row ">
             <div class="col-md-2 number py-3 text-center">03</div>
@@ -134,7 +134,7 @@
                 {{$conseil->certification}}
             </div>
             <div class="content text-left text blue">
-            À la fin, vous recevrez votre certification ISO 9001 que vous pourrez promouvoir auprès de vos clients
+            À la fin, vous recevrez votre certification {{$conseil->certification}} que vous pourrez promouvoir auprès de vos clients
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
                 des employés
             </div>
             <div class="content text-left text">
-                Une fois le système mis en place, nos consultants ISO 9001 fourniront une formation à vos employés pour que tout le monde connaisse et comprenne le nouveau système de gestion de la qualité.
+                Une fois le système mis en place, nos consultants {{$conseil->certification}} fourniront une formation à vos employés pour que tout le monde connaisse et comprenne le nouveau système de gestion de la qualité.
             </div>
         </div>
     </div>
@@ -202,7 +202,7 @@
                 {{$conseil->certification}}
             </div>
             <div class="content text-left text blue">
-            À la fin, vous recevrez votre certification ISO 9001 que vous pourrez promouvoir auprès de vos clients
+            À la fin, vous recevrez votre certification {{$conseil->certification}} que vous pourrez promouvoir auprès de vos clients
             </div>
         </div>
     </div>

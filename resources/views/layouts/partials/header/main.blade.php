@@ -69,7 +69,7 @@
                                         <div class="row w-100 mx-0">
                                             @foreach($conseils_header as $conseil)
                                                 <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['slug' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
+                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
                                                 </div>
                                             @endforeach
                                         </div>
@@ -85,7 +85,7 @@
                                         <div class="row w-100 mx-0">
                                             @foreach($formations_header as $formation)
                                                 <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('formation_slug', ['slug' => $formation->slug])}}">{{$formation->nom}}</a>
+                                                    <a class="dropdown-item" href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a>
                                                 </div>
                                             @endforeach
                                         </div>

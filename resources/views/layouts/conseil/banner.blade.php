@@ -14,7 +14,7 @@
                 <span class="w-100 d-inline-block">Nos consultants </span>
                 <span class="text-white">
                     <b>vous accompagnent à la mise en place<br>
-                    de la certification ISO 9001 au sein</b>
+                    de la certification {{$conseil->certification}} au sein</b>
                 </span>
                 <span class="w-100 d-inline-block">de votre entreprise.</span>
             </div>

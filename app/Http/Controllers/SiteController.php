@@ -55,22 +55,13 @@ class SiteController extends Controller
      * @return void
      */
     public function formation(Formation $formation)
-    {
-        /*$formation = Formation::where('id', $id)->firstOrFail();*/
-        if (! isset($formation->sessions) || $formation->sessions=="") {
-            $default = Formation::where('nom', '=', 'default')->first();
-            $formation->session=$default->session;
-            return view(
-                'formation', 
-                compact(
-                    'conseils_header', 
-                    'formations_header', 
-                    'formation', 
-                    'default'
-                )
-            );
+    {   
+        if (! isset($formation->sessions)) {
+            $formation->sessions=Formation::
+                where('nom', '=', 'default')
+                ->firstOrFail()
+                ->sessions;
         }
-        
         return view(
             'formation',
             compact(
@@ -82,26 +73,18 @@ class SiteController extends Controller
     /**
      * Pages formations accédées par le slug
      *
-     * @param string $slug le slug de la formation
+     * @param Formation $formation la formation a afficher
      * 
      * @return void
      */
-    public function formationBySlug($slug)
+    public function formationBySlug(Formation $formation)
     {
-        $formation = Formation::where('slug', '=', $slug)->firstOrFail();
-
-        if (! isset($formation->sessions) || $formation->sessions=="") {
-            $default = Formation::where('nom', '=', 'default')->firstOrFail();
-            $formation->session=$default->session;
-            return view(
-                'formation',
-                compact(
-                    'formation',
-                    'default'
-                )
-            );
+        if (! isset($formation->sessions)) {
+            $formation->sessions=Formation::
+                where('nom', '=', 'default')
+                ->firstOrFail()
+                ->sessions;
         }
-        
         return view(
             'formation',
             compact(
@@ -113,14 +96,12 @@ class SiteController extends Controller
     /**
      * Page conseil accédée par le slug
      *
-     * @param string $slug le slug de la page conseil
+     * @param Conseil $conseil le conseil
      * 
      * @return void
      */
-    public function conseilBySlug($slug)
+    public function conseilBySlug(Conseil $conseil)
     {
-        $conseil = Conseil::where('slug', '=', $slug)->firstOrFail();
-
         return view(
             'conseil',
             compact(
