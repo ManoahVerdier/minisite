@@ -13,12 +13,15 @@ class CreateFaqCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('faq_categories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('slug', 255);
-            $table->string('titre', 255)->nullable();
-            $table->timestamps();
-        });
+        Schema::create(
+            'faq_categories', 
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('slug', 255);
+                $table->string('titre', 255)->nullable();
+                $table->timestamps();
+            }
+        );
     }
 
     /**

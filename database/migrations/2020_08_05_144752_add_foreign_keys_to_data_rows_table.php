@@ -13,9 +13,17 @@ class AddForeignKeysToDataRowsTable extends Migration
      */
     public function up()
     {
-        Schema::table('data_rows', function (Blueprint $table) {
-            $table->foreign('data_type_id')->references('id')->on('data_types')->onUpdate('CASCADE')->onDelete('CASCADE');
-        });
+        Schema::table(
+            'data_rows', 
+            function (Blueprint $table) {
+                $table
+                    ->foreign('data_type_id')
+                    ->references('id')
+                    ->on('data_types')
+                    ->onUpdate('CASCADE')
+                    ->onDelete('CASCADE');
+            }
+        );
     }
 
     /**

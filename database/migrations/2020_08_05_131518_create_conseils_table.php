@@ -13,13 +13,16 @@ class CreateConseilsTable extends Migration
      */
     public function up()
     {
-        Schema::create('conseils', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('slug', 255)->nullable();
-            $table->string('certification', 255)->nullable();
-            $table->timestamps();
-            $table->text('lien_formation')->nullable();
-        });
+        Schema::create(
+            'conseils', 
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('slug', 255)->nullable();
+                $table->string('certification', 255)->nullable();
+                $table->timestamps();
+                $table->text('lien_formation')->nullable();
+            }
+        );
     }
 
     /**

@@ -13,16 +13,19 @@ class CreateTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('translations', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('table_name');
-            $table->string('column_name');
-            $table->unsignedInteger('foreign_key');
-            $table->string('locale');
-            $table->text('value');
-            $table->timestamps();
-            $table->unique(['table_name', 'column_name', 'foreign_key', 'locale']);
-        });
+        Schema::create(
+            'translations', 
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('table_name');
+                $table->string('column_name');
+                $table->unsignedInteger('foreign_key');
+                $table->string('locale');
+                $table->text('value');
+                $table->timestamps();
+                $table->unique(['table_name', 'column_name', 'foreign_key', 'locale']);
+            }
+        );
     }
 
     /**

@@ -13,9 +13,17 @@ class AddForeignKeysToMenuItemsTable extends Migration
      */
     public function up()
     {
-        Schema::table('menu_items', function (Blueprint $table) {
-            $table->foreign('menu_id')->references('id')->on('menus')->onUpdate('NO ACTION')->onDelete('CASCADE');
-        });
+        Schema::table(
+            'menu_items', 
+            function (Blueprint $table) {
+                $table
+                    ->foreign('menu_id')
+                    ->references('id')
+                    ->on('menus')
+                    ->onUpdate('NO ACTION')
+                    ->onDelete('CASCADE');
+            }
+        );
     }
 
     /**

@@ -13,16 +13,19 @@ class CreateSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('settings', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('key')->unique();
-            $table->string('display_name');
-            $table->text('value')->nullable();
-            $table->text('details')->nullable();
-            $table->string('type');
-            $table->integer('order')->default(1);
-            $table->string('group')->nullable();
-        });
+        Schema::create(
+            'settings', 
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('key')->unique();
+                $table->string('display_name');
+                $table->text('value')->nullable();
+                $table->text('details')->nullable();
+                $table->string('type');
+                $table->integer('order')->default(1);
+                $table->string('group')->nullable();
+            }
+        );
     }
 
     /**

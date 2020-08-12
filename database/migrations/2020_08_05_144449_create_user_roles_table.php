@@ -13,11 +13,14 @@ class CreateUserRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_roles', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id')->index();
-            $table->unsignedBigInteger('role_id')->index();
-            $table->primary(['user_id', 'role_id']);
-        });
+        Schema::create(
+            'user_roles', 
+            function (Blueprint $table) {
+                $table->unsignedBigInteger('user_id')->index();
+                $table->unsignedBigInteger('role_id')->index();
+                $table->primary(['user_id', 'role_id']);
+            }
+        );
     }
 
     /**

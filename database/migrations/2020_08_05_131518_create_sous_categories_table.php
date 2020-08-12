@@ -13,13 +13,16 @@ class CreateSousCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sous_categories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nom');
-            $table->string('slug');
-            $table->timestamps();
-            $table->integer('parent_id')->nullable();
-        });
+        Schema::create(
+            'sous_categories', 
+            function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('nom');
+                $table->string('slug');
+                $table->integer('parent_id')->nullable();
+                $table->timestamps();
+            }
+        );
     }
 
     /**
