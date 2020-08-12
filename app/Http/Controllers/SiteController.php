@@ -3,7 +3,7 @@
 /**
  * SiteController.php
  * 
- * PHP version 5
+ * PHP version 7.3
  * 
  * @category SiteController
  * @package  Controllers

@@ -1,9 +1,20 @@
 <?php
-
+/** 
+ * Page routes du web
+ * 
+ * PHP version 7.3
+ * 
+ * @category Routes
+ * @package  Routes
+ * @author   Manoah Verdier <verdier.developpement@gmail.com>
+ * @license  http://certificationiso.fr/mentions-legales Custom Licence
+ * @link     http://certificationiso.fr
+ */
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Formation;
 use App\Conseil;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
