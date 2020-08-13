@@ -13,7 +13,7 @@
         <div class="w-100 text-left blue muli text mb-5">{{$conseil->certification}}</div>
         <ul class="text-white text muli mt-5 w-50 mb-5 pb-5">
             <li>Nous proposons un programme d’accompagnement
-                iso 9001 vers la <strong>certification {{$conseil->certification}}</strong>
+            {{$conseil->certification}} vers la <strong>certification {{$conseil->certification}}</strong>
             </li>
         </ul>
     </div>
