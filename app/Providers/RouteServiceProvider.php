@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-        $formations_header = Formation::distinct('nom')
+        /*$formations_header = Formation::distinct('nom')
             ->whereNotNull('categorie_id')
             ->where("nom", "!=", "default")
             ->orderBy('nom', 'ASC')
@@ -44,7 +44,7 @@ class RouteServiceProvider extends ServiceProvider
             ->get();
 
         View::share('formations_header', $formations_header);
-        View::share('conseils_header', $conseils_header);
+        View::share('conseils_header', $conseils_header);*/
     }
 
     /**
