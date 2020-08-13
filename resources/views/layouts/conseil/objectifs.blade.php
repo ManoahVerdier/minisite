@@ -2,7 +2,7 @@
     <div class="col-md-4 offset-md-2 pr-5 px-5 px-md-1">
         <div class="title w-100 mt-5 pt-5 pr-5 mb-5">
             <span class="muli-bold">Votre objectif</span>
-            <span class="pretty"> une <br>démarche qualité réussie,</span>
+            <span class="pretty"><br>{{$conseil->demarche}}</span>
         </div>
         <div class='text mb-5 mb-md-0'>
             Vous souhaitez mener une démarche de <br>

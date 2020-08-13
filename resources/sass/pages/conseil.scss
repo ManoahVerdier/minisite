@@ -8,14 +8,18 @@
 
     .text{
         font-size:17px;
+        font-family: 'Muli', sans-serif;
     }
     
     #banner{
         height:450px;
-        @media(max-width:767px){
-            
-            
+       
+        .subtitle{
+            overflow: visible;
+            font-size:2.6rem;
+            white-space: nowrap;
         }
+
         #resume{
             background:#F2F2F2;
             padding:30px 15px 30px 15px;
@@ -24,6 +28,7 @@
                 background:white;
                 margin-left:0px;
                 margin-right:0px;
+                font-size:1rem;
             }
 
             .line{

@@ -12,10 +12,7 @@
     <div class="col-md-7 col-12 offset-md-2">
         <div class="row">
             <div class="col-md-6 pr-5 gray text">
-                votre entreprise démontre son intérêt à atteindre davantage que les 
-                exigences minimales du client. Ceci est un engagement envers 
-                l’amélioration de la qualité, une plus grande efficacité opérationnelle, une 
-                rentabilité accrue et une orientation client ciblée.
+                {!!$conseil->description!!}
             </div>
             <div class="col-md-6 text-right">
                 <img src="{{asset('img/conseil/'.$conseil->slug.'-desc.jpg')}}"/>
