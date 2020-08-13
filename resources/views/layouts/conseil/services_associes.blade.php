@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-6 col-10 offset-1 offset-md-3">
         <div class="text">
-            <b class="w-100 d-inline-block">Formation sur la norme ISO 9001</b>
+            <b class="w-100 d-inline-block">Formation sur la norme {{$conseil->certification}}</b>
             Nos consultants / formateurs peuvent vous former dans votre entreprise, avec un programme sur mesure sur la norme {{$conseil->certification}}.
             <a href="{{$conseil->lien_formation}}" class="blue w-100 d-inline-block">Découvrez les formations proposées.</a>
         </div>
