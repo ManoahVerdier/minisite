@@ -15,7 +15,7 @@
                 {!!$conseil->description!!}
             </div>
             <div class="col-md-6 text-right">
-                <img src="{{asset('img/conseil/'.$conseil->slug.'-desc.jpg')}}"/>
+                <img src="{{asset('img/conseil/conseil_'.$conseil->slug.'_certif.jpg')}}"/>
             </div>
         </div>
     </div>
