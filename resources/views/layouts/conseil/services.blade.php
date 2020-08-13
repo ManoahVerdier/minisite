@@ -82,7 +82,7 @@
                 des employés
             </div>
             <div class="content text-left text">
-                Une fois le système mis en place, nos consultants ISO 9001 fourniront une formation à vos employés pour que tout le monde connaisse et comprenne le nouveau système de gestion de la qualité.
+                Une fois le système mis en place, nos consultants {{$conseil->certification}} fourniront une formation à vos employés pour que tout le monde connaisse et comprenne le nouveau système de gestion de la qualité.
             </div>
         </div>
     </div>
