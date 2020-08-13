@@ -28,16 +28,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        $formations_header = Formation::distinct('nom')
-            ->whereNotNull('categorie_id')
-            ->where("nom", "!=", "default")
-            ->orderBy('nom', 'ASC')
-            ->get();
-        $conseils_header = Conseil::distinct('certification')
-            ->orderBy('certification', 'ASC')
-            ->get();
-
-        View::share('formations_header', $formations_header);
-        View::share('conseils_header', $conseils_header);
     }
 }

@@ -241,8 +241,6 @@ class SiteController extends Controller
                 $message
                     ->to('vmogenet@cyn-communication.fr', 'Admin')
                     ->subject('Contact '.env("APP_NAME"));
-                $message->to('verdier.developpement@gmail.com', 'Admin')
-                    ->subject('Contact '.env("APP_NAME"));
             }
         );
         
