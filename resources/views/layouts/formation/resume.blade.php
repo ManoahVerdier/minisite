@@ -1,5 +1,5 @@
 <div class="wrap" id="resume">
-    <div class="row content">
+    <div class="row content muli">
         <div class="col-12 text-right line">
             <span class="font-weight-bold blue float-left">Durée</span>{{$formation->duree}}
         </div>

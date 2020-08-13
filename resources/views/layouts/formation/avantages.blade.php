@@ -1,5 +1,5 @@
 <div id="avantages" class="mt-3">
-    <div class="wrap row">
+    <div class="wrap row muli">
         <div class="col-12 text-center py-2">
             <span class='blue font-weight-bold'> Nos avantages</span>
         </div>

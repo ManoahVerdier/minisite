@@ -50,7 +50,7 @@
 }
 
 .dark-grey {
-  color: #303030;
+  color: #303030 !important;
 }
 
 .yellow {
@@ -78,7 +78,7 @@
 }
 
 .bg-blue {
-  background-color: #1CB0EE;
+  background-color: #1CB0EE !important;
 }
 
 .border.border-blue,
@@ -86,7 +86,7 @@
 .border-top.border-blue,
 .border-left.border-blue,
 .border-right.border-blue {
-  border-color: #249fd5 !important;
+  border-color: #1CB0EE !important;
 }
 
 .h-20 {
@@ -11590,6 +11590,11 @@ header #menu #infos-pratiques-sub a:hover {
   color: #7dc84c;
 }
 
+#conseil-detail #description #list .content,
+#conseil-detail #avantages #list .content {
+  font-family: "Muli extra bold", sans-serif;
+}
+
 #conseil-detail #objectif {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -11808,13 +11813,33 @@ body {
 #menu .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: relative;
   top: 0%;
-  background-color: transparent;
   border: none;
+  border-radius: 0px !important;
+}
+
+#menu .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
+  background: transparent;
 }
 
 #menu .dropdown-toggle::after {
   float: right;
   margin-top: 10px;
+  z-index: 20 !important;
+  position: absolute;
+  right: 29px;
+  top: 29px;
+}
+
+#menu .dropdown-toggle::before {
+  content: " ";
+  display: inline-block;
+  height: 70px;
+  position: absolute;
+  right: 0px;
+  width: 70px;
+  top: 0px;
+  background: #1CB0EE;
+  z-index: 0;
 }
 
 body {

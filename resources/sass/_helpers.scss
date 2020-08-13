@@ -49,7 +49,7 @@
 }
 
 .dark-grey{
-    color:#303030;
+    color:#303030 !important;
 }
 
 .yellow{
@@ -77,12 +77,12 @@
 }
 
 .bg-blue{
-    background-color:#1CB0EE;
+    background-color:#1CB0EE !important;
 }
 
 .border,.border-bottom,.border-top,.border-left,.border-right{
     &.border-blue{
-        border-color:#249fd5 !important;
+        border-color:#1CB0EE !important;
     }
 }
 

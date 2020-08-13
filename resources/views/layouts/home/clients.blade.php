@@ -1,4 +1,4 @@
-<div class=" container-fluid mb-5" id="clients">
+<div class=" container-fluid mb-5 muli" id="clients">
     {{--<div class="container">--}}
         <div class="row pl-0 pl-md-5 pr-md-1 pt-5 justify-content-center h-100">
             <div class="px-5 col-12 col-md-6 bg-light-grey" id="clients-left">

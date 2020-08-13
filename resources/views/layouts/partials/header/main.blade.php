@@ -59,59 +59,71 @@
 
                     <div class="collapse navbar-collapse collapse show" id="menu-nav">
                         
-                        <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0">
-                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
-                                <a class="nav-link dropdown-toggle h4" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0 muli-bold">
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue pt-3 px-0">
+                                <a class="nav-link dark-grey dropdown-toggle h5 pb-3 pl-3" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Conseil
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
+                                <div class="dropdown-menu bg-blue" aria-labelledby="domaines" id="domaines-sub">
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
                                             @foreach($conseils_header as $conseil)
-                                                <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
                                                 </div>
                                             @endforeach
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
-                                <a class="nav-link dropdown-toggle h4" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue pt-3 px-0">
+                                <a class="nav-link dark-grey dropdown-toggle h5 pb-3 pl-3" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Formation
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="domaines" id="domaines-sub">
+                                <div class="dropdown-menu bg-blue" aria-labelledby="domaines" id="domaines-sub">
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
                                             @foreach($formations_header as $formation)
-                                                <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a>
                                                 </div>
                                             @endforeach
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue py-3">
-                                <a class="nav-link dropdown-toggle w-100 d-inline-block py-2 h4" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A propos</a>
-                                <div class="dropdown-menu" aria-labelledby="infos-pratiques" id="infos-pratiques-sub">
+                            <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue pt-3 px-0">
+                                <a class="nav-link dark-grey dropdown-toggle w-100 d-inline-block py-2 h5 pb-3 pl-3" href="#" id="infos-pratiques" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A propos</a>
+                                <div class="dropdown-menu bg-blue mt-0" aria-labelledby="infos-pratiques" id="infos-pratiques-sub">
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
-                                                <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('demarche_qualite')}}">Démarche qualité</a>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('demarche_qualite')}}">Démarche qualité</a>
                                                 </div>
-                                                <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('contact_recrutement')}}">Recrutement</a>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('contact_recrutement')}}">Recrutement</a>
                                                 </div>
-                                                <div class="col-12 text-left">
-                                                    <a class="dropdown-item" href="{{route('faqs')}}">FAQ</a>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('faqs')}}">FAQ</a>
                                                 </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item col-12 text-left border-bottom border-blue py-3">
-                                <a class="pl-2 w-100 d-inline-block py-2 h4" href="{{route('contact')}}">Contact</a>
+                            <li class="nav-item col-12 text-left border-bottom border-blue py-3 pb-2 px-0">
+                                <a class="pl-3 w-100 d-inline-block py-2 h5 dark-grey" href="{{route('contact')}}">Contact</a>
+                            </li>
+
+                            <li class="nav-item col-12 text-left border-bottom border-blue py-3 pb-2 px-0">
+                                <div id="search" class="my-2">
+                                    <form method="post" action="{{route('recherche')}}" class="input-group mb-3 border rounded">
+                                        @csrf
+                                        <input name="search" type="text" placeholder="Recherche" class="pl-1 pl-md-3 form-control border-0" aria-describedby="search">
+                                        <div class="input-group-append">
+                                            <button class="btn px-1 px-md-2" type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
                             </li>
                         </ul>
                     </div>

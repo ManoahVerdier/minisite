@@ -2,7 +2,7 @@
     <div class="col-12 pb-3">
         <h3 class="h5">Objectifs {{$formation->nom}}</h3>
     </div>
-    <div class="col-12 content">
+    <div class="col-12 content muli">
         {!!$formation->objectif!!}
     </div>
 </div>

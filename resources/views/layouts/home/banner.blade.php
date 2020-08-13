@@ -6,7 +6,7 @@
                 <div class='d-inline-block w-100 h-40 h-md-50'></div>
                 <h2 class='text-white h1 font-weight-bolder muli-bold mb-0'>Audit / Conseil</h2>
                 <h5 class='blue h4'>certifications ISO</h5>
-                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content">experts qualité</span></div>
+                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content muli">experts qualité</span></div>
             </div>
         </div>
         <div class="col-12 col-md-6 px-0" id="banner-right">
@@ -15,7 +15,7 @@
                 <div class='d-inline-block w-100 h-40 h-md-50'></div>
                 <h2 class='text-white h1 font-weight-bolder muli-bold mb-0'>Formations</h2>
                 <h5 class='blue h4'>normes ISO</h5>
-                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content"> experts consultants</span></div>
+                <div class='position-absolute banner-bullet text-white'><span class='bullet'>--</span><span class="bullet-content muli"> experts consultants</span></div>
             </div>
         </div>
     </div>

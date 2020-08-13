@@ -1,4 +1,4 @@
-<div class="wrap mt-3" id="session">
+<div class="wrap mt-3 muli" id="session">
     <div class="row content">
         <div class="col-12 text-left py-2">
             <span class='blue font-weight-bold'> Formation en entreprise</span>
