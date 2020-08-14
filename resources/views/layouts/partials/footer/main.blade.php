@@ -9,7 +9,7 @@
             <div class="col-12 col-md-6 mt-4 mt-md-0 bg-blue text-white pt-5 pl-5">
                 <p class="title mb-2 text-left pretty">Suivez-nous</p>
                 <a href="{{route('contact')}}" class="w-100 d-inline-block blue h5 font-weight-bold text-left mt-4 mb-5">
-                    <img src="{{asset('img/footer/LinkedIn.jpg')}}"/>
+                    <img src="{{asset('img/footer/LinkedIn.webp')}}"/>
                 </a>
             </div>
         </div>
