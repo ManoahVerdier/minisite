@@ -33,7 +33,7 @@ id="sscateg-page"
     @foreach($sous_categorie->formations()->get() as $formation)
         <div class="row mx-2">
             @if($formation->slug ?? false)
-                <div class="col-10"><a href="{{route('formation_slug', ['slug' => $formation->slug])}}">{{$formation->nom}}</a></div>
+                <div class="col-10"><a href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a></div>
             @else 
                 <div class="col-10"><a href="{{route('formation', ['id' => $formation->id])}}">{{$formation->nom}}</a></div>
             @endif
