@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', {{env('APP_NAME')}})
+@section('title', env('APP_NAME'))
 
 @section('body-attr')
 id="home-page"

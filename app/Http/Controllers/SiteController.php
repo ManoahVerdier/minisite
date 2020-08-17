@@ -382,7 +382,7 @@ class SiteController extends Controller
                 $message->from('contact@cyn-communication.fr');
                 $message
                     ->to('vmogenet@cyn-communication.fr', 'Admin')
-                    ->subject('Contact Cyn-formation');
+                    ->subject('Contact '.env('APP_NAME'));
             }
         );
         return view('contact_recrutement')

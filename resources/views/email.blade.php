@@ -1,4 +1,4 @@
-Vous avez recu un email depuis cyn-formation.fr @if($file ?? false)> recrutement @else contact @endif
+Vous avez recu un email depuis {{env('APP_NAME')}} @if($file ?? false)> recrutement @else contact @endif
 <p>
     Nom: {{ $nom }}
 </p>
