@@ -32,7 +32,7 @@ body{
 #menu{
     right:0px;
     top:0px;
-    z-index:3;
+    z-index:30;
     transition: width 2s, max-width 2s, left 2s;
 
     &.hidden{
