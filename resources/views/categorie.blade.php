@@ -35,7 +35,7 @@ id="form-page"
                 @if($formation->slug ?? false)
                     <div class="col-10"><a href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a></div>
                 @else 
-                    <div class="col-10"><a href="{{route('formation', ['id' => $formation->id])}}">{{$formation->nom}}</a></div>
+                    <div class="col-10"><a href="{{route('formation', ['formation' => $formation->id])}}">{{$formation->nom}}</a></div>
                 @endif
                 <div class="col-2 text-center purple font-weight-bold">{{$formation->duree}}</div>
             </div>
