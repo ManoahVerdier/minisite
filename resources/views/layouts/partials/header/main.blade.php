@@ -98,6 +98,15 @@
                                     <div class="container px-0">
                                         <div class="row w-100 mx-0">
                                                 <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('aPropos')}}">A propos de nous</a>
+                                                </div>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('clients')}}">Nos clients</a>
+                                                </div>
+                                                <div class="col-12 text-left pl-0">
+                                                    <a class="dropdown-item pl-3" href="{{route('partenaires')}}">Nos partenaires</a>
+                                                </div>
+                                                <div class="col-12 text-left pl-0">
                                                     <a class="dropdown-item pl-3" href="{{route('demarche_qualite')}}">Démarche qualité</a>
                                                 </div>
                                                 <div class="col-12 text-left pl-0">

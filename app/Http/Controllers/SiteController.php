@@ -296,6 +296,39 @@ class SiteController extends Controller
     }
 
     /**
+     * Page à propos de nous
+     *
+     * @return void
+     */
+    public function aPropos()
+    {
+        $page=Page::where('slug', 'a-propos-nous')->firstOrFail();
+        return view('page', compact('page'));
+    }
+
+    /**
+     * Page nos clients
+     *
+     * @return void
+     */
+    public function clients()
+    {
+        $page=Page::where('slug', 'nos-clients')->firstOrFail();
+        return view('page', compact('page'));
+    }
+
+    /**
+     * Page nos partenaires
+     *
+     * @return void
+     */
+    public function partenaires()
+    {
+        $page=Page::where('slug', 'nos-partenaires')->firstOrFail();
+        return view('page', compact('page'));
+    }
+
+    /**
      * Page index des catégories de faq
      *
      * @return void

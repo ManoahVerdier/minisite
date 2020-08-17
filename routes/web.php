@@ -77,6 +77,12 @@ Route::get('/cgv', 'SiteController@cgv')
     ->name('cgv');
 Route::get('/demarche-qualite', 'SiteController@demarcheQualite')
     ->name('demarche_qualite');
+Route::get('/a-propos-nous', 'SiteController@aPropos')
+    ->name('aPropos');
+Route::get('/nos-clients', 'SiteController@clients')
+    ->name('clients');
+Route::get('/nos-partenaires', 'SiteController@partenaires')
+    ->name('partenaires');
 
 Route::get('/faqs', 'SiteController@faqs')->name('faqs');
 Route::get('/faq/{slug}', 'SiteController@faq')->name('faq_slug');
