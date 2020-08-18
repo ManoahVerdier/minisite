@@ -329,6 +329,17 @@ class SiteController extends Controller
     }
 
     /**
+     * Page Audit interne qualite externe
+     *
+     * @return void
+     */
+    public function auditInterne()
+    {
+        $page=Page::where('slug', 'audit-interne-qualite-externalise')->firstOrFail();
+        return view('page', compact('page'));
+    }
+
+    /**
      * Page index des catégories de faq
      *
      * @return void

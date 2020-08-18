@@ -83,6 +83,8 @@ Route::get('/nos-clients', 'SiteController@clients')
     ->name('clients');
 Route::get('/nos-partenaires', 'SiteController@partenaires')
     ->name('partenaires');
+Route::get('audit-interne-qualite-externalise', 'SiteController@auditInterne')
+    ->name('audit-interne-qualite-externe');
 
 Route::get('/faqs', 'SiteController@faqs')->name('faqs');
 Route::get('/faq/{slug}', 'SiteController@faq')->name('faq_slug');
