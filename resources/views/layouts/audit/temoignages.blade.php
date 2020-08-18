@@ -7,9 +7,9 @@
     </div>
   </div>
   <div class="col-12 px-0 pb-4">
-    <img src="{{asset('img/audit/conseil_temoignages.jpg')}}" class="w-100"/>
+    <img src="{{asset('img/audit/temoignages.jpg')}}" class="w-100"/>
   </div>
-  <div class="col-8 offset-2">
+  <div class="col-8 offset-2 dark-gray">
     <p class="muli-bold text-center"><b>Nous travaillons avec des entreprises, petites et grandes</b></p>
     <p class="muli-bold text-center"><b>Nous pouvons aussi vous aider</b></p>
     <p class="muli">
@@ -20,6 +20,8 @@
       aux normes et réglementations mondiales. Nous sommes ainsi en mesure de fournir 
       des informations uniques que vous ne trouverez nulle part ailleurs.
     </p>
+  </div>
+  <div class="col-4 offset-4 dark-gray">
     <img src="{{asset('img/audit/Reference-Client-Audit-Interne.webp')}}" class="w-100"/>
   </div>
 </div>
