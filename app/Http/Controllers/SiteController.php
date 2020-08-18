@@ -335,8 +335,7 @@ class SiteController extends Controller
      */
     public function auditInterne()
     {
-        $page=Page::where('slug', 'audit-interne-qualite-externalise')->firstOrFail();
-        return view('page', compact('page'));
+        return view('audit');
     }
 
     /**
