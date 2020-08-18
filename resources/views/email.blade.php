@@ -13,7 +13,7 @@ Vous avez recu un email depuis {{env('APP_NAME')}} @if($file ?? false)> recrutem
 </p>
 @if($formation ?? false)
     <p>
-        Formation concernée : <a href="{{route('formation_slug',array('slug'=>$formation))}}"> {{ $formation }}</a>
+        Formation concernée : <a href="{{route('formation_slug',array('formation'=>$formation))}}"> {{ $formation }}</a>
     </p>
 @endif
 @if($date_choisie ?? false)
