@@ -9,7 +9,7 @@
         <div class="text">
             <b class="w-100 d-inline-block mb-4 pretty">Formation sur l'audit interne'</b>
             Nos consultants / formateurs peuvent vous former dans votre entreprise, avec un programme sur mesure sur l’audit interne.
-            <a href="{{route('formation_slug',['formation'=>'formation-auditeur-qualite']}}" class="blue w-100 d-inline-block mt-4 pretty">Découvrez les formations proposées.</a>
+            <a href="{{route('formation_slug',['formation'=>'formation-auditeur-qualite'])}}" class="blue w-100 d-inline-block mt-4 pretty">Découvrez les formations proposées.</a>
         </div>
     </div>
 </div>
