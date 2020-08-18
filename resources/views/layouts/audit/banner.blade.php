@@ -3,7 +3,7 @@
         <div class='row h-100  pt-5 pt-md-1 pb-5 pb-md-1'>
             <div class="col-12 align-self-center">
                 <div class='h1 blue w-100 mb-0 muli-bold subtitle'>Audit</div>
-                <div class='h2  w-100  mb-0 muli-bold dark-gray subtitle'><span class="position-relative" style="z-index:1">Interne Qualité Externalisé</span></div>
+                <div class='h2  w-100  mb-0 muli-bold dark-gray subtitle'><span class="position-relative" style="z-index:1">Interne <br>Qualité<br> Externalisé</span></div>
                 <div class='h1 blue w-100 font-weight-bold  mb-0 d-none d-md-block'>-</div>
             </div>
         </div>
