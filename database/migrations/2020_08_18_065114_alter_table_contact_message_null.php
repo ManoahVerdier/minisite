@@ -14,7 +14,7 @@ class AlterTableContactMessageNull extends Migration
     public function up()
     {
         Schema::table('contact', function (Blueprint $table) {
-            $table->string('message')->nullable();
+            $table->string('message')->nullable()->change();
         });
     }
 
