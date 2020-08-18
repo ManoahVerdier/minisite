@@ -205,7 +205,7 @@
                 font-size: 7em;
                 font-style: italic;
                 color: #aaafbf;
-                top:0;
+                top:-15px;
             }
 
             .content::after {
@@ -217,7 +217,7 @@
                 font-style: italic;
                 color: #aaafbf;
                 transform: rotate(180deg);
-                bottom: 0;
+                bottom: -15px;
             }
         }
 
