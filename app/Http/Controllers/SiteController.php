@@ -458,7 +458,6 @@ class SiteController extends Controller
     /**
      * Page recherche
      * 
-     * 
      * @return void
      */
     public function rechercheGet()
