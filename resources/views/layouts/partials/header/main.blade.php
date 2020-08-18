@@ -72,6 +72,9 @@
                                                     <a class="dropdown-item pl-3" href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a>
                                                 </div>
                                             @endforeach
+                                            <div class="col-12 text-left pl-0">
+                                                <a class="dropdown-item pl-3" href="{{route('audit-interne-qualite-externalise')}}">Audit interne qualité externalisé</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

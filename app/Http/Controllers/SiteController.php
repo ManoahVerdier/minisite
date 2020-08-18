@@ -456,6 +456,17 @@ class SiteController extends Controller
     }
 
     /**
+     * Page recherche
+     * 
+     * 
+     * @return void
+     */
+    public function rechercheGet()
+    {
+        return view('recherche');
+    }
+
+    /**
      * Traitement du formulaire de recherche et affichage des résultats
      * 
      * @param Request $request les données postées
