@@ -30,7 +30,7 @@
                 définitive, votre calendrier d’audit interne.
             </div>
             <div class="col-md-6 text-right">
-                <img src="{{asset('img/conseil/'.$conseil->slug.'_certif.jpg')}}"/>
+                <img src="{{asset('img/conseil/certif.jpg')}}"/>
             </div>
         </div>
     </div>
