@@ -33,7 +33,7 @@
                     <span class="font-weight-bold blue float-left">Type</span>à distance ou présentiel
                 </div>
                 <div class="col-12 text-center p-3">
-                    <a href="{{route('contact', ['id' => $conseil->id])}}" class="btn btn-blue">Nous contacter</a>
+                    <a href="{{route('contact')}}" class="btn btn-blue">Nous contacter</a>
                 </div>
             </div>
         </div>
