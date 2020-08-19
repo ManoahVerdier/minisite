@@ -9,6 +9,7 @@
         })(window,document,'script','dataLayer','GTM-WV9DF45');</script>
         <!-- End Google Tag Manager -->
 
+    <link rel="icon" href="{{env('SITE_URL')}}/favicon.ico?v=2" />
         
         {{-- Required meta tags --}}
         <meta charset="utf-8">
