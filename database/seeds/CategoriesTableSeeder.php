@@ -2,11 +2,11 @@
 
 use Illuminate\Database\Seeder;
 use App\Categorie;
-use TCG\Voyager\src\Models\DataRow;
-use TCG\Voyager\src\Models\DataType;
-use TCG\Voyager\src\Models\Menu;
-use TCG\Voyager\src\Models\MenuItem;
-use TCG\Voyager\src\Models\Permission;
+use TCG\Voyager\Models\DataRow;
+use TCG\Voyager\Models\DataType;
+use TCG\Voyager\Models\Menu;
+use TCG\Voyager\Models\MenuItem;
+use TCG\Voyager\Models\Permission;
 
 class CategoriesTableSeeder extends Seeder
 {
