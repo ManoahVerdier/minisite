@@ -14,6 +14,7 @@ class CreateHomepagesTable extends Migration
     public function up()
     {
         Schema::create('homepages', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('slide');
             $table->text('expertise');
             $table->string('img1');
@@ -33,6 +34,7 @@ class CreateHomepagesTable extends Migration
             $table->string('clients_certif_3');
             $table->string('clients_certif_4');
             $table->string('conseil_libelle');
+            $table->timestamps();
         });
     }
 
@@ -43,8 +45,6 @@ class CreateHomepagesTable extends Migration
      */
     public function down()
     {
-        Schema::table('formations', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('homepages');
     }
 }
