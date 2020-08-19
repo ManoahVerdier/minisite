@@ -22,6 +22,7 @@ use App\Page;
 use App\Faq;
 use App\FaqCategory;
 use App\Conseil;
+use App\Homepage;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Support\Facades\Mail;
 use DB;
@@ -44,7 +45,8 @@ class SiteController extends Controller
      */
     public function homepage()
     {
-        return view('home');
+        $hp = Homepage::first();
+        return view('home',compact('hp'));
     }
 
     /**

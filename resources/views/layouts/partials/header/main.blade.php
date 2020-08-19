@@ -62,7 +62,7 @@
                         <ul class="navbar-nav mt-2 mt-lg-0 row w-100 mx-0 muli-bold">
                             <li class="nav-item col-12 text-left dropdown position-relative border-bottom border-blue pt-3 px-0">
                                 <a class="nav-link dark-grey dropdown-toggle h5 pb-3 pl-3" href="#" id="domaines" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Conseil
+                                    Conseil @if($hp->conseil_libelle ?? false) {{$hp->conseil_libelle}} @endif
                                 </a>
                                 <div class="dropdown-menu bg-blue" aria-labelledby="domaines" id="domaines-sub">
                                     <div class="container px-0">

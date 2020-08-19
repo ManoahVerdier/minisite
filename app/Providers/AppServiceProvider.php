@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\View;
 
 use App\Formation;
 use App\Conseil;
+use App\Homepage;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -38,9 +39,11 @@ class AppServiceProvider extends ServiceProvider
             $conseils_header = Conseil::distinct('certification')
                 ->orderBy('certification', 'ASC')
                 ->get();
+            $hp = Homepage::first();
 
             View::share('formations_header', $formations_header);
             View::share('conseils_header', $conseils_header);
+            View::share('hp', $hp);
         }
     }
 }
