@@ -14,8 +14,8 @@ class AlterTableFormationsCategNull extends Migration
     public function up()
     {
         Schema::table('formations', function (Blueprint $table) {
-            $table->string('category_id')->nullable()->save();
-            $table->string('sous_category_id')->nullable()->save();
+            $table->string('categorie_id')->nullable()->save();
+            $table->string('sous_categorie_id')->nullable()->save();
         });
     }
 
