@@ -37,5 +37,6 @@ class DatabaseSeeder extends Seeder
         $this->call(FaqCategoriesTableSeeder::class);
         $this->call(TemoignagesTableSeeder::class);
         $this->call(SousCategoriesTableSeeder::class);
+        $this->call(HomepagesTableSeeder::class);
     }
 }
