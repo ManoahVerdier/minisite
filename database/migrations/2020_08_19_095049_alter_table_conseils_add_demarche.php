@@ -15,6 +15,7 @@ class AlterTableConseilsAddDemarche extends Migration
     {
         Schema::table('conseils', function (Blueprint $table) {
             $table->text('demarche')->nullable();
+            $table->text('description')->nullable();
         });
     }
 
@@ -25,7 +26,7 @@ class AlterTableConseilsAddDemarche extends Migration
      */
     public function down()
     {
-        Schema::table('pages', function (Blueprint $table) {
+        Schema::table('conseils', function (Blueprint $table) {
             //
         });
     }
