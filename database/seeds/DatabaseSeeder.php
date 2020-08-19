@@ -32,5 +32,9 @@ class DatabaseSeeder extends Seeder
         //$this->call(TranslationsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
         
+        $this->call(ConseilsTableSeeder::class);
+        $this->call(FaqsTableSeeder::class);
+        $this->call(FaqCategoriesTableSeeder::class);
+        $this->call(TemoignagesTableSeeder::class);
     }
 }
