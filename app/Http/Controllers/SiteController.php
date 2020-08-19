@@ -46,7 +46,6 @@ class SiteController extends Controller
     public function homepage()
     {
         $hp = Homepage::first();
-        dd($hp);
         return view('home', compact('hp'));
     }
 
