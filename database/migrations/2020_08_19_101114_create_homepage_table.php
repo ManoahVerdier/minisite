@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AlterTableFormationsAddColumns extends Migration
+class CreateHomepagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AlterTableFormationsAddColumns extends Migration
      */
     public function up()
     {
-        Schema::create('homepage', function (Blueprint $table) {
+        Schema::create('homepages', function (Blueprint $table) {
             $table->string('slide');
             $table->text('expertise');
             $table->string('img1');
