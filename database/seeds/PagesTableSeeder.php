@@ -1084,6 +1084,7 @@ class PagesTableSeeder extends Seeder
                 'updated_at' => '2020-08-18 08:30:56',
             ),
         ));
+
         
         
     }
