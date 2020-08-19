@@ -21,7 +21,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Audit',
                 'slug' => 'audit',
                 'created_at' => '2020-08-13 08:25:27',
@@ -31,7 +30,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Qualité',
                 'slug' => 'qualité',
                 'created_at' => '2020-08-13 08:25:39',
@@ -41,7 +39,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Mase',
                 'slug' => 'mase',
                 'created_at' => '2020-08-13 08:25:52',
@@ -51,7 +48,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 4,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Santé Sécurité HSE',
                 'slug' => 'sante-securite-hse',
                 'created_at' => '2020-08-13 08:26:22',
@@ -61,7 +57,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 5,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Environnement',
                 'slug' => 'environnement',
                 'created_at' => '2020-08-13 08:26:38',
@@ -71,7 +66,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 6,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Aéronautique',
                 'slug' => 'Aeronautique',
                 'created_at' => '2020-08-13 08:26:54',
@@ -81,7 +75,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 7,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Laboratoire',
                 'slug' => 'laboratoire',
                 'created_at' => '2020-08-13 08:27:11',
@@ -91,7 +84,6 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 8,
                 'parent_id' => NULL,
-                'order' => 1,
                 'nom' => 'Métrologie',
                 'slug' => 'metrologie',
                 'created_at' => '2020-08-13 08:27:28',
