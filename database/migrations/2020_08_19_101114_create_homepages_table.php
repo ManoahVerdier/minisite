@@ -18,22 +18,22 @@ class CreateHomepagesTable extends Migration
             $table->string('slide');
             $table->text('expertise');
             $table->string('img1');
-            $table->text('img1_link');
+            $table->text('img1_link')->nullable();
             $table->string('img2');
-            $table->text('img2_link');
+            $table->text('img2_link')->nullable();
             $table->string('img3');
-            $table->text('img3_link');
+            $table->text('img3_link')->nullable();
             $table->string('img4');
-            $table->text('img4_link');
+            $table->text('img4_link')->nullable();
             $table->string('img5');
-            $table->text('img5_link');
+            $table->text('img5_link')->nullable();
             $table->boolean('has_secteurs');
             $table->text('clients');
             $table->string('clients_certif_1');
             $table->string('clients_certif_2');
             $table->string('clients_certif_3');
             $table->string('clients_certif_4');
-            $table->string('conseil_libelle');
+            $table->string('conseil_libelle')->nullable();
             $table->timestamps();
         });
     }
