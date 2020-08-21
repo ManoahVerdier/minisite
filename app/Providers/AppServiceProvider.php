@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        if (Schema::hasTable('formations')) {
+        if (Schema::hasTable('homepages')) {
             $formations_header = Formation::distinct('nom')
                 ->whereNotNull('categorie_id')
                 ->where("nom", "!=", "default")
