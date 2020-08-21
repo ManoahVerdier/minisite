@@ -21,6 +21,7 @@ class CreateConseilsTable extends Migration
                 $table->string('certification', 255)->nullable();
                 $table->timestamps();
                 $table->text('lien_formation')->nullable();
+                $table->text('description')->nullable();
             }
         );
     }
