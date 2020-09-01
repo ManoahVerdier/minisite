@@ -4,6 +4,8 @@
             <div class="col-12 px-4 py-3">
                 <a href="{{url('/')}}" class="blue">Accueil</a>
                 <span>&gt;</span>
+                <a href="{{route('faqs')}}" class="blue">Faqs</a>
+                <span>&gt;</span>
                 @if($faq ?? false)
                     <a href="{{route('categorie', ['slug' => $faq->faq_category()->firstOrFail()->slug])}}" class="blue">{{$faq->faq_category()->first()->titre}}</a>
                     <span>&gt;</span>
