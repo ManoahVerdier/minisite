@@ -12,7 +12,7 @@
                     <span>{!!$taglessTitle!!}</span>
                 @else 
                     @if($faq_categ ?? false)
-                        <span>{{$faq_categ->nom}}</span>
+                        <span>{{$faq_categ->titre}}</span>
                     @endif
                 @endif
             </div>
