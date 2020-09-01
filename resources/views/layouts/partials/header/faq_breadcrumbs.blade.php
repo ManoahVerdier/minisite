@@ -7,7 +7,7 @@
                 <a href="{{route('faqs')}}" class="blue">Faqs</a>
                 <span>&gt;</span>
                 @if($faq ?? false)
-                    <a href="{{route('categorie', ['slug' => $faq->faq_category()->firstOrFail()->slug])}}" class="blue">{{$faq->faq_category()->first()->titre}}</a>
+                    <a href="{{route('faq_categ', ['slug' => $faq->faq_category()->firstOrFail()->slug])}}" class="blue">{{$faq->faq_category()->first()->titre}}</a>
                     <span>&gt;</span>
                     <span>{!!$taglessTitle!!}</span>
                 @else 
