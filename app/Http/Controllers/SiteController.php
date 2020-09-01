@@ -378,6 +378,19 @@ class SiteController extends Controller
     }
 
     /**
+     * Page spécifique
+     *
+     * @param string $slug le slug de la question
+     * 
+     * @return void
+     */
+    public function page($slug)
+    {
+        $page = Page::where('slug', $slug)->firstOrFail();
+        return view('page', compact('page'));
+    }
+
+    /**
      * Page contact pour recrutement
      *
      * @return void

@@ -39,6 +39,8 @@ Route::get('/c/{slug}', 'SiteController@categorie')
     ->name('categorie');
 Route::get('/sc/{slug}', 'SiteController@sousCategorie')
     ->name('sous_categorie');
+Route::get('/p/{slug}', 'SiteController@page')
+    ->name('page');
 
 Route::get('/contact/{id?}/{session?}', 'SiteController@contact')
     ->name('contact');
