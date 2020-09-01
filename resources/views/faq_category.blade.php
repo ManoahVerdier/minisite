@@ -10,6 +10,7 @@ id="faqs-page"
 {{-- Header --}}
 @section('header')
     @include('layouts.partials.header.main')
+    @include('layouts.partials.header.mobile')
 @endsection
 
 {{-- Breadcrumbs --}}

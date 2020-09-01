@@ -11,6 +11,7 @@ id="sscateg-page"
 @section('header')
     @include('layouts.partials.header.main')
     @include('layouts.partials.header.breadcrumbs')
+    @include('layouts.partials.header.mobile')
 @endsection
 
 {{-- Breadcrumbs --}}
