@@ -23,7 +23,7 @@ id="faqs-page"
 <div class="container">
     <h1 class="w-100 text-center blue mb-4 mt-3">FAQ {{$faq_categ->titre}}</h1>
     @foreach($faq_categ->faqs()->get() as $faq)
-        <div class="row mx-2">
+        <div class="row mx-2 mb-2">
             <div class="col-12"><a class="h4 mb-2" href="{{route('faq_slug', ['slug' => $faq->slug])}}">{!!$faq->question!!}</a></div>
         </div>
     @endforeach
