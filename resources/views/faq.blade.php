@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $faq->question)
+@section('title', $taglessTitle)
 @section('description', $faq->description)
 
 @section('body-attr')
