@@ -5,9 +5,9 @@
                 <a href="{{url('/')}}" class="blue">Accueil</a>
                 <span>&gt;</span>
                 @if($faq ?? false)
-                    <a href="{{route('categorie', ['slug' => $faq->faq_category()->firstOrFail()->slug])}}" class="blue">{!!$faq->faq_category()->first()->titre!!}</a>
+                    <a href="{{route('categorie', ['slug' => $faq->faq_category()->firstOrFail()->slug])}}" class="blue">{{$faq->faq_category()->first()->titre}}</a>
                     <span>&gt;</span>
-                    <span>{{$faq->question}}</span>
+                    <span>{!!$faq->question!!}</span>
                 @else 
                     @if($faq_categorie ?? false)
                         <span>{{$faq_categorie->nom}}</span>
