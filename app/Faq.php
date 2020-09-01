@@ -9,6 +9,6 @@ class Faq extends Model
 {
     public function faq_category()
     {
-        return $this->belongsTo(\App\FaqCategory::class);
+        return $this->belongsTo(\App\FaqCategory::class,'categ_id');
     }
 }
