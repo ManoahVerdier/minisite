@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" class="h-100 w-100">
+<html lang="fr" class="h-100 w-100 certif">
     <head>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
