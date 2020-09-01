@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Faq extends Model
 {
-    public function faq_categorie()
+    public function faq_category()
     {
-        return $this->belongsTo(\App\FaqCategorie::class);
+        return $this->belongsTo(\App\FaqCategory::class);
     }
 }
