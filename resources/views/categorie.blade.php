@@ -28,17 +28,19 @@ id="form-page"
         </div>
 
         <div class="row border-bottom mx-2 mb-2">
-            <div class="col-10 text-left font-weight-bold">Intitulé</div>
-            <div class="col-2 text-center font-weight-bold">Durée</div>
+            <div class="col-md-10 col-8 text-left font-weight-bold">Intitulé</div>
+            <div class="col-md-2 col-4 text-center font-weight-bold">Durée</div>
         </div>
         @foreach($ss_categ->formations()->orderBy('nom')->get() as $formation)
             <div class="row mx-2 my-2">
-                @if($formation->slug ?? false)
-                    <div class="col-10"><a href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a></div>
-                @else 
-                    <div class="col-10"><a href="{{route('formation', ['formation' => $formation->id])}}">{{$formation->nom}}</a></div>
-                @endif
-                <div class="col-2 text-center purple font-weight-bold">{{$formation->duree}}</div>
+                <div class="col-md-10 col-8">
+                    @if($formation->slug ?? false)
+                        <a href="{{route('formation_slug', ['formation' => $formation->slug])}}">{{$formation->nom}}</a>
+                    @else 
+                        <a href="{{route('formation', ['formation' => $formation->id])}}">{{$formation->nom}}</a>
+                    @endif
+                </div>
+                <div class="col-md-2 col-4 text-center purple font-weight-bold">{{$formation->duree}}</div>
             </div>
         @endforeach
     @endforeach
