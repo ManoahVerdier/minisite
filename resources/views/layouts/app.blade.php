@@ -9,7 +9,8 @@
         })(window,document,'script','dataLayer','GTM-WV9DF45');</script>
         <!-- End Google Tag Manager -->
 
-    <link rel="icon" href="{{env('APP_URL')}}favicon.ico" />
+        {{--Favicon--}}
+        <link rel="icon" href="{{env('APP_URL')}}favicon.ico" />
         
         {{-- Required meta tags --}}
         <meta charset="utf-8">
@@ -32,13 +33,14 @@
         @yield('captcha')
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9998670-20"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9998670-35"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-9998670-20');
+            gtag('config', 'UA-9998670-35');
         </script>
+
 
         <script>
             function initFreshChat() {
