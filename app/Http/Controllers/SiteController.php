@@ -375,7 +375,7 @@ class SiteController extends Controller
     {
         $faq = Faq::where('slug', $slug)->firstOrFail();
         //dd($faq->question,strip_tags($faq->question),htmlspecialchars_decode(strip_tags($faq->question)));
-        $taglessTitle = htmlspecialchars_decode(strip_tags($faq->question), ENT_QUOTES);
+        $taglessTitle = html_entity_decode(strip_tags($faq->question), ENT_QUOTES, 'UTF-8');
         return view('faq', compact('faq', 'taglessTitle'));
     }
 
