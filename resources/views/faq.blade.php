@@ -11,6 +11,7 @@ id="faq-page"
 @section('header')
     @include('layouts.partials.header.main')
     @include('layouts.partials.header.mobile')
+    @include('layouts.partials.header.faq_breadcrumbs')
 @endsection
 
 

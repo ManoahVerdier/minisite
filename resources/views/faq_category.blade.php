@@ -11,6 +11,7 @@ id="faqs-page"
 @section('header')
     @include('layouts.partials.header.main')
     @include('layouts.partials.header.mobile')
+    @include('layouts.partials.header.faq_breadcrumbs')
 @endsection
 
 {{-- Breadcrumbs --}}
@@ -23,7 +24,7 @@ id="faqs-page"
     <h1 class="w-100 text-center blue mb-4 mt-3">FAQ {{$faq_categ->titre}}</h1>
     @foreach($faq_categ->faqs()->get() as $faq)
         <div class="row mx-2">
-            <div class="col-12"><a href="{{route('faq_slug', ['slug' => $faq->slug])}}">{{$faq->question}}</a></div>
+            <div class="col-12"><a href="{{route('faq_slug', ['slug' => $faq->slug])}}">{!!$faq->question!!}</a></div>
         </div>
     @endforeach
 </div>
