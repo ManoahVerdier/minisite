@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AlterTableConseilsAddDemarche extends Migration
+class AlterTablePagesAddMeta extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AlterTableConseilsAddDemarche extends Migration
      */
     public function up()
     {
-        Schema::table('conseils', function (Blueprint $table) {
-            $table->text('description')->nullable();
+        Schema::table('pages', function (Blueprint $table) {
+            $table->text('description');
+            $table->text('title');
         });
     }
 
@@ -25,8 +26,9 @@ class AlterTableConseilsAddDemarche extends Migration
      */
     public function down()
     {
-        Schema::table('conseils', function (Blueprint $table) {
+        Schema::table('pages', function (Blueprint $table) {
             $table->dropColumn('description');
+            $table->dropColumn('title');
         });
     }
 }
