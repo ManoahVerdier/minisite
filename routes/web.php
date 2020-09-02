@@ -41,6 +41,8 @@ Route::get('/sc/{slug}', 'SiteController@sousCategorie')
     ->name('sous_categorie');
 Route::get('/p/{slug}', 'SiteController@page')
     ->name('page');
+Route::get('/documentation', 'SiteController@pages')
+    ->name('pages');
 
 Route::get('/contact/{id?}/{session?}', 'SiteController@contact')
     ->name('contact');

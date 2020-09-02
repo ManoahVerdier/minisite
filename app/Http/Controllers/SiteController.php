@@ -352,6 +352,20 @@ class SiteController extends Controller
     }
 
     /**
+     * Page index des pages
+     *
+     * @return void
+     */
+    public function pages()
+    {
+        $pages = Page::whereNotIn(
+            "slug", 
+            ['cgv', 'nos-partenaires', 'a-propos-nous', 'demarche-quelite', 'nos-clients' ]
+        )->get();
+        return view('pages', compact('pages'));
+    }
+
+    /**
      * Page index des faqs d'une catégorie
      *
      * @param string $categSlug le slug de la catégorie
