@@ -20,7 +20,7 @@ id="docs-page"
 @section('content')
 
 <div class="container">
-    <h1 class="w-100 text-center blue mb-4 mt-3">FAQ</h1>
+    <h1 class="w-100 text-center blue mb-4 mt-3">Documentation</h1>
 
     @foreach($pages as $page)
         <div class="row mx-2">

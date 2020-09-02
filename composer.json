@@ -22,6 +22,7 @@
         "twbs/bootstrap": "^4.5"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.4",
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
         "kitloong/laravel-migrations-generator": "^4.4",

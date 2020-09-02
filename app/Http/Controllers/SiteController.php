@@ -360,8 +360,17 @@ class SiteController extends Controller
     {
         $pages = Page::whereNotIn(
             "slug", 
-            ['cgv', 'nos-partenaires', 'a-propos-nous', 'demarche-quelite', 'nos-clients' ]
+            [
+                'cgv', 
+                'nos-partenaires', 
+                'a-propos-nous', 
+                'demarche-qualite', 
+                'nos-clients',
+                'mentions-legales',
+                'audit-interne-qualite-externalise'
+            ]
         )->get();
+
         return view('pages', compact('pages'));
     }
 
