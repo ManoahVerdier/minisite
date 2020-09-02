@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', env('APP_NAME'))
+@section('title', {{$page->title}})
+@section('description', $page->description)
 
 @section('body-attr')
 id="home-page"
