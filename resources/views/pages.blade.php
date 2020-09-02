@@ -24,7 +24,7 @@ id="docs-page"
 
     @foreach($pages as $page)
         <div class="row mx-2">
-            <div class="col-12"><a class="h4 mb-2" href="{{route('page', ['slug' => $page->slug])}}">{{$page->titre}}</a></div>
+            <div class="col-12"><a class="h4 mb-2" href="{{route('page', ['slug' => $page->slug])}}">{{$page->title}}</a></div>
         </div>
     @endforeach
 </div>

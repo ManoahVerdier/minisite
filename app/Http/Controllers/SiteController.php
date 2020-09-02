@@ -370,7 +370,7 @@ class SiteController extends Controller
                 'audit-interne-qualite-externalise'
             ]
         )->get();
-
+        
         return view('pages', compact('pages'));
     }
 
