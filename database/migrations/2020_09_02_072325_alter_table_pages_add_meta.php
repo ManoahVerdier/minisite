@@ -14,8 +14,8 @@ class AlterTablePagesAddMeta extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->text('description');
-            $table->text('title');
+            $table->text('description')->nullable();
+            $table->text('title')->nullable();
         });
     }
 
