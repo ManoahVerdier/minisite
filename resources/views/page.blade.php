@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', {{$page->title}})
+@section('title', $page->title)
 @section('description', $page->description)
 
 @section('body-attr')
