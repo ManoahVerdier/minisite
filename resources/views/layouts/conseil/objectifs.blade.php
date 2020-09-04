@@ -11,6 +11,6 @@
         </div>
     </div>
     <div class="col-md-4 offset-md-2 px-0 px-md-1">
-        <img class="w-100" src="{{asset('img/conseil/'.$conseil->slug.'_objectif.jpg')}}"/>
+        <img class="w-100" src="{{asset('img/conseil/'.env('IMG_SLUG').'_conseil-objectif.jpg')}}"/>
     </div>
 </div>
