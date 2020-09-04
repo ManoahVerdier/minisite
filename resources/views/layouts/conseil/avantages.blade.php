@@ -31,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col-md-1 number py-4 text-center">02</div>
-            < class="col-md-10 content border-top py-4 px-0">
+            <div class="col-md-10 content border-top py-4 px-0">
                 @if($conseil->avantage2!="")
                     {{$conseil->avantage2}}
                 @else
@@ -42,7 +42,7 @@
         </div>
         <div class="row ">
             <div class="col-md-1 number py-4 text-center">03</div>
-            < class="col-md-10 content border-top py-4 px-0">
+            <div class="col-md-10 content border-top py-4 px-0">
                 @if($conseil->avantage3!="")
                     {{$conseil->avantage3}}
                 @else
@@ -53,7 +53,7 @@
         </div>
         <div class="row ">
             <div class="col-md-1 number py-4 text-center">04</div>
-            < class="col-md-10 content border-top py-4 px-0">
+            <div class="col-md-10 content border-top py-4 px-0">
                 @if($conseil->avantage4!="")
                     {{$conseil->avantage4}}
                 @else
@@ -64,7 +64,7 @@
         </div>
         <div class="row ">
             <div class="col-md-1 number py-4 text-center">05</div>
-            < class="col-md-10 content border-top border-bottom py-4 px-0">
+            <div class="col-md-10 content border-top border-bottom py-4 px-0">
                 @if($conseil->avantage5!="")
                     {{$conseil->avantage5}}
                 @else
