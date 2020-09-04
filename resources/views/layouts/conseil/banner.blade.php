@@ -11,12 +11,30 @@
     <div class="col-12 col-md-7 bg-blue ">
         <div class='row h-100'>
             <div class="col-10 col-md-6 offset-1 offset-md-3 align-self-center h5 py-5 py-md-1">
-                <span class="w-100 d-inline-block pretty mb-3">Nos consultants </span>
-                <span class="text-white muli">
-                    <b>vous accompagnent à la mise en place<br>
-                    de la certification {{$conseil->certification}} <span class="dark-grey">au sein</span></b>
+                <span class="w-100 d-inline-block pretty mb-3">
+                    @if($conseil->banner_italic!="")
+                        {{$conseil->banner_italic}}
+                    @else
+                        Nos consultants 
+                    @endif
                 </span>
-                <span class="w-100 d-inline-block muli">de votre entreprise.</span>
+                <span class="text-white muli">
+                    <b>
+                        @if($conseil->banner_regular_white!="")
+                            {{$conseil->banner_regular_white}}
+                        @else
+                            vous accompagnent à la mise en place<br>
+                            de la certification {{$conseil->certification}} 
+                        @endif
+                        <span class="dark-grey">
+                            @if($conseil->banner_regular_black!="")
+                                {{$conseil->banner_regular_black}}
+                            @else
+                                au sein de votre entreprise.
+                            @endif
+                        </span>
+                    </b>
+                </span>
             </div>
         </div>
     </div>

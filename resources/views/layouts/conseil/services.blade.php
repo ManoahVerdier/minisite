@@ -7,18 +7,26 @@
     </div>  
     <div class='col-10 col-md-4 offset-md-2 offset-1 mb-5 pb-5'>
         <div class="text px-2 gray muli">
-            Nous sommes convaincus de la simplicité pour obtenir la certification {{$conseil->certification}} et nos consultants {{$conseil->certification}} vous
-            guideront pas à pas tout au long du processus.
-            <br><br>
-            Envoyez-nous votre formulaire de demande et un consultant vous répondra dans les 24 heures.
+            @if($conseil->service1!="")
+                {{$conseil->service1}}
+            @else
+                Nous sommes convaincus de la simplicité pour obtenir la certification {{$conseil->certification}} et nos consultants {{$conseil->certification}} vous
+                guideront pas à pas tout au long du processus.
+                <br><br>
+                Envoyez-nous votre formulaire de demande et un consultant vous répondra dans les 24 heures.
+            @endif
         </div>
     </div>
     <div class='col-10  col-md-4 mb-5 pb-5 d-none d-md-flex'>
         <div class="text px-2 gray muli">
-            Nous organiserons une consultation gratuite pour nous assurer de bien comprendre votre demande et 
-            nous vous fournirons un prix fixe et sans frais cachés pour votre accompagnement.
-            <br><br>
-            Une fois notre offre acceptée, les travaux de mise en œuvre de votre système de management de la qualité {{$conseil->certification}} commenceront.
+            @if($conseil->service2!="")
+                {{$conseil->service2}}
+            @else
+                Nous organiserons une consultation gratuite pour nous assurer de bien comprendre votre demande et 
+                nous vous fournirons un prix fixe et sans frais cachés pour votre accompagnement.
+                <br><br>
+                Une fois notre offre acceptée, les travaux de mise en œuvre de votre système de management de la qualité {{$conseil->certification}} commenceront.
+            @endif
         </div>
     </div>
 

@@ -12,8 +12,13 @@
         <div class="w-100 text-left text-white muli-bold h1 mt-5 pt-5 mb-0">Conseil</div>
         <div class="w-100 text-left blue muli text mb-5">{{$conseil->certification}}</div>
         <ul class="text-white text muli mt-5 w-50 mb-5 pb-5">
-            <li>Nous proposons un programme d’accompagnement
-            {{$conseil->certification}} vers la <strong>certification {{$conseil->certification}}</strong>
+            <li>
+                @if($conseil->metier_black!="")
+                    {{$conseil->metier_black}}
+                @else
+                    Nous proposons un programme d’accompagnement
+                    {{$conseil->certification}} vers la <strong>certification {{$conseil->certification}}</strong>
+                @endif
             </li>
         </ul>
     </div>
@@ -23,13 +28,25 @@
         <div class="w-100 text-left dark-grey muli text ">certification ISO</div>
         <ul class="text-white text muli mt-5 w-60 mb-5 pb-5">
             <li>
-                Une expertise technique en <b>conseil {{$conseil->certification}}</b>
+                @if($conseil->metier_blue1!="")
+                    {{$conseil->metier_blue1}}
+                @else
+                    Une expertise technique en <b>conseil {{$conseil->certification}}</b>
+                @endif
             </li>
             <li>
-                Un accompagnement opérationnel 
+                @if($conseil->metier_blue2!="")
+                    {{$conseil->metier_blue2}}
+                @else
+                    Un accompagnement opérationnel 
+                @endif
             </li>
             <li>
-                Les compétences nécessaires pour vous approprier la démarche
+                @if($conseil->metier_blue3!="")
+                    {{$conseil->metier_blue3}}
+                @else
+                    Les compétences nécessaires pour vous approprier la démarche
+                @endif
             </li>
         </ul>
     </div>
