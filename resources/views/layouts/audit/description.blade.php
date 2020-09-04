@@ -18,11 +18,11 @@
                 peuvent être menés par des salariés internes à l’entreprise.
                 Toutefois, ils peuvent également être «sous-traités» – 
                 à des consultants extérieurs. 
-                </br>
+                <br>
                 Toutes les normes ISO nécessitent des audits internes qualité, 
                 notamment:ISO 9001, ISO 14001, ISO 45001, ISO 9100, 
                 ISO 17025, ISO 17020, ISO 22000
-                </br>
+                <br>
                 Nos consultants peuvent aider votre entreprise à répondre à 
                 cette exigence d’amélioration continue en effectuant vos audits 
                 internes aux emplacements et aux dates requis par votre système 
