@@ -80,6 +80,7 @@
         </script>
         <!-- End global Site Tag (gtag.js) - Google Analytics -->
 
+        @if(env('FRESH_CHAT') ?? FALSE)
         <script>
             function initFreshChat() {
                 if(window.fcWidget) {
@@ -98,5 +99,6 @@
             }
             window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
         </script>
+        @endif
     </body>
 </html>
