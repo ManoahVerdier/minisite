@@ -337,7 +337,8 @@ class SiteController extends Controller
      */
     public function auditInterne()
     {
-        return view('audit');
+        $conseil=Conseil::where('slug', 'audit-interne-qualite-externalise')->first();
+        return view('audit', compact('conseil'));
     }
 
     /**

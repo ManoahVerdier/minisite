@@ -12,22 +12,26 @@
     <div class="col-md-7 col-12 offset-md-2">
         <div class="row">
             <div class="col-md-6 pr-5 gray text">
-                les entreprises certifiées conformes à une norme ISO, 
-                ou en cours de certification, doivent effectuer des audits 
-                internes à intervalles réguliers. Les audits internes 
-                peuvent être menés par des salariés internes à l’entreprise.
-                Toutefois, ils peuvent également être «sous-traités» – 
-                à des consultants extérieurs. 
-                <br>
-                Toutes les normes ISO nécessitent des audits internes qualité, 
-                notamment:ISO 9001, ISO 14001, ISO 45001, ISO 9100, 
-                ISO 17025, ISO 17020, ISO 22000
-                <br>
-                Nos consultants peuvent aider votre entreprise à répondre à 
-                cette exigence d’amélioration continue en effectuant vos audits 
-                internes aux emplacements et aux dates requis par votre système 
-                de gestion, votre procédure d’audit interne qualité ou, en 
-                définitive, votre calendrier d’audit interne.
+                @if($conseil->description)
+                    {!!$conseil->description!!}
+                @else 
+                    les entreprises certifiées conformes à une norme ISO, 
+                    ou en cours de certification, doivent effectuer des audits 
+                    internes à intervalles réguliers. Les audits internes 
+                    peuvent être menés par des salariés internes à l’entreprise.
+                    Toutefois, ils peuvent également être «sous-traités» – 
+                    à des consultants extérieurs. 
+                    <br>
+                    Toutes les normes ISO nécessitent des audits internes qualité, 
+                    notamment:ISO 9001, ISO 14001, ISO 45001, ISO 9100, 
+                    ISO 17025, ISO 17020, ISO 22000
+                    <br>
+                    Nos consultants peuvent aider votre entreprise à répondre à 
+                    cette exigence d’amélioration continue en effectuant vos audits 
+                    internes aux emplacements et aux dates requis par votre système 
+                    de gestion, votre procédure d’audit interne qualité ou, en 
+                    définitive, votre calendrier d’audit interne.
+                @endif
             </div>
             <div class="col-md-6 text-right">
                 <img src="{{asset('img/audit/certif.jpg')}}"/>
