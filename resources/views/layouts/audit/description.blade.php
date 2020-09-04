@@ -12,7 +12,7 @@
     <div class="col-md-7 col-12 offset-md-2">
         <div class="row">
             <div class="col-md-6 pr-5 gray text">
-                @if($conseil->description)
+                @if($conseil->description!="")
                     {!!$conseil->description!!}
                 @else 
                     les entreprises certifiées conformes à une norme ISO, 
