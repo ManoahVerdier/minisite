@@ -6,3 +6,4 @@ cd public
 rm storage
 ln -s ../storage/app/public/ storage
 cd ..
+php artisan rename:img
