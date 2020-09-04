@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="col-12 px-0 pb-4">
-    <img src="{{asset('img/conseil/'.env('IMG_SLUG').'_conseil_temoignages.jpg')}}" class="w-100"/>
+    <img src="{{asset('img/conseil/'.env('IMG_SLUG').'_conseil-temoignages.jpg')}}" class="w-100"/>
   </div>
   <div class="col-6 offset-3">
     <div class="owl-carousel owl-theme text-center" data-loop="true" data-dots="true" data-nav="false" data-sm="1" data-md="1" data-autoplay="true" data-margin="30">
