@@ -94,6 +94,17 @@ class ConseilsTableSeeder extends Seeder
                 'description' => '<p>votre entreprise d&eacute;montre son int&eacute;r&ecirc;t &agrave; atteindre davantage que les exigences minimales du client. Ceci est un engagement envers la s&eacute;curit&eacute;, la gestion des risques et vous permettra de r&eacute;duire les accidents de travail et les co&ucirc;ts tout en augmentant les profits.</p>',
                 'demarche' => 'améliorer la sécurité dans votre entreprise',
             ),
+            7 => 
+            array (
+                'id' => 8,
+                'slug' => 'audit-interne-qualite-externalise',
+                'certification' => NULL,
+                'created_at' => '2020-09-04 14:12:26',
+                'updated_at' => '2020-09-04 14:12:26',
+                'lien_formation' => NULL,
+                'description' => NULL,
+                'demarche' => NULL,
+            ),
         ));
         
         
