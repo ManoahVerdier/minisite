@@ -29,11 +29,10 @@
                         @if($conseil->banner_regular_black!="")
                             {!!$conseil->banner_regular_black!!}
                         @else 
-                            <span class="dark-grey"></span>
+                            <span class="w-100 d-inline-block muli">de votre entreprise.</span>
                         @endif
                     </b>
                 </span>
-                <span class="w-100 d-inline-block muli">de votre entreprise.</span>
             </div>
         </div>
     </div>
