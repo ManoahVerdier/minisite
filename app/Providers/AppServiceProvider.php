@@ -37,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
                 ->orderBy('nom', 'ASC')
                 ->get();
             $conseils_header = Conseil::distinct('certification')
+                ->where('slug', '!=', 'audit-interne-qualite-externalise')
                 ->orderBy('certification', 'ASC')
                 ->get();
             $hp = Homepage::first();
