@@ -337,6 +337,22 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.conseils.index',
                 'parameters' => NULL,
             ),
+            20 => 
+            array (
+                'id' => 23,
+                'menu_id' => 1,
+                'title' => 'Homepages',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => NULL,
+                'color' => NULL,
+                'parent_id' => NULL,
+                'order' => 9,
+                'created_at' => '2020-08-19 12:04:39',
+                'updated_at' => '2020-08-19 12:04:39',
+                'route' => 'voyager.homepages.index',
+                'parameters' => NULL,
+            ),
         ));
         
         
