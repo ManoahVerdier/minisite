@@ -22,8 +22,8 @@ id="contact-page"
 <section id="formation-detail">
     <div class="container py-4">
         <h1 class="w-100 text-center blue mb-4">Nous contacter</h1>
-        <p>Demander un devis, un renseignement
-            Vous souhaitez un renseignement ? un devis ? ou tout simplement parler à un consultant.
+        <p>
+            Vous souhaitez un renseignement ? un devis ? ou tout simplement parler à un consultant. 
             N’hésitez pas à nous joindre par téléphone ou remplissez ce formulaire pour être recontacté immédiatement.
         </p>
         <div class="row">
