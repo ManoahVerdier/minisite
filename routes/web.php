@@ -11,9 +11,6 @@
  * @link     http://certificationiso.fr
  */
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\DB;
-use App\Formation;
-use App\Conseil;
 use TCG\Voyager\Facades\Voyager;
 
 /*
