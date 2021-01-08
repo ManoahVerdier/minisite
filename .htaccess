@@ -64,9 +64,7 @@ RedirectPermanent /formations/formation-mase https://certificationiso.fr/f/forma
 RedirectPermanent /prix-certification-iso-mase/ https://certificationiso.fr/f/formation-mase
 RedirectPermanent /formation-auditeur-qualite/ https://certificationiso.fr/f/formation-auditeur-qualite
 RedirectPermanent /certification-iso-22000/ https://certificationiso.fr/
-RedirectPermanent /formations https://certificationiso.fr/
-RedirectPermanent /conseil/ https://certificationiso.fr/
-RedirectPermanent /conseil https://certificationiso.fr/
+
 RedirectPermanent /comment-devenir-consultant-qualite/feed/ https://certificationiso.fr/
 RedirectPermanent /category/seo/feed/ https://certificationiso.fr/
 
@@ -83,7 +81,9 @@ RedirectPermanent /certification-iso-22000 https://certificationiso.fr/
 RedirectPermanent /formations https://certificationiso.fr/
 RedirectPermanent /comment-devenir-consultant-qualite/feed https://certificationiso.fr/
 RedirectPermanent /category/seo/feed https://certificationiso.fr/
-
+RedirectPermanent /formations https://certificationiso.fr/
+RedirectPermanent /conseil/ https://certificationiso.fr/
+RedirectPermanent /conseil https://certificationiso.fr/
 RedirectPermanent /testdates/ https://certificationiso.fr/
 RedirectPermanent /testdates https://certificationiso.fr/
 
