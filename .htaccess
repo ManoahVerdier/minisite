@@ -25,7 +25,7 @@ RedirectPermanent /formations/formation-nouvelle-norme-iso-9001-version-2015-2/ 
 RedirectPermanent /certification-iso-45001/ https://certificationiso.fr/cs/conseil-iso-45001
 RedirectPermanent /certification-iso-45001 https://certificationiso.fr/cs/conseil-iso-45001
 RedirectPermanent /formation-responsable-metrologie/ https://certificationiso.fr/
-RedirectPermanent /formations/ https://certificationiso.fr
+
 RedirectPermanent /formation-mase/ https://certificationiso.fr/cs/mase
 RedirectPermanent /certification-iso-9001-2015/ https://certificationiso.fr/cs/conseil-iso-9001
 RedirectPermanent /conseil-iso-9001/ https://certificationiso.fr/cs/conseil-iso-9001
@@ -81,6 +81,7 @@ RedirectPermanent /certification-iso-22000 https://certificationiso.fr/
 RedirectPermanent /formations https://certificationiso.fr/
 RedirectPermanent /comment-devenir-consultant-qualite/feed https://certificationiso.fr/
 RedirectPermanent /category/seo/feed https://certificationiso.fr/
+RedirectPermanent /formations/ https://certificationiso.fr
 RedirectPermanent /formations https://certificationiso.fr/
 RedirectPermanent /conseil/ https://certificationiso.fr/
 RedirectPermanent /conseil https://certificationiso.fr/
