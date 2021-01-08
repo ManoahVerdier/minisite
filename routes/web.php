@@ -30,7 +30,7 @@ Route::get('/formation/{formation}', 'SiteController@formation')
     ->name('formation');
 Route::get('/f/{formation:slug}', 'SiteController@formationBySlug')
     ->name('formation_slug');
-Route::get('/conseil/{conseil:slug}', 'SiteController@conseilBySlug')
+Route::get('/cs/{conseil:slug}', 'SiteController@conseilBySlug')
     ->name('conseil_slug');
 Route::get('/c/{slug}', 'SiteController@categorie')
     ->name('categorie');
