@@ -14,7 +14,7 @@
         </div>
         <div class="row p-4">
             <div class="col-6 col-md px-1 px-md-2">
-                <img height="130px" class="mx-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}"/>
+                <img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img1_link ?? false)
                     <a href="{{$hp->img1_link}}" class="font-weight-bold dark-grey">
