@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
-@section('title', env('APP_NAME').' - Contact')
+@if($formation ?? false)
+    @section('title', env('APP_NAME').' - Contact - '.$formation->titre)
+@else
+    @section('title', env('APP_NAME').' - Contact')
+@endif
+
+@if($formation ?? false)
+    @section('description', env('APP_NAME').' - Contact - '.$formation->titre)
+@else
+    @section('description', env('APP_NAME').' - Contact')
+@endif
 
 @section('captcha')
 <script src="https://www.google.com/recaptcha/api.js"></script>
