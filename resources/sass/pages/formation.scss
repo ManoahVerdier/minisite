@@ -2,6 +2,10 @@
     #title{
         h2{
             font-size:1rem;
+
+            &.h5{
+                font-size:1.125rem !important;
+            }
         }
     }
     #formation-detail{

@@ -2,9 +2,11 @@
     <div class="col-12 col-md-2 pl-5 bg-light-grey pt-5 pt-md-1">
         <div class='row h-100  pt-5 pt-md-1 pb-5 pb-md-1'>
             <div class="col-12 align-self-center">
-                <div class='h1 blue w-100 mb-0 muli-bold subtitle'>Conseil</div>
-                <div class='h2  w-100  mb-0 muli-bold dark-gray subtitle'>{{$conseil->certification}}</div>
-                <div class='h1 blue w-100 font-weight-bold  mb-0 d-none d-md-block'>-</div>
+                <h1>
+                    <div class='h1 blue w-100 mb-0 muli-bold subtitle'>Conseil</div>
+                    <div class='h2  w-100  mb-0 muli-bold dark-gray subtitle'>{{$conseil->certification}}</div>
+                    <div class='h1 blue w-100 font-weight-bold  mb-0 d-none d-md-block'>-</div>
+                </h1>
             </div>
         </div>
     </div>

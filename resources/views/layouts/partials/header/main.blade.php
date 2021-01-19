@@ -11,7 +11,7 @@
             <div class="d-none d-md-block col-3">
                 <div id="devis-btn" class="mt-4 text-center">
                     <a href="{{route('contact')}}">
-                        <span class="grey">DEMANDER</span>
+                        <span class="grey mr-1">DEMANDER</span>
                         <span class="yellow"> UN DEVIS</span>
                         <span class="devis-icon btn btn-circle btn-yellow ml-2"><i class="fas fa-euro-sign"></i></span>
                     </a>
