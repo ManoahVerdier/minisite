@@ -14,8 +14,7 @@
         </div>
         <div class="row p-4">
             <div class="col-6 col-md px-1 px-md-2">
-                <div class="h-100 mb-3 lazyload w-100" style='background-repeat:no-repeat;background-size:100%;background-image:url("{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}")'></div>
-                {{--<img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}"/>--}}
+                <img height="130px" class="mx-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img1_link ?? false)
                     <a href="{{$hp->img1_link}}" class="font-weight-bold dark-grey">
@@ -29,8 +28,7 @@
                 </div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <div class="h-100 mb-3 lazyload w-100" style='background-repeat:no-repeat;background-size:100%;background-image:url("{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}")'></div>
-                {{--<img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_auto.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_auto.webp')}}"/>--}}
+                <img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_auto.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_auto.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img2_link ?? false)
                     <a href="{{$hp->img2_link}}" class="font-weight-bold dark-grey">
@@ -44,8 +42,7 @@
                 </div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <div class="h-100 mb-3 lazyload w-100" style='background-repeat:no-repeat;background-size:100%;background-image:url("{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}")'></div>
-                {{--<img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_environnement.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_environnement.webp')}}"/>--}}
+                <img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_environnement.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_environnement.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img3_link ?? false)
                     <a href="{{$hp->img3_link}}" class="font-weight-bold dark-grey">
@@ -59,8 +56,7 @@
                 </div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <div class="mb-3 lazyload w-100" style='height:130px; background-repeat:no-repeat;background-size:100%;background-image:url("{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}")'></div>
-                {{--<img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_labo.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_labo.webp')}}"/>--}}
+                <img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_labo.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_labo.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img4_link ?? false)
                     <a href="{{$hp->img4_link}}" class="font-weight-bold dark-grey">
@@ -74,8 +70,7 @@
                 </div>
             </div>
             <div class="col-6 col-md px-1 px-md-2">
-                <div class="h-100 mb-3 lazyload w-100" style='background-repeat:no-repeat;background-size:100%;background-image:url("{{asset('img/home/'.env('IMG_SLUG').'_HP_aero.webp')}}")'></div>
-                {{--<img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_sante.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_sante.webp')}}"/>--}}
+                <img width="100%" class="h-auto mb-3 lazyload" data-src="{{asset('img/home/'.env('IMG_SLUG').'_HP_sante.webp')}}" src="{{asset('img/home/'.env('IMG_SLUG').'_HP_sante.webp')}}"/>
                 <div class="w-100 text-upper expertise-categ pb-3 pb-md-0">
                     @if($hp->img5_link ?? false)
                     <a href="{{$hp->img5_link}}" class="font-weight-bold dark-grey">

@@ -1,5 +1,6 @@
 #home-page{
     #banner{
+        min-height:calc(calc(50vw * 580) / 680);
         .banner-text{
             top:0px;
             padding:100px;
