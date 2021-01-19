@@ -57,6 +57,6 @@
         @yield('extra-js')
         <script src={{mix('/js/app.js')}} async></script>
         @show
-        
+        <script src="https://kit.fontawesome.com/4236d13d2d.js" crossorigin="anonymous"></script>
     </body>
 </html>
