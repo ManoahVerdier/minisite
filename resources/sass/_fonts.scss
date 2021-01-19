@@ -26,6 +26,7 @@
 //@import url('/fonts/ElegantIcons.ttf');
 @font-face {
   font-family: "ElegantIcons";
+  font-display: swap; 
   src: url("/fonts/ElegantIcons.ttf") format("trutype"),
        url("/fonts/ElegantIcons.woff") format("woff");
  }
