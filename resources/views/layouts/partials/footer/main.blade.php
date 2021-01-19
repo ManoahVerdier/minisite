@@ -23,7 +23,7 @@
                 <a href="mailto:contact@cyn-communication.fr" class="ml-4 w-100 d-inline-block blue h3 font-weight-bold ">contact@cyn-communication fr</a>
             </div>
             <div class="col-12 text-center">
-                <span>{{env('APP_NAME')}} - Copyright 2020 - Tous droits reserves. | </span>
+                <span>{{env('APP_NAME')}} - Copyright 2021 - Tous droits reserves. | </span>
                 <a href="{{route('mentions_legales')}}">Mentions legales</a> | <span> 
                 <a href="{{route('pages')}}">Documentation</a><span> 
             </div>
