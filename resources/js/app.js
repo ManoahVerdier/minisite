@@ -1,4 +1,4 @@
 
-//import './bootstrap';
+import './bootstrap';
 //import 'lazysizes';
 import './conseil';
