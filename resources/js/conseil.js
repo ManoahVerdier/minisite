@@ -1,7 +1,6 @@
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 
-console.log('test');
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     loop: $('.owl-carousel').data('loop') === false ? false : true,
