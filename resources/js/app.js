@@ -1,4 +1,5 @@
 import './bootstrap';
-import './conseil';
 import 'lazysizes';
+import './conseil';
+
 import '@fortawesome/fontawesome-free/js/all.js';
