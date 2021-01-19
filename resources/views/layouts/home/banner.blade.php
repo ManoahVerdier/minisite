@@ -1,4 +1,4 @@
-<div class="container-fluid mb-5" id="banner">
+<div class="container-fluid mb-5" id="banner" style="min-height: 42.64706vw;">
     <div class="row" >
         <div class="col-12 col-md-6 px-0" id="banner-left">
             <img width="100%" class="h-auto" src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_haut_01.webp')}}"/>

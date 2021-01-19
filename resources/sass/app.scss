@@ -1,22 +1,17 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
 
 // Variables
 @import 'variables';
 @import 'helpers';
 @import 'fonts';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
-@import 'footer/main';
+
 
 @import 'header/main';
 
-@import 'pages/formation';
+
 @import 'pages/homepage';
-@import 'pages/conseil';
+
 
 @media (min-width:1270px){
     .container{
@@ -99,3 +94,13 @@ body{
     bottom:50px;
     right:5px;
 }
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
+
+@import 'pages/conseil';
+@import 'pages/formation';
+
+@import 'footer/main';
