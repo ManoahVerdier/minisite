@@ -19,32 +19,32 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_BMW.webp')}}"/>
+                <img width="100%" class="h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_BMW.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-60 mb-1'></div>
                     <h5 class='yellow h5 font-weight-bold mt-md-5 mt-4 mb-0 ml-4 pl-1 pt-2 pt-md-1'><span class='ml-3 pl-1'>{{$hp->clients_certif_1}}</span></h5>
                 </div>
             </div>
             <div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Carrefour.webp')}}"/>
+                <img width="100%" class="h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Carrefour.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-60 mb-1'></div>
                     <h5 class='yellow h5 font-weight-bold mt-md-5 mt-4 mb-0 ml-5 pl-2 pt-2 pt-md-1'>{{$hp->clients_certif_2}}</h5>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Ricard.webp')}}"/>
+                <img width="100%" class="h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Ricard.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-60 mb-1'></div>
                     <h5 class='yellow h5 font-weight-bold mt-md-5 mt-4 mb-0 ml-5 pt-2 pt-md-1'>{{$hp->clients_certif_3}}</h5>
                 </div>
             </div><div class="col-12 col-md-4  p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Ministère.webp')}}"/>
+                <img width="100%" class="h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_Ministère.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-60 mb-1'></div>
                     <h5 class='yellow h5 font-weight-bold mt-md-5 mt-4 mb-0 ml-5 pl-1 pt-2 pt-md-1'><span class='ml-1'>{{$hp->clients_certif_4}}</span></h5>
                 </div>
             </div><div class="col-12 col-md-4 p-0 m-0" id="clients-left">
-                <img class="w-100 h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_clients.webp')}}"/>
+                <img width="100%" class="h-auto lazyload" data-src="{{asset('/img/home/'.env('IMG_SLUG').'_HP_clients.webp')}}"/>
                 <div class='position-absolute w-100 h-100 clients-text'>
                     <div class='d-inline-block w-100 h-60 mb-1'></div>
                 </div>
