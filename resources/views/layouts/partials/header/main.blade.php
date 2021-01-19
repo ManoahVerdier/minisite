@@ -38,7 +38,7 @@
    
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-1 d-none d-md-block">
                 <button id="show-menu" class="btn btn-blank my-3" onclick="$('#menu').toggleClass('hidden')"><div class="blue"><img src="{{asset('/img/header/menu_img.png')}}"/></div></button>
             </div>
         </div>
