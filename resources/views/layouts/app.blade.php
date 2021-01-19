@@ -66,6 +66,6 @@
         @yield('extra-js')
         {!! Html::script(mix('/js/app.js')) !!}
         @show
-
+        
     </body>
 </html>
