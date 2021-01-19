@@ -541,4 +541,5 @@ class SiteController extends Controller
         $search = $request->get('search');
         return view('recherche', compact('categorie', 'formations', 'search'));
     }
+    
 }
