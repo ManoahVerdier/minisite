@@ -1,4 +1,4 @@
-<div >
+<div class="bg-light-grey container-fluid muli" id="expertise">
     {{--<div class="container">--}}
         <div class="row p-5">
             <div class="col-12 col-md-4" id="expertise-left">
