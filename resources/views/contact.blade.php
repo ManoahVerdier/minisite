@@ -1,13 +1,21 @@
 @extends('layouts.app')
 
 @if($formation ?? false)
-    @section('title', env('APP_NAME').' - Contact - '.$formation->titre)
+    @if($session)
+        @section('title', env('APP_NAME').' - Inscription - '.$formation->titre)
+    @else 
+        @section('title', env('APP_NAME').' - Contact - '.$formation->titre)    
+    @endif
 @else
     @section('title', env('APP_NAME').' - Contact')
 @endif
 
 @if($formation ?? false)
-    @section('description', env('APP_NAME').' - Contact - '.$formation->titre)
+    @if($session)
+        @section('description', env('APP_NAME').' - Inscription - '.$formation->titre)
+    @else 
+        @section('description', env('APP_NAME').' - Contact - '.$formation->titre)
+    @endif
 @else
     @section('description', env('APP_NAME').' - Contact')
 @endif
