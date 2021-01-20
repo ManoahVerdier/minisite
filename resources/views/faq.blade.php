@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $taglessTitle)
-@section('description', $faq->description)
+@section('title', $faq->title)
+@section('description', $faq->meta_desc)
 
 @section('body-attr')
 id="faq-page"
