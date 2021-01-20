@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', env('APP_NAME')." - ".$sous_categorie->nom)
-@section('description', env('APP_NAME')." - ".$sous_categorie->nom)
+@section('title', env('APP_NAME')." - ".$sous_categorie->title)
+@section('description', env('APP_NAME')." - ".$sous_categorie->meta_desc)
 
 @section('body-attr')
 id="sscateg-page"

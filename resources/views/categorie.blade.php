@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', env('APP_NAME')." - ".$categorie->nom)
-@section('description', env('APP_NAME')." - ".$categorie->nom)
+@section('title', $categorie->title)
+@section('description', $categorie->meta_desc)
 
 @section('body-attr')
 id="form-page"
