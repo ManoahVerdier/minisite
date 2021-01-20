@@ -14,11 +14,11 @@ class TableConseilsAddMeta extends Migration
     public function up()
     {
         Schema::table('formations', function (Blueprint $table) {
-            $table->text('description')->nullable();
+            $table->text('meta_description')->nullable();
             $table->text('title')->nullable();
         });
         Schema::table('conseils', function (Blueprint $table) {
-            $table->text('description')->nullable();
+            $table->text('meta_description')->nullable();
             $table->text('title')->nullable();
         });
     }
@@ -31,11 +31,11 @@ class TableConseilsAddMeta extends Migration
     public function down()
     {
         Schema::table('formations', function (Blueprint $table) {
-            $table->dropColumn('description');
+            $table->dropColumn('meta_description');
             $table->dropColumn('title');
         });
         Schema::table('conseils', function (Blueprint $table) {
-            $table->dropColumn('description');
+            $table->dropColumn('meta_description');
             $table->dropColumn('title');
         });
     }
