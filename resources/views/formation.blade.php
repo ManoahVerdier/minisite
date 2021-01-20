@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', $formation->title)
-@section('description', $formation->meta_desc)
+@section('description', $formation->meta_description)
 
 @section('body-attr')
 id="form-page"
