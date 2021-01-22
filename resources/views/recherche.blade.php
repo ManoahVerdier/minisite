@@ -43,6 +43,7 @@ id="search-page"
     </div>
 
     @if($search??false)
+        <h5 class="my-3">Formations</h5>
         <div class="row border-bottom mx-2 mb-2">
             <div class="col-10 text-left font-weight-bold">Intitulé</div>
             <div class="col-2 text-center font-weight-bold">Durée</div>
@@ -53,6 +54,14 @@ id="search-page"
                 <div class="col-2 text-center purple font-weight-bold">{{$formation->duree}}</div>
             </div>
         @endforeach
+        @if($conseils->count()>0)
+            <h5 class="my-3">Conseils</h5>
+            @foreach($conseils as $conseil)
+                <div class="row mx-2">
+                    <div class="col-12"><a href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a></div>
+                </div>
+            @endforeach
+        @endif
     @endif
 </div>
 @endsection

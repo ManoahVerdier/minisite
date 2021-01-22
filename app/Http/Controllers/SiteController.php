@@ -536,10 +536,27 @@ class SiteController extends Controller
                 '%'.$request->get('search').'%'
             )
             ->get();
+        $conseils = Conseil::
+                where(
+                    'certification', 
+                    'LIKE', 
+                    '%'.$request->get('search').'%'
+                )
+                ->orWhere(
+                    'description', 
+                    'LIKE', 
+                    '%'.$request->get('search').'%'
+                )
+                ->orWhere(
+                    'demarche', 
+                    'LIKE', 
+                    '%'.$request->get('search').'%'
+                )
+                ->get();
 
         $categorie = Categorie::where('slug', "qualite")->first();
         $search = $request->get('search');
-        return view('recherche', compact('categorie', 'formations', 'search'));
+        return view('recherche', compact('categorie', 'formations', 'conseils', 'search'));
     }
     
 }

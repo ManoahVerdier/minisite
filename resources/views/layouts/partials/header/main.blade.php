@@ -1,15 +1,15 @@
 <header>
     <div class="container" id="header-main">
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <div id="logo" class="px-md-3 px-0 mt-3 mb-3">
-                    <a href="{{url('/')}}" class="d-inline-block h-50 w-100">
+        <div class="row h-100">
+            <div class="col-6 col-md-3 align-self-center">
+                <div id="logo" class="px-md-3 px-0 mt-2 mb-2">
+                    <a href="{{url('/')}}" class="d-inline-block h-50 w-100 mb-1">
                         <img class=" mx-auto" src="{{asset('img/header/logo.png')}}"/>
                     </a>
                 </div>
             </div>
-            <div class="d-none d-md-block col-3">
-                <div id="devis-btn" class="mt-4 text-center">
+            <div class="d-none d-md-block col-3 align-self-center">
+                <div id="devis-btn" class=" text-center">
                     <a href="{{route('contact')}}">
                         <span class="grey mr-1">DEMANDER</span>
                         <span class="yellow"> UN DEVIS</span>
@@ -17,18 +17,18 @@
                     </a>
                 </div>
             </div>
-            <div class="d-none d-md-block col-2">
-                <div id="contact-btn" class="mt-4 text-center">
+            <div class="d-none d-md-block col-2  align-self-center">
+                <div id="contact-btn" class="text-center">
                     <a href="tel:0482534478" class='btn btn-blue rounded-pill font-weight-bold px-3'>
                         <span>04 82 53 44 78</span>
                         <span class="ml-3 contact-icon text-white"><img height="20px" width="20px" src="{{asset('img/header/headset.png')}}"/></span>
                     </a>
                 </div>
             </div>
-            <div class="col-6 col-md-3">
-                <div id="search" class="my-4">
+            <div class="col-6 col-md-3 align-self-center">
+                <div id="search" class="">
 
-                        <form method="post" action="{{route('recherche')}}" class="input-group mb-3 border rounded">
+                        <form method="post" action="{{route('recherche')}}" class="input-group border rounded">
                             @csrf
                             <input name="search" type="text" placeholder="Recherche" class="pl-1 pl-md-3 form-control border-0" aria-describedby="search">
                             <div class="input-group-append">
@@ -38,8 +38,8 @@
    
                 </div>
             </div>
-            <div class="col-1 d-none d-md-block">
-                <button id="show-menu" class="btn btn-blank my-3" onclick="$('#menu').toggleClass('hidden')"><div class="blue"><img src="{{asset('/img/header/menu_img.png')}}"/></div></button>
+            <div class="col-1 d-none d-md-block align-self-center">
+                <button id="show-menu" class="btn btn-blank" onclick="$('#menu').toggleClass('hidden')"><div class="blue"><img src="{{asset('/img/header/menu_img.png')}}"/></div></button>
             </div>
         </div>
     </div>

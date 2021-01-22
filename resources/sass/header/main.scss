@@ -3,6 +3,10 @@ header{
         max-height:75px;
         min-height:75px;
 
+        .row{
+            min-height:75px;
+        }
+
         #logo{ 
             img{
                 width:80%;
