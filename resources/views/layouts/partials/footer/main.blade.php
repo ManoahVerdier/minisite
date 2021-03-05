@@ -25,7 +25,7 @@
             <div class="col-12 text-center">
                 <span>{{env('APP_NAME')}} - Copyright 2021 - Tous droits reserves. | </span>
                 <a href="{{route('mentions_legales')}}">Mentions legales</a> | <span> 
-                {!!<a href="{{route('pages')}}">Documentation</a><span> !!}}
+                
             </div>
         </div>
     </div>
