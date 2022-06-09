@@ -1,7 +1,6 @@
 header{
     #header-main{
-        max-height:75px;
-        min-height:75px;
+        
 
         .row{
             min-height:75px;
@@ -69,43 +68,24 @@ header{
     }
 
     #menu{
-        background: #DEDEDE;
-        color:#2E3038;
+        /*background: #313131;
+        color:white;*/
 
-        a{
-            color:#2E3038;
-            font-size:1.1rem;
-            text-transform:uppercase;
-
-            &:hover{
-                /*background:#FDBE2D;*/
-                color:#249fd5;
-                text-decoration:none;
-            }
-        }
-
-        #domaines-sub,#infos-pratiques-sub{
-            top:135px;
-            width:100%;
-            border-radius:0px;
-            border:none;
-            z-index:1;
-            background:#F7F7F7;
-            margin-top:0px;
-
-            @media (max-width:767px){
-                position:relative;
-                top:0px;
-                left:-40px;
-                width:calc(100% + 80px);
-            }
-
+        ul{
+            
             a{
+                color:white;
+                font-size:1.1rem;
+                text-transform:uppercase;
+
                 &:hover{
-                    background:rgba(222,222,222,0);
+                    /*background:#FDBE2D;*/
+                    color:#249fd5;
+                    text-decoration:none;
                 }
             }
         }
+        
     }
 }
 

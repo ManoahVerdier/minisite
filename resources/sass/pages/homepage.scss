@@ -1,18 +1,6 @@
 #home-page{
     #banner{
-        min-height:calc(calc(50vw * 580) / 680);
-
-        @media(max-width:767px){
-            min-height:calc(2 * calc(calc(100vw * 580) / 680));
-        }
-
-        #banner-left, #banner-right{
-            min-height:calc(calc(50vw * 580) / 680);
-
-            @media(max-width:767px){
-                min-height:calc(calc(100vw * 580) / 680);
-            }
-        }
+       
         .banner-text{
             top:0px;
             padding:100px;

@@ -32,6 +32,8 @@
 
         
         @yield('extra-css')
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
     </head>
 
     <body @yield('body-attr')>
@@ -52,11 +54,22 @@
         {{-- Footer --}}
         @yield('footer')
 
+        <!-- START Bootstrap-Cookie-Alert -->
+        <div class="alert text-center cookiealert" role="alert">
+            <b>Vous aimez les cookies ?</b> &#x1F36A; Nous utilisons des cookies afin d'améliorer votre expérience utilisateur. <a href="https://cookiesandyou.com/" target="_blank">Pour en savoir plus</a>
+
+            <button type="button" class="btn btn-primary btn-sm acceptcookies">
+                Accepter
+            </button>
+        </div>
+        <!-- END Bootstrap-Cookie-Alert -->
+
         {{-- JavaScript --}}
         @section('script')
         @yield('extra-js')
         <script src={{mix('/js/app.js')}} async></script>
         @show
         <script src="https://kit.fontawesome.com/4236d13d2d.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
     </body>
 </html>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHomepagesTable extends Migration
+class TablePageAddFields extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateHomepagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('homepages', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::table('pages', function (Blueprint $table) {
             $table->string('img')->nullable();
-            $table->string('title');
-            $table->text('contenu')->nullable();
-            $table->timestamps();
+            $table->text('accordion_text')->nullable();
+            $table->text('excerpt')->nullable();
         });
     }
 
@@ -29,6 +27,10 @@ class CreateHomepagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homepages');
+        Schema::table('pages', function (Blueprint $table) {
+            $table->dropColumn('img');
+            $table->dropColumn('accordion_text');
+            $table->dropColumn('excerpt');
+        });
     }
 }

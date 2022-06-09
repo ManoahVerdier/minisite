@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MenuItemsTableSeeder::class);
         
         $this->call(CategoriesTableSeeder::class);
-        $this->call(FormationsTableSeeder::class);
         $this->call(DataTypesTableSeeder::class);
         $this->call(DataRowsTableSeeder::class);
         
@@ -31,11 +30,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SettingsTableSeeder::class);
         //$this->call(TranslationsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
-        
-        $this->call(ConseilsTableSeeder::class);
-        $this->call(FaqsTableSeeder::class);
-        $this->call(FaqCategoriesTableSeeder::class);
-        $this->call(TemoignagesTableSeeder::class);
         $this->call(SousCategoriesTableSeeder::class);
         $this->call(HomepagesTableSeeder::class);
     }

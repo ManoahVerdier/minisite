@@ -9,7 +9,6 @@ id="search-page"
 {{-- Header --}}
 @section('header')
     @include('layouts.partials.header.main')
-    @include('layouts.partials.header.mobile')
 @endsection
 
 {{-- Breadcrumbs --}}
@@ -18,13 +17,10 @@ id="search-page"
 {{-- Content --}}
 @section('content')
 
-<div class="container mb-5">
+<div class="container my-5">
 
-    @if($search??false)
-    <h1 class="w-100 text-center blue mb-4">{{$search}}</h1>
-    @else 
-    <h1 class="w-100 text-center blue mb-4">Recherche</h1>
-    @endif
+ 
+    <h1 class="w-100 text-center text-dark mb-4">Recherche</h1>
 
     <div id="search" class="my-4">
 
@@ -43,25 +39,15 @@ id="search-page"
     </div>
 
     @if($search??false)
-        <h5 class="my-3">Formations</h5>
-        <div class="row border-bottom mx-2 mb-2">
-            <div class="col-10 text-left font-weight-bold">Intitulé</div>
-            <div class="col-2 text-center font-weight-bold">Durée</div>
-        </div>
-        @foreach($formations as $formation)
+        <h5 class="mb-3 mt-5 ">Résultats de la recherche "{{$search}}"</h5>
+        
+        @foreach($pages as $page)
             <div class="row mx-2">
-                <div class="col-10"><a href="{{route('formation', ['formation' => $formation->id])}}">{{$formation->nom}}</a></div>
-                <div class="col-2 text-center purple font-weight-bold">{{$formation->duree}}</div>
+                <div class="col-12 font-weight-bold"><a href="{{route('page', ['slug' => $page->slug])}}">{{$page->title}}</a></div>
+                <div class="col-12">{{$page->excerpt}}</div>
+                
             </div>
         @endforeach
-        @if($conseils->count()>0)
-            <h5 class="my-3">Conseils</h5>
-            @foreach($conseils as $conseil)
-                <div class="row mx-2">
-                    <div class="col-12"><a href="{{route('conseil_slug', ['conseil' => $conseil->slug])}}">Conseil {{$conseil->certification}}</a></div>
-                </div>
-            @endforeach
-        @endif
     @endif
 </div>
 @endsection

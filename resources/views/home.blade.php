@@ -10,16 +10,15 @@ id="home-page"
 {{-- Header --}}
 @section('header')
     @include('layouts.partials.header.main')
-    @include('layouts.partials.header.mobile')
 @endsection
 
 
 {{-- Content --}}
 @section('content')
     @include('layouts.home.banner')
-    @include('layouts.home.expertise')
-    @include('layouts.home.clients')
     @include('layouts.home.carte')
+    @include('layouts.home.page')
+    
 @endsection
 {{-- Footer --}}
 @section('footer')

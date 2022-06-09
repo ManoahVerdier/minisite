@@ -58,7 +58,7 @@ class SiteController extends Controller
      */
     public function formation(Formation $formation)
     {   
-        if (! isset($formation->sessions)) {
+        /*if (! isset($formation->sessions)) {
             $formation->sessions=Formation::
                 where('nom', '=', 'default')
                 ->firstOrFail()
@@ -69,7 +69,7 @@ class SiteController extends Controller
             compact(
                 'formation'
             )
-        );
+        );*/
     }
 
     /**
@@ -81,7 +81,7 @@ class SiteController extends Controller
      */
     public function formationBySlug(Formation $formation)
     {
-        if (! isset($formation->sessions)) {
+        /*if (! isset($formation->sessions)) {
             $formation->sessions=Formation::
                 where('nom', '=', 'default')
                 ->firstOrFail()
@@ -92,7 +92,7 @@ class SiteController extends Controller
             compact(
                 'formation'
             )
-        );
+        );*/
     }
 
     /**
@@ -104,12 +104,12 @@ class SiteController extends Controller
      */
     public function conseilBySlug(Conseil $conseil)
     {
-        return view(
+        /*return view(
             'conseil',
             compact(
                 'conseil'
             )
-        );
+        );*/
     }
 
     /**
@@ -122,13 +122,12 @@ class SiteController extends Controller
     public function categorie($slug)
     {
         $categorie = Categorie::where('slug', $slug)->first();
-        $formations = $categorie->formations()->get();
+        //$formations = $categorie->formations()->get();
 
         return view(
             'categorie', 
             compact(
-                'categorie', 
-                'formations'
+                'categorie'
             )
         );
     }
@@ -143,13 +142,12 @@ class SiteController extends Controller
     public function sousCategorie($slug)
     {
         $sous_categorie = SousCategorie::where('slug', $slug)->first();
-        $formations = $sous_categorie->formations()->get();
+        //$formations = $sous_categorie->formations()->get();
 
         return view(
             'sous_categorie',
             compact(
-                'sous_categorie',
-                'formations'
+                'sous_categorie'
             )
         );
     }
@@ -165,13 +163,13 @@ class SiteController extends Controller
     public function contact($id="",$session=false)
     {
         $formation=null;
-        if ($id!="") {
-            $formation = Formation::where('id', '=', $id)->firstOrFail();
+        /*if ($id!="") {
+           // $formation = Formation::where('id', '=', $id)->firstOrFail();
             if (! isset($formation->sessions) || $formation->sessions=="") {
-                $default = Formation::where('nom', '=', 'default')->firstOrFail();
+                //$default = Formation::where('nom', '=', 'default')->firstOrFail();
                 $formation->sessions=$default->sessions;
             }
-        }
+        }*/
         return view(
             'contact', 
             compact(
@@ -207,12 +205,12 @@ class SiteController extends Controller
         $date_choisie=false;
 
         if ($request->get('formation_id') ?? false) {
-            $formation = Formation::where('id', '=', $request->get('formation_id'))
+            /*$formation = Formation::where('id', '=', $request->get('formation_id'))
                 ->firstOrFail();
-            $slug = $formation->slug;
+            $slug = $formation->slug;*/
             
             if ($request->get('session') != null ) {
-                if ($formation->sessions ?? false) {
+                /*if ($formation->sessions ?? false) {
                     $date_choisie = explode(
                         ',', 
                         $formation->sessions
@@ -224,7 +222,7 @@ class SiteController extends Controller
                         ',', 
                         $formation->sessions
                     )[$request->get('session')];
-                }
+                }*/
             }
         }
 
@@ -514,49 +512,36 @@ class SiteController extends Controller
      */
     public function recherche(Request $request)
     {
-        $formations = Formation::
+        $pages = Page::
             where(
-                'titre', 
+                'title', 
                 'LIKE', 
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'contenu', 
+                'excerpt', 
                 'LIKE', 
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'objectif', 
+                'accordion_text', 
                 'LIKE', 
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'infos_pratiques',
+                'description',
+                'LIKE',
+                '%'.$request->get('search').'%'
+            )
+            ->orWhere(
+                'contenu',
                 'LIKE',
                 '%'.$request->get('search').'%'
             )
             ->get();
-        $conseils = Conseil::
-                where(
-                    'certification', 
-                    'LIKE', 
-                    '%'.$request->get('search').'%'
-                )
-                ->orWhere(
-                    'description', 
-                    'LIKE', 
-                    '%'.$request->get('search').'%'
-                )
-                ->orWhere(
-                    'demarche', 
-                    'LIKE', 
-                    '%'.$request->get('search').'%'
-                )
-                ->get();
-
-        $categorie = Categorie::where('slug', "qualite")->first();
+        
         $search = $request->get('search');
-        return view('recherche', compact('categorie', 'formations', 'conseils', 'search'));
+        return view('recherche', compact('pages', 'search'));
     }
     
 }
