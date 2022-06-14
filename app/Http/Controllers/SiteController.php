@@ -411,6 +411,7 @@ class SiteController extends Controller
     {
         $page = Page::where('slug', $slug)->firstOrFail();
         return view('page', compact('page'));
+        //return view('page', compact('page'));
     }
 
     /**
