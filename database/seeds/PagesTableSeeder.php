@@ -19,7 +19,8 @@ class PagesTableSeeder extends Seeder
         \DB::table('pages')->insert(array (
             0 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 1,
+                'slug' => 'mentions-legales',
                 'contenu' => '<div>
 <h2>Mentions l&eacute;gales</h2>
 </div>
@@ -46,17 +47,25 @@ class PagesTableSeeder extends Seeder
 <p><strong>H&eacute;bergement</strong></p>
 <p><strong>OVH</strong><strong><br /></strong>2 rue Kellermann - 59100 Roubaix</p>',
                 'created_at' => '2020-08-17 06:42:00',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 1,
-                'img' => NULL,
-                'slug' => 'mentions-legales',
-                'title' => NULL,
                 'updated_at' => '2020-08-17 14:41:50',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             1 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 2,
+                'slug' => 'a-propos-nous',
                 'contenu' => '<div class="wpb_text_column wpb_content_element " style="background-image: initial; background-position: 0px 0px; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; margin: 0px 0px 35px; padding: 0px; vertical-align: baseline; outline: 0px; color: #5e5e5e; font-family: Raleway, sans-serif; font-size: 17px;">
 <div class="wpb_wrapper" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px;">
 <h1 style="color: inherit !important; background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; font-size: 24px !important; line-height: inherit !important; font-weight: inherit !important; font-family: inherit !important; text-align: center;"><span class="blue" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; color: #1db0ee !important;">A propos de nous</span></h1>
@@ -191,17 +200,25 @@ class PagesTableSeeder extends Seeder
 </div>
 </div>',
                 'created_at' => '2020-08-17 07:09:22',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 2,
-                'img' => NULL,
-                'slug' => 'a-propos-nous',
-                'title' => NULL,
                 'updated_at' => '2020-08-17 07:09:22',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             2 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 3,
+                'slug' => 'nos-clients',
                 'contenu' => '<div class="wpb_text_column wpb_content_element " style="background-image: initial; background-position: 0px 0px; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; margin: 0px 0px 35px; padding: 0px; vertical-align: baseline; outline: 0px; color: #5e5e5e; font-family: Raleway, sans-serif; font-size: 17px;">
 <div class="wpb_wrapper" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px;">
 <h1 style="color: inherit !important; background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; font-size: 24px !important; line-height: inherit !important; font-weight: inherit !important; font-family: inherit !important; text-align: center;"><span class="blue" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; color: #1db0ee !important;">Ils font confiance &agrave; nos partenaires</span></h1>
@@ -567,17 +584,25 @@ class PagesTableSeeder extends Seeder
 </div>
 </div>',
                 'created_at' => '2020-08-17 07:10:30',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 3,
-                'img' => NULL,
-                'slug' => 'nos-clients',
-                'title' => NULL,
                 'updated_at' => '2020-08-17 07:10:30',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             3 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 4,
+                'slug' => 'nos-partenaires',
                 'contenu' => '<div class="vc_row wpb_row section vc_row-fluid " style="background-image: initial; background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; padding: 0px; vertical-align: baseline; outline: 0px; position: relative; color: #5e5e5e; font-family: Raleway, sans-serif; font-size: 17px; margin: 0px -15px 0px !important -15px;">
 <div class=" full_section_inner clearfix" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; position: relative; z-index: 20;">
 <div class="wpb_column vc_column_container vc_col-sm-12" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; width: 1330px; position: relative; min-height: 1px; box-sizing: border-box; float: left;">
@@ -686,17 +711,25 @@ class PagesTableSeeder extends Seeder
 </div>
 </div>',
                 'created_at' => '2020-08-17 07:11:01',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 4,
-                'img' => NULL,
-                'slug' => 'nos-partenaires',
-                'title' => NULL,
                 'updated_at' => '2020-08-17 07:11:01',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             4 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 5,
+                'slug' => 'audit-interne-qualite-externalise',
                 'contenu' => '<div id="cons_title_row" class="vc_row wpb_row section vc_row-fluid  vc_custom_1586501333566" style="background-image: initial; background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: initial; background-origin: initial; background-clip: initial; border: 0px; vertical-align: baseline; outline: 0px; position: relative; color: #5e5e5e; font-family: Raleway, sans-serif; font-size: 17px; padding: 0px 0px !important 0px 0px !important; margin: 0px 0px !important 0px !important 0px !important;">
 <div class=" full_section_inner clearfix" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; position: relative; z-index: 20;">
 <div class="wpb_column vc_column_container vc_col-sm-1/5 vc_col-has-fill" style="background: 0px 0px; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; position: relative; min-height: 1px; box-sizing: border-box; float: left;">
@@ -1036,17 +1069,25 @@ class PagesTableSeeder extends Seeder
 </div>
 </div>',
                 'created_at' => '2020-08-18 07:27:00',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 5,
-                'img' => NULL,
-                'slug' => 'audit-interne-qualite-externalise',
-                'title' => NULL,
                 'updated_at' => '2020-08-18 07:43:49',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             5 => 
             array (
-                'accordion_text' => NULL,
+                'id' => 6,
+                'slug' => 'demarche-qualite',
                 'contenu' => '<div id="form-title" style="background: none; padding-top: 20px; padding-bottom: 30px; color: #545151; font-family: \'Droid Sans\', sans-serif;">
 <h1 style="margin: 0px; font-family: \'Open Sans Condensed\', sans-serif; color: #249fd5; font-size: 32pt; line-height: 38px; text-rendering: optimizelegibility; background: none; height: 38px; display: inline-block; text-align: center;">D&eacute;marche Qualit&eacute;</h1>
 </div>
@@ -1105,31 +1146,78 @@ class PagesTableSeeder extends Seeder
 </article>
 </div>',
                 'created_at' => '2020-08-18 08:16:00',
-                'description' => NULL,
-                'excerpt' => NULL,
-                'id' => 6,
-                'img' => NULL,
-                'slug' => 'demarche-qualite',
-                'title' => NULL,
                 'updated_at' => '2020-08-18 08:30:56',
+                'description' => NULL,
+                'title' => NULL,
+                'img' => NULL,
+                'accordion_text' => NULL,
+                'excerpt' => NULL,
+                'subtitle' => NULL,
+                'stars' => NULL,
+                'lien_amazon' => '',
+                'points_forts' => NULL,
+                'points_faibles' => NULL,
+                'presentation' => NULL,
+                'conclusion' => NULL,
+                'resume' => NULL,
             ),
             6 => 
             array (
-                'accordion_text' => '<p>Ceci est un texte suppl&eacute;mentaire affich&eacute; dans l\'accord&eacute;on, qui est lui-m&ecirc;me ferm&eacute; par d&eacute;faut.</p>',
-                'contenu' => '<p>Voici le produit 1.</p>
-<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus pretium risus sed scelerisque. Ut quis vulputate augue. Etiam sapien magna, lobortis vel venenatis hendrerit, rutrum ac lectus. Sed consectetur orci ligula, a luctus augue venenatis in. Quisque in felis nec neque congue tempor quis non nisl. Proin nec blandit mi, eu ultrices neque. Fusce elementum accumsan dolor, ut mollis tellus maximus eget. Phasellus vel aliquam lectus. Suspendisse a lorem leo. Donec rutrum, turpis et lobortis luctus, dolor metus faucibus erat, ut lobortis massa ex fringilla justo. Etiam vitae justo leo. Vestibulum aliquam hendrerit neque eget bibendum. Aenean pellentesque nulla nec massa cursus tristique. Mauris vestibulum convallis arcu vel malesuada. Duis dapibus efficitur ullamcorper.</p>
-<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Sed id imperdiet mi. Donec commodo, massa quis eleifend mollis, ante enim vestibulum lectus, a aliquam ipsum lorem eu quam. Phasellus commodo sit amet massa in lobortis. Mauris ut porttitor ipsum. In et odio sodales, elementum justo id, scelerisque leo. Sed nec volutpat erat. Mauris metus ipsum, dapibus sed erat eget, commodo dignissim nisi. Nulla quis vehicula lacus. In id magna id magna viverra scelerisque et ullamcorper tortor. In ac dolor tristique, tempor lectus id, ullamcorper mi.</p>
-<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Integer gravida vitae ipsum at tristique. Donec at cursus enim. Suspendisse accumsan in metus vel efficitur. Morbi placerat ut magna sit amet dictum. Sed vel lacus dictum, porta tellus nec, ullamcorper nisl. Sed facilisis cursus eros laoreet convallis. Duis eget ipsum accumsan, faucibus felis sit amet, eleifend justo. Praesent sed dictum orci. Quisque vel odio leo.</p>
-<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Duis est magna, lobortis ut ultricies consectetur, vulputate sed sapien. Nunc dolor dolor, facilisis id vulputate vel, tempus vel dolor. In pharetra dui massa, vel laoreet eros placerat vitae. In elementum nisi nec pharetra efficitur. Fusce molestie sapien vitae porta consectetur. Suspendisse mauris nisi, molestie consequat dolor sit amet, auctor posuere risus. Aliquam dapibus lectus ex, quis tempor magna tincidunt ac. Curabitur cursus elit quis quam sollicitudin condimentum.</p>
-<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Cras vitae massa id dui vestibulum sodales. Mauris sollicitudin interdum ornare. In risus elit, vulputate pellentesque ullamcorper quis, rhoncus a ipsum. Praesent a consequat nunc. Donec dapibus enim in dui suscipit pharetra. Donec nec augue maximus arcu dapibus rutrum eu id tortor. Quisque semper, metus euismod sodales mollis, felis turpis sollicitudin magna, vitae dictum dolor lacus lobortis nunc. Suspendisse varius a lectus non consectetur.</p>',
-                'created_at' => '2022-06-09 19:08:00',
-                'description' => 'Ceci est une description courte du produit destinée à la balise meta',
-                'excerpt' => 'Ceci est un extrait du texte destiné à être placé sur les autres pages, telles que les résultats de recherche ou la page d\'accueil.',
                 'id' => 7,
-                'img' => 'pages/June2022/kaCfxKxD95eyaousdWOh.jpg',
                 'slug' => 'produit1',
+                'contenu' => '<table style="border-collapse: collapse; width: 100%; height: 91px;" border="1">
+<tbody>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique1</strong></td>
+<td style="width: 50%; height: 13px;">Valeur1</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique2</strong></td>
+<td style="width: 50%; height: 13px;">Valeur2</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique3</strong></td>
+<td style="width: 50%; height: 13px;">Valeur3</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique4</strong></td>
+<td style="width: 50%; height: 13px;">Valeur4</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique5</strong></td>
+<td style="width: 50%; height: 13px;">Valeur5</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique6</strong></td>
+<td style="width: 50%; height: 13px;">Valeur6</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><strong>Caract&eacute;ristique7</strong></td>
+<td style="width: 50%; height: 13px;">Valeur7</td>
+</tr>
+</tbody>
+</table>',
+                'created_at' => '2022-06-09 19:08:00',
+                'updated_at' => '2022-06-14 15:24:49',
+                'description' => 'Ceci est une description courte du produit destinée à la balise meta',
                 'title' => 'Titre du produit',
-                'updated_at' => '2022-06-09 19:10:52',
+                'img' => 'pages/June2022/kaCfxKxD95eyaousdWOh.jpg',
+                'accordion_text' => '<p>Ceci est un texte suppl&eacute;mentaire affich&eacute; dans l\'accord&eacute;on, qui est lui-m&ecirc;me ferm&eacute; par d&eacute;faut.</p>',
+                'excerpt' => 'Ceci est un extrait du texte destiné à être placé sur les autres pages, telles que les résultats de recherche ou la page d\'accueil.',
+                'subtitle' => 'Sous titre',
+                'stars' => 4.5,
+                'lien_amazon' => 'https://www.amazon.fr/Xiaomi-Watch-S1-GL-Black/dp/B09TR5XVML/ref=sr_1_6?keywords=xiaomi+watch+s1&qid=1655212205&s=electronics&sprefix=xiao+mi+wa%2Celectronics%2C60&sr=1-6',
+                'points_forts' => '<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Donec a lacus justo. Nullam dapibus finibus lectus id tincidunt. Phasellus sit amet est metus. Sed ultricies massa tristique risus varius, vitae sollicitudin magna lobortis. Aenean ornare interdum est, vulputate bibendum est elementum sed. Maecenas commodo rutrum neque, quis suscipit leo accumsan vel. Pellentesque pharetra in nulla eu posuere. Proin a ipsum ullamcorper, lobortis justo quis, vestibulum turpis. Curabitur ornare, lacus in malesuada auctor, risus justo elementum neque, ac ullamcorper dui ante nec ante. Donec a placerat lectus. Sed vel rutrum nisi. Nunc bibendum dolor metus.</p>',
+                'points_faibles' => '<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Donec a lacus justo. Nullam dapibus finibus lectus id tincidunt. Phasellus sit amet est metus. Sed ultricies massa tristique risus varius, vitae sollicitudin magna lobortis. Aenean ornare interdum est, vulputate bibendum est elementum sed. Maecenas commodo rutrum neque, quis suscipit leo accumsan vel. Pellentesque pharetra in nulla eu posuere. Proin a ipsum ullamcorper, lobortis justo quis, vestibulum turpis. Curabitur ornare, lacus in malesuada auctor, risus justo elementum neque, ac ullamcorper dui ante nec ante. Donec a placerat lectus. Sed vel rutrum nisi. Nunc bibendum dolor metus.</p>',
+                'presentation' => '<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Donec a lacus justo. Nullam dapibus finibus lectus id tincidunt. Phasellus sit amet est metus. Sed ultricies massa tristique risus varius, vitae sollicitudin magna lobortis. Aenean ornare interdum est, vulputate bibendum est elementum sed. Maecenas commodo rutrum neque, quis suscipit leo accumsan vel. Pellentesque pharetra in nulla eu posuere. Proin a ipsum ullamcorper, lobortis justo quis, vestibulum turpis. Curabitur ornare, lacus in malesuada auctor, risus justo elementum neque, ac ullamcorper dui ante nec ante. Donec a placerat lectus. Sed vel rutrum nisi. Nunc bibendum dolor metus.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Donec a lacus justo. Nullam dapibus finibus lectus id tincidunt. Phasellus sit amet est metus. Sed ultricies massa tristique risus varius, vitae sollicitudin magna lobortis. Aenean ornare interdum est, vulputate bibendum est elementum sed. Maecenas commodo rutrum neque, quis suscipit leo accumsan vel. Pellentesque pharetra in nulla eu posuere. Proin a ipsum ullamcorper, lobortis justo quis, vestibulum turpis. Curabitur ornare, lacus in malesuada auctor, risus justo elementum neque, ac ullamcorper dui ante nec ante. Donec a placerat lectus. Sed vel rutrum nisi. Nunc bibendum dolor metus.</p>',
+                'conclusion' => '<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>
+<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Donec a lacus justo. Nullam dapibus finibus lectus id tincidunt. Phasellus sit amet est metus. Sed ultricies massa tristique risus varius, vitae sollicitudin magna lobortis. Aenean ornare interdum est, vulputate bibendum est elementum sed. Maecenas commodo rutrum neque, quis suscipit leo accumsan vel. Pellentesque pharetra in nulla eu posuere. Proin a ipsum ullamcorper, lobortis justo quis, vestibulum turpis. Curabitur ornare, lacus in malesuada auctor, risus justo elementum neque, ac ullamcorper dui ante nec ante. Donec a placerat lectus. Sed vel rutrum nisi. Nunc bibendum dolor metus.</p>',
+                'resume' => '<p style="margin: 0px 0px 15px; padding: 0px; text-align: justify; color: #000000; font-family: \'Open Sans\', Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin vestibulum leo ut suscipit. Vestibulum in justo vitae augue imperdiet suscipit at nec nibh. Suspendisse quis ante elit. Suspendisse euismod orci ac cursus congue. Sed dictum nisi ut tortor scelerisque, nec feugiat metus accumsan. Praesent gravida ex dui, ut vulputate eros rutrum vel. Sed cursus, turpis in venenatis malesuada, mauris enim ultricies nisl, et blandit nulla ligula eget neque. Vestibulum luctus porttitor velit congue ornare. Sed molestie justo lorem, id feugiat odio sodales eget. Morbi pulvinar ante non nunc ullamcorper, ornare efficitur lacus consectetur. Nam luctus urna eu pretium euismod. Donec porta viverra lorem, dignissim mattis ipsum varius in. Aliquam erat volutpat.</p>',
             ),
         ));
         
