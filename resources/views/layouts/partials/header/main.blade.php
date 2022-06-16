@@ -31,7 +31,7 @@
                             </a>
                         </li>
                     </ul>--}}
-                    {{menu('Main_menu','layouts.partials.header.voyager_menu')}}
+                    {{menu('main_menu','layouts.partials.header.voyager_menu')}}
                 </div>
                 
                 <form method="post" action="{{route('recherche')}}" class="form-inline w-sm-100 mt-2 mt-md-0">

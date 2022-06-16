@@ -41698,6 +41698,10 @@ __webpack_require__.r(__webpack_exports__);
  //import 'lazysizes';
 
 
+$('#accordion .btn-link').on('click', function () {
+  $(this).parent().parent().parent().parent().toggleClass('active');
+  $(this).parent().parent().parent().parent().toggleClass('inactive');
+});
 
 /***/ }),
 

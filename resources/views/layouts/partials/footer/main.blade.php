@@ -6,10 +6,7 @@
             </div>
             <div class="col-12 col-md-6 px-5 text-center">
                 <p class="h5"><b>Liens utiles</b></p>
-                <a href="{{route('contact')}}" class="w-100 d-inline-block ">
-                    Contact
-                </a>
-                <a href="#" class="w-100 d-inline-block ">
+                <a href="{{ route("page",["slug"=>"mentions-legales"]) }}" class="w-100 d-inline-block ">
                     Mentions légales
                 </a>
                 <a href="#" class="w-100 d-inline-block ">

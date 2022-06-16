@@ -19,6 +19,7 @@ use App\Categorie;
 use App\SousCategorie;
 use App\Contact;
 use App\Page;
+use App\PageProduit;
 use App\Faq;
 use App\FaqCategory;
 use App\Conseil;
@@ -346,7 +347,7 @@ class SiteController extends Controller
      */
     public function faqs()
     {
-        $faqs = FaqCategory::all();
+        $faqs = Faq::all();
         return view('faqs', compact('faqs'));
     }
 
@@ -411,6 +412,20 @@ class SiteController extends Controller
     {
         $page = Page::where('slug', $slug)->firstOrFail();
         return view('page', compact('page'));
+        //return view('page', compact('page'));
+    }
+
+    /**
+     * Page produit spécifique
+     *
+     * @param string $slug le slug de la page
+     * 
+     * @return void
+     */
+    public function page_produit($slug)
+    {
+        $page = PageProduit::where('slug', $slug)->firstOrFail();
+        return view('page_produit', compact('page'));
         //return view('page', compact('page'));
     }
 

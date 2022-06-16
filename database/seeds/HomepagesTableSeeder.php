@@ -28,8 +28,8 @@ class HomepagesTableSeeder extends Seeder
 <p style="box-sizing: border-box; font-family: Muli, sans-serif; margin-top: 0px; margin-bottom: 1rem; color: #212529; font-size: 14.4px; background-color: #f8fafc;">Duis est magna, lobortis ut ultricies consectetur, vulputate sed sapien. Nunc dolor dolor, facilisis id vulputate vel, tempus vel dolor. In pharetra dui massa, vel laoreet eros placerat vitae. In elementum nisi nec pharetra efficitur. Fusce molestie sapien vitae porta consectetur. Suspendisse mauris nisi, molestie consequat dolor sit amet, auctor posuere risus. Aliquam dapibus lectus ex, quis tempor magna tincidunt ac. Curabitur cursus elit quis quam sollicitudin condimentum.</p>
 <p style="box-sizing: border-box; font-family: Muli, sans-serif; margin-top: 0px; margin-bottom: 1rem; color: #212529; font-size: 14.4px; background-color: #f8fafc;">Cras vitae massa id dui vestibulum sodales. Mauris sollicitudin interdum ornare. In risus elit, vulputate pellentesque ullamcorper quis, rhoncus a ipsum. Praesent a consequat nunc. Donec dapibus enim in dui suscipit pharetra. Donec nec augue maximus arcu dapibus rutrum eu id tortor. Quisque semper, metus euismod sodales mollis, felis turpis sollicitudin magna, vitae dictum dolor lacus lobortis nunc. Suspendisse varius a lectus non consectetur.</p>',
                 'created_at' => '2022-06-14 14:13:00',
-                'updated_at' => '2022-06-14 14:52:28',
-                'color' => '#f6993f',
+                'updated_at' => '2022-06-16 09:16:09',
+                'color' => '#5956e9',
                 'footer' => '<p><span style="color: #ffffff; font-family: Muli, sans-serif; font-size: 14.4px; background-color: #343a40;">Texte du footer, modifiable depuis le back office, de longueur variable et affich&eacute; de mani&egrave;re responsive.</span></p>',
             ),
         ));

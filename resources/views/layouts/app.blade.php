@@ -65,11 +65,14 @@
         <!-- END Bootstrap-Cookie-Alert -->
 
         {{-- JavaScript --}}
+        
         @section('script')
-        @yield('extra-js')
-        <script src={{mix('/js/app.js')}} async></script>
-        @show
         <script src="https://kit.fontawesome.com/4236d13d2d.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+        
+        <script src={{mix('/js/app.js')}} async></script>
+        @yield('extra-js')
+        @show
+        
     </body>
 </html>

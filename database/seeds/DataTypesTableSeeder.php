@@ -141,7 +141,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2020-08-07 16:54:10',
-                'updated_at' => '2022-06-14 11:32:27',
+                'updated_at' => '2022-06-16 12:16:08',
             ),
             7 => 
             array (
@@ -214,6 +214,24 @@ class DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2022-06-14 14:04:18',
                 'updated_at' => '2022-06-14 14:13:01',
+            ),
+            11 => 
+            array (
+                'id' => 17,
+                'name' => 'page_produits',
+                'slug' => 'page-produits',
+                'display_name_singular' => 'Page Produit',
+                'display_name_plural' => 'Page Produits',
+                'icon' => NULL,
+                'model_name' => 'App\\PageProduit',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2022-06-16 12:04:37',
+                'updated_at' => '2022-06-16 12:04:37',
             ),
         ));
         

@@ -18,6 +18,8 @@ class CreateHomepagesTable extends Migration
             $table->string('img')->nullable();
             $table->string('title');
             $table->text('contenu')->nullable();
+            $table->string('color');
+            $table->text('footer');
             $table->timestamps();
         });
     }

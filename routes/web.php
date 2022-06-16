@@ -38,6 +38,8 @@ Route::get('/sc/{slug}', 'SiteController@sousCategorie')
     ->name('sous_categorie');
 Route::get('/p/{slug}', 'SiteController@page')
     ->name('page');
+Route::get('/produit/{slug}', 'SiteController@page_produit')
+    ->name('page_produit');
 Route::get('/documentation', 'SiteController@pages')
     ->name('pages');
 
