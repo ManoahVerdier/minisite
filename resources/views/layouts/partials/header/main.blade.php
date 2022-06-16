@@ -3,7 +3,11 @@
         <div class="h-100" id="menu-head">
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                 <a href="{{url('/')}}" class="navbar-brand">
-                    <img class=" mx-auto" src="{{asset('img/header/logo.png')}}"/>
+                    @if(App\Homepage::first()->logo??false)
+                        <img class=" mx-auto" src="{{  asset("storage/".App\Homepage::first()->logo)  }}"/>
+                    @else 
+                        <img class=" mx-auto" src="{{asset('img/header/logo.png')}}"/>
+                    @endif
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu" aria-expanded="false" aria-label="Voir le menu">
                     <span class="navbar-toggler-icon"></span>

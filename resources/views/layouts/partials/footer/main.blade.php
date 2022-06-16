@@ -2,7 +2,7 @@
     <div class="container bg-dark text-white">    
         <div class="row pt-3">
             <div class="col-12 col-md-6 text-left px-5">
-                <p class="py-4 text-left mb-4">Texte du footer, modifiable depuis le back office, de longueur variable et affiché de manière responsive.</p>
+                <p class="py-4 text-left mb-4">{{  App\Homepage::first()->footer  }}</p>
             </div>
             <div class="col-12 col-md-6 px-5 text-center">
                 <p class="h5"><b>Liens utiles</b></p>

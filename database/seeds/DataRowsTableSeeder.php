@@ -1766,7 +1766,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 192,
                 'data_type_id' => 15,
                 'field' => 'footer',
-                'type' => 'rich_text_box',
+                'type' => 'text_area',
                 'display_name' => 'Texte du footer',
                 'required' => 1,
                 'browse' => 1,
@@ -2080,6 +2080,22 @@ class DataRowsTableSeeder extends Seeder
                 'delete' => 0,
                 'details' => '{}',
                 'order' => 19,
+            ),
+            129 => 
+            array (
+                'id' => 214,
+                'data_type_id' => 15,
+                'field' => 'logo',
+                'type' => 'image',
+                'display_name' => 'Logo',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 6,
             ),
         ));
         

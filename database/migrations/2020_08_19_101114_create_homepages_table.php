@@ -17,8 +17,11 @@ class CreateHomepagesTable extends Migration
             $table->increments('id');
             $table->string('img')->nullable();
             $table->string('title');
+            $table->string('titre_site');
+            $table->string('soustitre_site');
             $table->text('contenu')->nullable();
             $table->string('color');
+            $table->string('logo')->nullable();
             $table->text('footer');
             $table->timestamps();
         });
