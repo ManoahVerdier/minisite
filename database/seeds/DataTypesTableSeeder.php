@@ -121,9 +121,9 @@ class DataTypesTableSeeder extends Seeder
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2020-08-07 16:54:01',
-                'updated_at' => '2020-08-07 16:54:01',
+                'updated_at' => '2022-06-16 12:39:09',
             ),
             6 => 
             array (
@@ -213,7 +213,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2022-06-14 14:04:18',
-                'updated_at' => '2022-06-14 14:13:01',
+                'updated_at' => '2022-06-16 12:27:05',
             ),
             11 => 
             array (
@@ -229,9 +229,9 @@ class DataTypesTableSeeder extends Seeder
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2022-06-16 12:04:37',
-                'updated_at' => '2022-06-16 12:04:37',
+                'updated_at' => '2022-06-16 12:26:45',
             ),
         ));
         

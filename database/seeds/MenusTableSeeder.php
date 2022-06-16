@@ -31,6 +31,13 @@ class MenusTableSeeder extends Seeder
                 'created_at' => '2022-06-09 19:11:16',
                 'updated_at' => '2022-06-09 19:11:25',
             ),
+            2 => 
+            array (
+                'id' => 3,
+                'name' => 'footer',
+                'created_at' => '2022-06-16 13:34:50',
+                'updated_at' => '2022-06-16 13:34:50',
+            ),
         ));
         
         

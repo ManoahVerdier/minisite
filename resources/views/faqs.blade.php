@@ -19,7 +19,7 @@ id="faqs-page"
 @section('content')
 
 <div class="container" id="accordion">
-    <h1 class="border-bottom border-primary mb-3 text-center">FAQ</h1>
+    <h1 class="border-bottom border-primary text-center mt-4 mb-5">FAQ</h1>
 
     @foreach($faqs as $faq)
         <div class="row mx-2">
