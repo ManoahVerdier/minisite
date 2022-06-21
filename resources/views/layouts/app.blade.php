@@ -37,10 +37,21 @@
     </head>
 
     <body @yield('body-attr')>
-        <!-- Google Tag Manager (noscript) -->
-        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV9DF45"-->
-        <!--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
-        <!-- End Google Tag Manager (noscript) -->
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://prodice.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/prodice.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
         
 
         {{-- Header --}}
