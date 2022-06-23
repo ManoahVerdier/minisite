@@ -52,69 +52,6 @@ class SiteController extends Controller
     }
 
     /**
-     * Pages formations accédées par l'id
-     *
-     * @param Formation $formation la formation concernée
-     * 
-     * @return void
-     */
-    public function formation(Formation $formation)
-    {   
-        /*if (! isset($formation->sessions)) {
-            $formation->sessions=Formation::
-                where('nom', '=', 'default')
-                ->firstOrFail()
-                ->sessions;
-        }
-        return view(
-            'formation',
-            compact(
-                'formation'
-            )
-        );*/
-    }
-
-    /**
-     * Pages formations accédées par le slug
-     *
-     * @param Formation $formation la formation a afficher
-     * 
-     * @return void
-     */
-    public function formationBySlug(Formation $formation)
-    {
-        /*if (! isset($formation->sessions)) {
-            $formation->sessions=Formation::
-                where('nom', '=', 'default')
-                ->firstOrFail()
-                ->sessions;
-        }
-        return view(
-            'formation',
-            compact(
-                'formation'
-            )
-        );*/
-    }
-
-    /**
-     * Page conseil accédée par le slug
-     *
-     * @param Conseil $conseil le conseil
-     * 
-     * @return void
-     */
-    public function conseilBySlug(Conseil $conseil)
-    {
-        /*return view(
-            'conseil',
-            compact(
-                'conseil'
-            )
-        );*/
-    }
-
-    /**
      * Page catégorie
      * 
      * @param string $slug le slug de la categorie
@@ -331,17 +268,6 @@ class SiteController extends Controller
     }
 
     /**
-     * Page Audit interne qualite externe
-     *
-     * @return void
-     */
-    public function auditInterne()
-    {
-        $conseil=Conseil::where('slug', 'audit-interne-qualite-externalise')->first();
-        return view('audit', compact('conseil'));
-    }
-
-    /**
      * Page index des catégories de faq
      *
      * @return void
@@ -529,7 +455,7 @@ class SiteController extends Controller
      */
     public function recherche(Request $request)
     {
-        $pages = Page::
+        $pages = PageProduit::
             where(
                 'title', 
                 'LIKE', 
@@ -541,17 +467,17 @@ class SiteController extends Controller
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'accordion_text', 
+                'subtitle', 
                 'LIKE', 
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'description',
+                'presentation',
                 'LIKE',
                 '%'.$request->get('search').'%'
             )
             ->orWhere(
-                'contenu',
+                'resume',
                 'LIKE',
                 '%'.$request->get('search').'%'
             )
