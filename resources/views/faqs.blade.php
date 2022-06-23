@@ -38,7 +38,7 @@ id="faqs-page"
 
                         <div id="{{ $faq->slug }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body bg-white">
-                                {!!$faq->question!!}                            
+                                {!!$faq->reponse!!}                            
                             </div>
                         </div>
                     </div>
