@@ -47,7 +47,8 @@ class SiteController extends Controller
     public function homepage()
     {
         $hp = Homepage::first();
-        return view('home', compact('hp'));
+        $produits = PageProduit::all()->take(3);
+        return view('home', compact('hp','produits'));
     }
 
     /**

@@ -56,16 +56,16 @@ id="home-page"
         <div class="row">
             <div class="col-1"></div>
             <div class="col-5">
-                <div class="border border-2 border rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
+                <div class="bg-primary text-white d-inline-block h-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
                     <p class="h3 text-center">Points forts</p>
-                    {!!$page->points_forts!!}
+                    <div class="text-white">{!!$page->points_forts!!}</div>
                 </div>
             </div>
             
             <div class="col-5">
-                <div class="bg-primary ml-5 p-4 h-100 d-inline-block text-white  product_pro_cons" id="product_cons"  >
+                <div class=" ml-5 p-4 h-100  d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
-                    <div class="text-white">{!!$page->points_faibles!!}</div>
+                    {!!$page->points_faibles!!}
                 </div>
             </div>
             <div class="col-1"></div>
@@ -82,56 +82,56 @@ id="home-page"
         <div class="row">
             <div class="col-12">
                 <h3 class="border-bottom border-primary">Présentation</h3>
-                {!!$page->points_forts!!}
+                {!!$page->presentation!!}
                 <div class="text-center">
                     <a href="{{ $page->lien }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
-                <div class="col-1"></div>
-                <div class="col-5">
-                    <div class="border border-2 border rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
-                        <p class="h3 text-center">Points forts</p>
-                        {!!$page->points_forts!!}
-                    </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div class="bg-primary text-white d-inline-block h-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
+                    <p class="h3 text-center">Points forts</p>
+                    <div class="text-white">{!!$page->points_forts!!}</div>
                 </div>
-                
-                <div class="col-5">
-                    <div class="bg-primary ml-5 p-4 h-100 d-inline-block text-white  product_pro_cons" id="product_cons"  >
-                        <p class="h3 text-center">Points faibles</p>
-                        <div class="text-white">{!!$page->points_faibles!!}</div>
-                    </div>
-                </div>
-                <div class="col-1"></div>
             </div>
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h3 class="border-bottom border-primary">Conclusion</h3>
-                    {!! $page->conclusion !!}
-                    <div class="text-center">
-                        <a href="{{ $page->lien }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
-                    </div>
+            
+            <div class="col-5">
+                <div class=" ml-5 p-4 h-100  d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
+                    <p class="h3 text-center">Points faibles</p>
+                    {!!$page->points_faibles!!}
                 </div>
-            {{-- <div class="col-12">
-                <div id="accordion">
-                    <div class="card bg-dark">
-                        <div class="card-header" id="accordion">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Pour en savoir plus
-                            </button>
-                        </h5>
-                        </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="border-bottom border-primary">Conclusion</h3>
+                {!! $page->conclusion !!}
+                <div class="text-center">
+                    <a href="{{ $page->lien }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
+                </div>
+            </div>
+        {{-- <div class="col-12">
+            <div id="accordion">
+                <div class="card bg-dark">
+                    <div class="card-header" id="accordion">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Pour en savoir plus
+                        </button>
+                    </h5>
+                    </div>
 
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body bg-light">
-                                {!!$page->accordion_text!!}                            
-                            </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-light">
+                            {!!$page->accordion_text!!}                            
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
+        </div> --}}
         </div>
     </div>
 @endsection
