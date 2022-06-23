@@ -1,0 +1,1 @@
+editor.settings.toolbar = editor.settings.toolbar + 'removeformat'
