@@ -56,14 +56,14 @@ id="home-page"
         <div class="row">
             <div class="col-1"></div>
             <div class="col-5">
-                <div class="bg-primary text-white d-inline-block h-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
+                <div class="bg-primary text-white d-inline-block h-100 w-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
                     <p class="h3 text-center">Points forts</p>
                     <div class="text-white">{!!$page->points_forts!!}</div>
                 </div>
             </div>
             
             <div class="col-5">
-                <div class=" ml-5 p-4 h-100  d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
+                <div class=" ml-5 p-4 h-100  w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
                     {!!$page->points_faibles!!}
                 </div>
@@ -91,14 +91,14 @@ id="home-page"
         <div class="row mt-5">
             <div class="col-1"></div>
             <div class="col-5">
-                <div class="bg-primary text-white d-inline-block h-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
+                <div class="bg-primary text-white d-inline-block h-100 w-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
                     <p class="h3 text-center">Points forts</p>
                     <div class="text-white">{!!$page->points_forts!!}</div>
                 </div>
             </div>
             
             <div class="col-5">
-                <div class=" ml-5 p-4 h-100  d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
+                <div class=" ml-5 p-4 h-100 w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
                     {!!$page->points_faibles!!}
                 </div>
