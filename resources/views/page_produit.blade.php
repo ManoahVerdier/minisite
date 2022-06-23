@@ -37,7 +37,7 @@ id="home-page"
             </div>
             <div class="col-4">
                 <p class="h3 text-center mb-3">Meilleurs prix</p>
-                <a href="{{ $page->lien }}" class="btn btn-primary btn-block btn-lg text-white "><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
+                <a href="{{ $page->lien_amazon }}" class="btn btn-primary btn-block btn-lg text-white "><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
             </div>
         </div>
         <div class="row my-3">
@@ -84,7 +84,7 @@ id="home-page"
                 <h3 class="border-bottom border-primary">Présentation</h3>
                 {!!$page->presentation!!}
                 <div class="text-center">
-                    <a href="{{ $page->lien }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
+                    <a href="{{ $page->lien_amazon }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@ id="home-page"
                 <h3 class="border-bottom border-primary">Conclusion</h3>
                 {!! $page->conclusion !!}
                 <div class="text-center">
-                    <a href="{{ $page->lien }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
+                    <a href="{{ $page->lien_amazon }}" class="btn btn-primary btn-lg text-white mb-3"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
                 </div>
             </div>
         {{-- <div class="col-12">
