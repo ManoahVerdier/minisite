@@ -10,7 +10,7 @@
                         
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-block btn-primary">Voir le produit</a>
+                        <a href="{{ route("page_produit",["slug"=>$produit->slug]) }}" class="btn btn-block btn-primary">Voir le produit</a>
                     </div>
                 </div>
             @endforeach
