@@ -63,7 +63,7 @@ id="home-page"
             </div>
             
             <div class="col-sm-12 col-md-5">
-                <div class=" ml-5 p-4 h-100  w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
+                <div class=" ml-md-5 mt-3 mt-md-0 p-4 h-100  w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
                     {!!$page->points_faibles!!}
                 </div>
@@ -98,7 +98,7 @@ id="home-page"
             </div>
             
             <div class="col-sm-12 col-md-5">
-                <div class=" ml-5 p-4 h-100 w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
+                <div class=" ml-md-5 mt-3 mt-md-0 p-4 h-100 w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
                     {!!$page->points_faibles!!}
                 </div>
