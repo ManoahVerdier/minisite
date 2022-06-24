@@ -32,10 +32,10 @@ id="home-page"
             </div>
         </div>
         <div class="row my-3">
-            <div class="col-8 col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-8">
                 <img src="{{ URL::asset("storage/".$page->img) }}" alt="{{ $page->title }}" class="img-fluid">
             </div>
-            <div class="col-4 col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4">
                 <p class="h3 text-center mb-3">Meilleurs prix</p>
                 <a href="{{ $page->lien_amazon }}" class="btn btn-primary btn-block btn-lg text-white " rel="nofollow"  target="_blank"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
             </div>
