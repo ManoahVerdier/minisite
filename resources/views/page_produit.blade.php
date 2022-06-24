@@ -32,10 +32,10 @@ id="home-page"
             </div>
         </div>
         <div class="row my-3">
-            <div class="col-8">
+            <div class="col-8 col-sm-12 col-md-8">
                 <img src="{{ URL::asset("storage/".$page->img) }}" alt="{{ $page->title }}" class="img-fluid">
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-12 col-md-4">
                 <p class="h3 text-center mb-3">Meilleurs prix</p>
                 <a href="{{ $page->lien_amazon }}" class="btn btn-primary btn-block btn-lg text-white " rel="nofollow"  target="_blank"><i class="fa fa-cart-plus mr-3"></i>Voir le prix sur Amazon</a>
             </div>
@@ -54,21 +54,21 @@ id="home-page"
             </div>
         </div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-5">
+            <div class="col-1 col-sm-12 col-md-1"></div>
+            <div class="col-5 col-sm-12 col-md-5">
                 <div class="bg-primary text-white d-inline-block h-100 w-100 rounded-3 mr-5 p-4 product_pro_cons" id="product_pros">
                     <p class="h3 text-center">Points forts</p>
                     <div class="text-white">{!!$page->points_forts!!}</div>
                 </div>
             </div>
             
-            <div class="col-5">
+            <div class="col-5 col-sm-12 col-md-5">
                 <div class=" ml-5 p-4 h-100  w-100 d-inline-block border border-2 border product_pro_cons" id="product_cons"  >
                     <p class="h3 text-center">Points faibles</p>
                     {!!$page->points_faibles!!}
                 </div>
             </div>
-            <div class="col-1"></div>
+            <div class="col-1 col-sm-12 col-md-1"></div>
         </div>
         <div class="row mt-4" id="product_carac">
             <div class="col-12"><h3 class="border-bottom border-primary mb-3">Fiche technique/caractéristiques</h3></div>
