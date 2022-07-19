@@ -6,6 +6,8 @@
 .env
 .env.backup
 .phpunit.result.cache
+Duplication_des_minisites.docx
+Duplication_des_minisites.pdf
 Homestead.json
 Homestead.yaml
 npm-debug.log
