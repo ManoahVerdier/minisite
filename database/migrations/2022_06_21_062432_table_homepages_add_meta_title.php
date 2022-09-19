@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TableHomepageAddFields extends Migration
+class TableHomepagesAddMetaTitle extends Migration
 {
     /**
      * Run the migrations.
@@ -14,9 +14,8 @@ class TableHomepageAddFields extends Migration
     public function up()
     {
         Schema::table('homepages', function (Blueprint $table) {
-            $table->string('color');
-            $table->text('footer');
-            
+            $table->string('metatitle');
+            $table->string('metadesc');
         });
     }
 
@@ -27,10 +26,9 @@ class TableHomepageAddFields extends Migration
      */
     public function down()
     {
-        Schema::table('categories', function (Blueprint $table) {
-            $table->dropColumn('color');
-            $table->dropColumn('footer');
-            
+        Schema::table('homepages', function (Blueprint $table) {
+            $table->dropColumn('metatitle');
+            $table->dropColumn('metadesc');
         });
     }
 }

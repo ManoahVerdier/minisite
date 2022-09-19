@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .copy('resources/js/custom_voyager.js','public/js')
     .sass('resources/sass/app.scss', 'public/css',{prependData:'$customColor:'+process.env.PRIMARY_COLOR+';'})
     .version();
 mix.browserSync(process.env.APP_URL);

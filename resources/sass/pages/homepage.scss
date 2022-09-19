@@ -61,76 +61,7 @@
         }
     }
 
-    #expertise{
-        padding-top:100px;
-        
-        #expertise-right{
-            font-size:1rem;
-        }
-
-        #expertise-left{
-            padding-left:100px;
-            @media(max-width:767px){
-                padding-left:15px;
-            }
-        }
-
-        .expertise-categ{
-            &::after {
-                content: "›";
-                display: inline-block;
-                position: absolute;
-                left: calc(100% - 60px);
-                background: #1DB0EE;
-                height: 30px;
-                width: 30px;
-                border-radius: 30px;
-                text-align: center;
-                line-height: 10px;
-                color: #fff;
-                font-size: 1.8em;
-                vertical-align: middle;
-                padding-top: 7px;
-                padding-bottom: 5px;
-                padding-left: 6px;
-                padding-right: 5px;
-                font-weight:bold;
-
-                @media(max-width: 767px){
-                    left: calc(100% - 40px);
-                    bottom:45px;
-                    height:25px;
-                    width:25px;
-                    font-size:1.5em;
-                }
-            }
-
-            a{
-                text-transform:uppercase;
-            }
-        }
-
-        .underline{
-            position:relative;
-            top:-20px;
-        }
-
-        .plus{
-            width:40px;
-            height:40px;
-            border-radius:30px;
-            text-align:center;
-            padding-top:7px;
-            top:-8px;
-            right:5em;
-
-            @media(max-width:767px){
-                font-size: 1.5rem;
-                padding-top: 0px;
-            }
-        }
-    }
-
+    
     #clients{
         #clients-right{
             font-size:1rem;
@@ -154,5 +85,9 @@
             bottom:2.5em;
             font-size:1.3rem;
         }
+    }
+
+    #page-accueil h2{
+        width:100%;
     }
 }

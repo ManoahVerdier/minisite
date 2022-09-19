@@ -18,6 +18,8 @@ class CreatePagesTable extends Migration
             function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('slug', 255)->nullable();
+                $table->text('description')->nullable();
+                $table->text('title')->nullable();
                 $table->longText('contenu')->nullable();
                 $table->timestamps();
             }

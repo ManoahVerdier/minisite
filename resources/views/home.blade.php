@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', "Certification ISO, cabinet de conseil QHSE partout en France")
-@section('description', "Cabinet de conseil en Qualité, Hygiène, Sécurité et Environnement. Nous intervenons partout en France")
+@section('title', App\Homepage::first()->metatitle  )
+@section('description', App\Homepage::first()->metadesc)
 
 @section('body-attr')
 id="home-page"

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSousCategoriesTable extends Migration
+class CreateFaqsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,12 +14,13 @@ class CreateSousCategoriesTable extends Migration
     public function up()
     {
         Schema::create(
-            'sous_categories', 
+            'faqs', 
             function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('nom');
-                $table->string('slug');
-                $table->integer('parent_id')->nullable();
+                $table->string('slug', 255);
+                $table->string('question', 255)->nullable();
+                $table->text('reponse')->nullable();
+                $table->text('description')->nullable();
                 $table->timestamps();
             }
         );
@@ -32,6 +33,6 @@ class CreateSousCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sous_categories');
+        Schema::dropIfExists('faqs');
     }
 }

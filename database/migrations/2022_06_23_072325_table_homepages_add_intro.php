@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AlterTablePagesAlterContenuLongText extends Migration
+class TableHomepagesAddIntro extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AlterTablePagesAlterContenuLongText extends Migration
      */
     public function up()
     {
-        Schema::table('pages', function (Blueprint $table) {
-            $table->longText('contenu')->change();
+        Schema::table('homepages', function (Blueprint $table) {
+            $table->text('intro');
         });
     }
 
@@ -25,8 +25,8 @@ class AlterTablePagesAlterContenuLongText extends Migration
      */
     public function down()
     {
-        Schema::table('pages', function (Blueprint $table) {
-            //
+        Schema::table('homepages', function (Blueprint $table) {
+            $table->dropColumn('intro');
         });
     }
 }
